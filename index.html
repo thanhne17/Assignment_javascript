@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link defer href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Mulish:wght@300&display=swap" rel="stylesheet">
+    <!-- <link defer href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Mulish:wght@300&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
     <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- slide_range -->
@@ -56,7 +57,7 @@
           </div>
             <div class="bottom-header flex justify-between w-[75%] m-auto items-center">
               <div class="logo">
-                <a href="#" class="text-[3rem] font-black">
+                <a href="#" class="text-[3rem] min-w-[150px] font-black">
                   LAPShop<span class="text-[orange]">.</span>
                 </a>
               </div>
@@ -393,49 +394,69 @@
         </div>
 
         <!-- all pr -->
-        <div class="all-product bg-[#f8fafc] my-[70px] p-[10px]">
+        <div class="all-product bg-[#f8fafc] mt-[70px] p-[10px]">
           <div class="wrap-product mx-auto w-[80%]">
-            <h1 class="text-3xl font-black mb-[10px] whitespace-nowrap">Tất cả laptop</h1>
+            <h1 class="text-3xl font-black mb-[10px] whitespace-nowrap ">Tất cả laptop</h1>
             <div class="wrap-all flex">
-              <div class="fillter sticky min-w-[250px]">
-                <h3 class="mt-[20px] text-xl font-bold">Khoảng giá: </h3>
-                <div class="price">
-                  <!-- <p class="text-base font-light">Từ 500.000 đến 100.000.000đ</p> -->
-                  <div class="w-[80%] mx-auto">
-                    <input type="text" id="js-range-slider" name="my_range" value=""
-                        data-type="double"
-                        data-min="0"
-                        data-max="1000"
-                        data-from="200"
-                        data-to="500"
-                        data-grid="true"
-                    />
+              <div class="fillter min-w-[250px]">
+                
+                <div class="sticky top-[20px] ">
+                  <h3 class="mt-[20px] text-xl font-bold">Khoảng giá: </h3>
+                  <div class="price">
+                    <div class="w-[80%] mx-auto">
+                      <input type="text" id="js-range-slider" name="my_range" value=""
+                          data-type="double"
+                          data-min="0"
+                          data-max="1000"
+                          data-from="0"
+                          data-to="1000"
+                          data-grid="true"
+                      />
+                    </div>
+                  </div>
+                  <h3 class="mt-[20px] text-xl font-bold">Thương hiệu</h3>
+                  <div class="branch rounded-md border p-[10px]">
+                    <div class="text-base font-light border-b"><input type="checkbox" name="" id=""> SamSung</div>
+                    <div class="text-base font-light"><input type="checkbox" name="" id=""> Apple</div>
+                  </div>
+                  <h3 class="mt-[20px] text-xl font-bold">Ram</h3>
+                  <div class="ram rounded-md border p-[10px]">
+                    <div class="text-base font-light border-b"><input type="checkbox" name="" id=""> 4gb</div>
+                    <div class="text-base font-light border-b"><input type="checkbox" name="" id=""> 8gb</div>
+                    <div class="text-base font-light border-b"><input type="checkbox" name="" id=""> 16gb</div>
+                    <div class="text-base font-light"><input type="checkbox" name="" id=""> 32gb</div>
+                  </div>
+                  <h3 class="mt-[20px] text-xl font-bold">Bộ nhớ trong</h3>
+                  <div class="ram rounded-md border p-[10px]">
+                    <div class="text-base font-light border-b"><input type="checkbox" name="" id=""> 4gb</div>
+                    <div class="text-base font-light border-b"><input type="checkbox" name="" id=""> 8gb</div>
+                    <div class="text-base font-light border-b"><input type="checkbox" name="" id=""> 16gb</div>
+                    <div class="text-base font-light"><input type="checkbox" name="" id=""> 32gb</div>
                   </div>
                 </div>
-            
-                <h3 class="mt-[20px] text-xl font-bold">Thương hiệu</h3>
-                <div class="branch rounded-md border p-[10px]">
-                  <div class="text-base font-light border-b"><input type="checkbox" name="" id=""> SamSung</div>
-                  <div class="text-base font-light"><input type="checkbox" name="" id=""> Apple</div>
-                </div>
-                <h3 class="mt-[20px] text-xl font-bold">Ram</h3>
-                <div class="ram rounded-md border p-[10px]">
-                  <div class="text-base font-light border-b"><input type="checkbox" name="" id=""> 4gb</div>
-                  <div class="text-base font-light border-b"><input type="checkbox" name="" id=""> 8gb</div>
-                  <div class="text-base font-light border-b"><input type="checkbox" name="" id=""> 16gb</div>
-                  <div class="text-base font-light"><input type="checkbox" name="" id=""> 32gb</div>
-                </div>
-                <h3 class="mt-[20px] text-xl font-bold">Bộ nhớ trong</h3>
-                <div class="ram rounded-md border p-[10px]">
-                  <div class="text-base font-light border-b"><input type="checkbox" name="" id=""> 4gb</div>
-                  <div class="text-base font-light border-b"><input type="checkbox" name="" id=""> 8gb</div>
-                  <div class="text-base font-light border-b"><input type="checkbox" name="" id=""> 16gb</div>
-                  <div class="text-base font-light"><input type="checkbox" name="" id=""> 32gb</div>
-                </div>
+
               </div>
               <div class="product ml-[30px]">
                 <div class="wrap-product grid grid-cols-4 gap-[20px]">
-                  <div class="product1 bg-[#fff] border rounded-xl overflow-hidden p-[20px]">
+                  <div class="product1 bg-[#fff] hover:shadow-md rounded-xl overflow-hidden p-[20px]">
+                    <a href="#">
+                      <figure >
+                        <img src="https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/asus-zenbook-q408ug.jpg" alt="">
+                      </figure>
+                      <div class="info">
+                        <div class="name text-xl font-bold">
+                          Asus Zenbook Q408UG
+                        </div>
+                        <div class="price">
+                          <p class="py-[10px]">Từ <span class="text-[red] font-semibold" id="saled" value="23690000">23.690.000đ</span></p>
+                          <del id="sale" value="27990000" class="font-xs">27.990.000đ</del>  -<span class="phanTram font-bold"></span>
+                  
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="product1 bg-[#fff] hover:shadow-md rounded-xl overflow-hidden p-[20px]">
                     <a href="#">
                       <figure >
                         <img src="https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/asus-zenbook-q408ug.jpg" alt="">
@@ -453,7 +474,7 @@
                     </a>
                   </div>
 
-                  <div class="product1 bg-[#fff] border rounded-xl overflow-hidden p-[20px]">
+                  <div class="product1 bg-[#fff] hover:shadow-md rounded-xl overflow-hidden p-[20px]">
                     <a href="#">
                       <figure >
                         <img src="https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/asus-zenbook-q408ug.jpg" alt="">
@@ -471,7 +492,7 @@
                     </a>
                   </div>
 
-                  <div class="product1 bg-[#fff] border rounded-xl overflow-hidden p-[20px]">
+                  <div class="product1 bg-[#fff] hover:shadow-md rounded-xl overflow-hidden p-[20px]">
                     <a href="#">
                       <figure >
                         <img src="https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/asus-zenbook-q408ug.jpg" alt="">
@@ -489,7 +510,7 @@
                     </a>
                   </div>
 
-                  <div class="product1 bg-[#fff] border rounded-xl overflow-hidden p-[20px]">
+                  <div class="product1 bg-[#fff] hover:shadow-md rounded-xl overflow-hidden p-[20px]">
                     <a href="#">
                       <figure >
                         <img src="https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/asus-zenbook-q408ug.jpg" alt="">
@@ -507,7 +528,61 @@
                     </a>
                   </div>
 
-                  <div class="product1 bg-[#fff] border rounded-xl overflow-hidden p-[20px]">
+                  <div class="product1 bg-[#fff] hover:shadow-md rounded-xl overflow-hidden p-[20px]">
+                    <a href="#">
+                      <figure >
+                        <img src="https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/asus-zenbook-q408ug.jpg" alt="">
+                      </figure>
+                      <div class="info">
+                        <div class="name text-xl font-bold">
+                          Asus Zenbook Q408UG
+                        </div>
+                        <div class="price">
+                          <p class="py-[10px]">Từ <span class="text-[red] font-semibold" id="saled" value="23690000">23.690.000đ</span></p>
+                          <del id="sale" value="26990000" class="font-xs">26.990.000đ</del>  -<span class="phanTram font-bold"></span>
+                  
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="product1 bg-[#fff] hover:shadow-md rounded-xl overflow-hidden p-[20px]">
+                    <a href="#">
+                      <figure >
+                        <img src="https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/asus-zenbook-q408ug.jpg" alt="">
+                      </figure>
+                      <div class="info">
+                        <div class="name text-xl font-bold">
+                          Asus Zenbook Q408UG
+                        </div>
+                        <div class="price">
+                          <p class="py-[10px]">Từ <span class="text-[red] font-semibold" id="saled" value="23690000">23.690.000đ</span></p>
+                          <del id="sale" value="26990000" class="font-xs">26.990.000đ</del>  -<span class="phanTram font-bold"></span>
+                  
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="product1 bg-[#fff] hover:shadow-md rounded-xl overflow-hidden p-[20px]">
+                    <a href="#">
+                      <figure >
+                        <img src="https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/asus-zenbook-q408ug.jpg" alt="">
+                      </figure>
+                      <div class="info">
+                        <div class="name text-xl font-bold">
+                          Asus Zenbook Q408UG
+                        </div>
+                        <div class="price">
+                          <p class="py-[10px]">Từ <span class="text-[red] font-semibold" id="saled" value="23690000">23.690.000đ</span></p>
+                          <del id="sale" value="26990000" class="font-xs">26.990.000đ</del>  -<span class="phanTram font-bold"></span>
+                  
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="product1 bg-[#fff] hover:shadow-md rounded-xl overflow-hidden p-[20px]">
                     <a href="#">
                       <figure >
                         <img src="https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/asus-zenbook-q408ug.jpg" alt="">
@@ -531,8 +606,106 @@
           </div>
         </div>
 
-        <footer class="w-[100%] text-center mx-auto">
-          Thành Nguyễn
+        <!-- introduce -->
+        <div class="introduce bg-[#f8fafc] pt-[70px]">
+          <div class="flex w-[80%] rounded-xl bg-[#fff] overflow-hidden shadow-xl mx-auto">
+            <div class="right p-[30px] flex-1">
+              <h1 class="font-black text-3xl pb-[30px]">Tự tin mua sắm cùng LAPShop</h1>
+              <div class="wrap-introduce flex border-b py-[20px]">
+                <div class="">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mb-[10px]" fill="none" viewBox="0 0 22 22" stroke="currentColor">
+                    <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                  <h3 class="text-xl font-bold mb-[10px]">Chế độ bảo hành tận tâm</h3>
+                  <p class="font-medium">Tất cả các sản phẩm do ThinkPro bán ra đều được tuân thủ điều
+                    kiện bảo hành của nhà cung cấp, hãng sản xuất. Nếu có vấn đề về
+                    chất lượng sản phẩm, ThinkPro xin cam kết sẽ hỗ trợ Quý khách
+                    tới cùng.</p>
+                </div>
+
+                <div class="ml-[20px]">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mb-[10px]" fill="none" viewBox="0 0 22 22" stroke="currentColor">
+                    <path stroke-linecap="round" 
+                    stroke-linejoin="round" 
+                    stroke-width="2" 
+                    d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                  </svg>
+                  <h3 class="text-xl font-bold mb-[10px]">Hỗ trợ đổi trả 1-1 hoặc hoàn tiền 100%</h3>
+                  <p class="font-medium">Với thời gian dùng thử lên tới 15 ngày, Quý khách sẽ được hỗ 
+                    trợ đổi trả 1-1 hoặc hoàn tiền 100% nếu phát sinh lỗi hoặc cảm thấy sản phẩm chưa 
+                    đáp ứng được nhu cầu.</p>
+                </div>
+              </div>
+
+              <div class="wrap-introduce flex border-b py-[20px]">
+                <div class="">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mb-[10px]" fill="none" viewBox="0 0 22 22"  stroke="currentColor">
+                    <path stroke-linecap="round" 
+                    stroke-linejoin="round" 
+                    stroke-width="2" 
+                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <h3 class="text-xl font-bold mb-[10px]">Thông tin hữu ích</h3>
+                  <p class="font-medium">Tất cả các sản phẩm do ThinkPro bán ra đều được tuân thủ điều
+                    kiện bảo hành của nhà cung cấp, hãng sản xuất. Nếu có vấn đề về
+                    chất lượng sản phẩm, ThinkPro xin cam kết sẽ hỗ trợ Quý khách
+                    tới cùng.</p>
+                </div>
+              </div>
+
+              <div class="wrap-introduce flex pt-[20px]">
+                <div class="">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mb-[10px]" fill="none" viewBox="0 0 22 22"  stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11" />
+                  </svg>
+                  <h3 class="text-xl font-bold mb-[10px]">LAPShop. trên social networks</h3>
+                  <div class="btn flex">
+                    <a href="#" class="fb min-w-[150px] mx-[5px] border rounded-lg p-[5px] flex items-center">
+                      <figure class="w-[40px] mr-[10px]">
+                        <img src="https://thinkpro.vn/_nuxt/img/facebook.e4b1047.png" alt="">
+                      </figure>
+                      <p>Facebook</p>
+                    </a>
+
+                    <a href="#" class="fb min-w-[150px] mx-[5px] border rounded-lg p-[5px] flex items-center">
+                      <figure class="w-[40px] mr-[10px]">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAA4CAYAAABqtn+aAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMFSURBVHgB7ZztcdNAEIbf8/DfdgPkXEGABhDugApiKkgqIIECKAFDB6EBMA2AhwKwqMB2BeJWt6dc5DjSKZloz75nZvXlk2f0zt7ex+qkEEABaD6s74fGxnx84t2iveMRW51910PI91zfsN13bcvnuTO1//92UPf9aATLzO4Mdq9xPJCgS2PXxr6FCFpCwhlbGSuSlTYv2tYSU/Ayogd7SlsVTbXQFDiP6IH6EvGWJypPPG12v/HwgH7oLIxob9zJwPvhCkm8NlD7kLkT3wPXSAK2pfLC0gNZ0SReezIXC10VzpAIZUYbJ+ApEqGUmjkBNRKhZLQpG5HUgHRmPCgeZzB/rIyoCr9AoiunJGDyvu6MSUCNfrlA6HSRHLQED6T5tonZv0N8Qo4keGCJEfEL7PDoK+JhSAIOIQRlp9NnsB65hHzGIhsRFvIl5FfroehWmKo1x8cPkImIRqQRZecqSUhx8XGASPDiIzU0OaQgIM+g0QFz36wQkDmMxgPrSOn2RCsgUev2XKMHohbQwUK+RQ/dnoMQ0OMET9yreIYDgJNic/QwLI1SwOLmkGLfZ/SYFIuuCrN49CrdlbG/6DejuCEBc0RAYY1yODR/SMJdon824qswexwJlxl7D1k5bLkC1uIcedsZ5FEKmENYXtiLc+dsYic8SMANhFCrrtS6asgmp0Zki57xGgiaRP3OpiGffySgBA+k6vrJ2C/E9aJTFQP7hGLcDHHmp1cSYuAF4mUbTUdaKMskYHc2ioZyKgnYlTJv7SYTciRCKbt/TsCfSISyoM3AP0kEsaCNe8WX+mBrJNqS8xsT1gOV7Qv+QKItlVb+SqUMScS2TFzvpZrSV7ZOJwGbmftdP+X/wrGQBvQTJO5iZWzqC3grqcSxcMoFCyR8dsQjdrJyXOCVsY+opuqOFvf8FNqmd43aVMPdGrZxeQ27NqzNmhIF2TQ5hPuqBw3V/sAubV3sKxz8sCwqmVvhpGtFnjf8RdPKKB143VH/nIl/nvN+y7bGzedO3CdP0GVe4D9w98m2bjpq4gAAAABJRU5ErkJggg==" alt="">
+                      </figure>
+                      <p>Youtube</p>
+                    </a>
+
+                    <a href="#" class="fb min-w-[150px] mx-[5px] border rounded-lg p-[5px] flex items-center">
+                      <figure class="w-[40px] mr-[10px]">
+                        <img src="https://thinkpro.vn/_nuxt/img/tiktok.7a8c0ef.png" alt="">
+                      </figure>
+                      <p>Tiktok</p>
+                    </a>
+
+                    <a href="#" class="fb min-w-[150px] mx-[5px] border rounded-lg p-[5px] flex items-center">
+                      <figure class="w-[40px] mr-[10px]">
+                        <img src="https://thinkpro.vn/_nuxt/img/instagram.c928c7c.png" alt="">
+                      </figure>
+                      <p>Instagram</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="left flex-2">
+              <figure>
+                <img src="https://thinkpro.vn/_nuxt/img/thinkpro-footer.d5b4dbc.png" alt="">
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <footer class="w-[100%] h-[100px] bg-[#f8fafc]">
+          
         </footer>
       
 
