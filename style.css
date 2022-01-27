@@ -128,3 +128,14 @@ header .top-header .social {
         opacity: 1;
     }
 }
+
+@keyframes toTop {
+    from{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
