@@ -29,7 +29,7 @@ const Header =  {
             </div>
             <div class="bottom-header flex justify-between w-[75%] m-auto items-center">
                 <div class="logo">
-                <a href="#" class="text-[3rem] min-w-[150px] font-black">
+                <a href="/" class="text-[3rem] min-w-[150px] font-black">
                     LAPShop<span class="text-[orange]">.</span>
                 </a>
                 </div>

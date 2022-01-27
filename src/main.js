@@ -1,8 +1,9 @@
 import Navigo from "navigo";
 import HomePage from "./page/HomePage";
 import Product from "./page/product";
-const render = (content) => {
-    document.querySelector(".container").innerHTML = content.print();
+import DetailProduct from "./page/detailProduct";
+const render = (content,id) => {
+    document.querySelector(".container").innerHTML = content.print(id);
 };
 
 const route = new Navigo("/");
@@ -13,6 +14,9 @@ route.on({
     },
     "/product": ()=>{
         render(Product);
+    },  
+    "/detailPr/:id": ({data}) => {
+        render(DetailProduct,data.id);
     }
 });
 

@@ -47,7 +47,7 @@ const AllProduct = {
             <div class="product ml-[30px]">
               <div class="wrap-product grid grid-cols-4 gap-[20px]">
                 <div class="product1 bg-[#fff] hover:shadow-md rounded-xl overflow-hidden p-[20px]">
-                  <a href="#">
+                  <a href="/detailPr/1">
                     <figure >
                       <img src="https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/asus-zenbook-q408ug.jpg" alt="">
                     </figure>
