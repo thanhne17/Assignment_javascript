@@ -4,10 +4,10 @@ import Footer from "../components/footer";
 import Introduce from "../components/introduce";
 
 const Product = {
-    print(){
+    async print(){
         return /* html */ `
             ${Header.print()}
-            ${AllProduct.print()}
+            ${await AllProduct.print()}
             ${Introduce.print()}
             ${Footer.print()}
          `;

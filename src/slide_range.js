@@ -6,4 +6,4 @@ $("#js-range-slider").ionRangeSlider({
     max: 1000,
     from: 550
 });
-  $("#js-range-slider").ionRangeSlider();
+$("#js-range-slider").ionRangeSlider();

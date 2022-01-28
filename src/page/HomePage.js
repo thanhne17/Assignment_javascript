@@ -8,14 +8,14 @@ import OurProduct from "../components/our_product";
 import Footer from "../components/footer";
 
 const HomePage = {
-    print(){
+    async print(){
         return /* html */ `
             ${Header.print()}
             ${Background.print()}
             ${OurProduct.print()}
             ${CateBranch.print()}
             ${CateProduct.print()}
-            ${AllProduct.print()}
+            ${await AllProduct.print()}
             ${Introduce.print()}
             ${Footer.print()}
         `;
