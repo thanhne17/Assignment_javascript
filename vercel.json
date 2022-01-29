@@ -2,15 +2,15 @@
     "routes": [
         {
           "src": "/dashboad",
-          "dest": ""
+          "dest": "/"
         },
         {
             "src": "/",
-            "dest": ""
+            "dest": "/"
         },
         {
             "src": "/prodcut",
-            "dest": ""
+            "dest": "/"
         },
         {
           "src": "/detailPr/(.*)",
