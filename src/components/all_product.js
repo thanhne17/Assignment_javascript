@@ -1,5 +1,9 @@
 const AllProduct = {
     print(){
+        const currentPage = 1;
+        const itemsPerPage = 12;
+        const start = (currentPage - 1) * itemsPerPage;
+        const end = currentPage * itemsPerPage;
         return fetch("http://localhost:3001/posts")
             .then((res)=>res.json())
             .then((result)=> /* html */ `
@@ -47,28 +51,28 @@ const AllProduct = {
                     </div>
                     <div class="product ml-[30px]">
                       <div class="wrap-product grid grid-cols-4 gap-[20px]">
-                        ${result.map((Element)=> /* html */ `
-                        <div class="product1 bg-[#fff] hover:shadow-lg duration-300 rounded-xl overflow-hidden p-[20px] relative">
-                        <a href="/detailPr/${Element.id}" class="">
-                          <figure class="h-[50%]">
-                            <img src="${Element.img}" alt="">
-                          </figure>
-                          <div class="info h-[50%] bottom-[5px] ">
-                            <div class="name text-xl font-bold">
-                              ${Element.name_prodcut}
-                            </div>
-                            <div class="price">
-                              <p class="py-[10px]">Từ <span class="text-[red] font-semibold" id="saled" value="23690000">23.690.000đ</span></p>
-                              <del id="sale" value="27990000" class="font-xs">27.990.000đ</del>  -<span class="phanTram font-bold"></span>
-                      
-                            </div>
+                      ${result.slice(start, end).map((Element)=> /* html */ `
+                      <div class="product1 bg-[#fff] hover:shadow-lg duration-300 rounded-xl overflow-hidden p-[20px] relative">
+                      <a href="/detailPr/${Element.id}" class="">
+                        <figure class="h-[50%]">
+                          <img src="${Element.img}" alt="">
+                        </figure>
+                        <div class="info h-[50%] bottom-[5px] ">
+                          <div class="name text-xl font-bold">
+                            ${Element.name_prodcut}
                           </div>
-                        </a>
-                      </div>
-                        `).join(" ")}
+                          <div class="price">
+                            <p class="py-[10px]">Từ <span class="text-[red] font-semibold" id="saled" value="23690000">23.690.000đ</span></p>
+                            <del id="sale" value="27990000" class="font-xs">27.990.000đ</del>  -<span class="phanTram font-bold"></span>
+                    
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                      `).join(" ")}
                         </div>
                         <div class="flex justify-between mt-[20px] items-center"> 
-                          <a href="#" class="bg-[#fe3464] py-[10px] px-[195px] text-[#fff] rounded-lg next">Trang tiếp</a>
+                          <a href="#" class="bg-[#fe3464] py-[10px] px-[195px] text-[#fff] rounded-lg" id="next">Trang tiếp</a>
                           <div class="flex">
                           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
@@ -85,6 +89,9 @@ const AllProduct = {
               </div>
             `);
     },
+    after(){
+        console.log(1);
+    }
 };
 
 

@@ -10,5 +10,7 @@ setTimeout(() => {
             phanTram[i].innerHTML = `${Math.floor(result)}%`;        
         }
     }
-    
+
+
+
 }, 1000);

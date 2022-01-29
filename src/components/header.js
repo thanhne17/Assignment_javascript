@@ -2,9 +2,9 @@ const Header =  {
     print() {
         return /* html */ `
                     <!-- header -->
-        <header class="w-[100%]">
+        <header class="w-[100%] sticky top-0 z-10 bg-[#ffffffcf] backdrop-blur">
             <div class="wrap-top-header bg-[#f8f9fa]">
-            <div class="top-header flex justify-between items-center w-[90%] m-auto p-[10px]">
+            <div class="top-header flex justify-between items-center w-[90%] m-auto p-[10px] hidden">
                 <div class="social cursor-pointer">
                 <i data-color="blue" class="fab fa-facebook hover:text-[blue]"></i>
                 <i data-color="#1c96e8" class="fab fa-twitter hover:text-[#1c96e8]"></i>
@@ -37,7 +37,7 @@ const Header =  {
                 <ul class="flex">
                     <li><a href="/">Home</a> </li>
                     <li><a href="/product">Product</a> </li>
-                    <li><a href="">Special</a> </li>
+                    <li><a href="/dashboad">Admin</a> </li>
                     <li><a href="">Blog</a> </li>
                     <li><a href="">About Us</a> </li>
                     <li class="relative chuong">

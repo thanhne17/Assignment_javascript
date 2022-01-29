@@ -1,0 +1,20 @@
+{
+    "routes": [
+        {
+          "src": "/dashboad",
+          "dest": ""
+        },
+        {
+            "src": "/",
+            "dest": ""
+        },
+        {
+            "src": "/prodcut",
+            "dest": ""
+        },
+        {
+          "src": "/detailPr/(.*)",
+          "dest": "/"
+        }
+      ]
+}
