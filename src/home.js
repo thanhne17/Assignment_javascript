@@ -17,6 +17,7 @@ setTimeout(() => {
     };
 
     const myBtn = document.querySelector(".btn-top");
+    const header = document.querySelector("header");
     window.onscroll = ()=>{
         scrollFunction();
     };
@@ -25,9 +26,17 @@ setTimeout(() => {
         if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
             myBtn.style.display = "block";
             myBtn.style.animation = "toTop .5s";
+            header.classList.add("sticky");
+            header.style.animation = "down .5s";
+            header.classList.add("shadow-md");
+
         }
         else{
             myBtn.style.display = "none";
+            header.classList.remove("sticky");
+            header.style.animation = "";
+            header.classList.remove("shadow-md");
+            
         }
     }
 

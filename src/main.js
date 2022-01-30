@@ -3,6 +3,7 @@ import HomePage from "./page/HomePage";
 import Product from "./page/product";
 import DetailProduct from "./page/detailProduct";
 import Dashboad from "./page/admin/dashboad";
+import IndexProduct from "./page/admin/product";
 
 const render = async (content,id) => {
     document.querySelector(".container").innerHTML = await content.print(id);
@@ -25,6 +26,9 @@ route.on({
     },
     "/dashboad": ()=>{
         render(Dashboad);
+    },
+    "/admin/index": ()=>{
+        render(IndexProduct);
     }
     
 });

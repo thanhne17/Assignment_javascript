@@ -15,7 +15,6 @@
     "vite": "^2.7.2"
   },
   "dependencies": {
-    "ion-rangeslider": "^2.3.1",
     "json-server": "^0.17.0",
     "navigo": "^8.11.1"
   }

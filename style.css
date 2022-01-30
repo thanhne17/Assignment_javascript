@@ -56,7 +56,7 @@ header .top-header .social {
     animation: fadeIn .5s;
     min-height: 50px;
     backdrop-filter: blur(5px);
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(51, 50, 50, 0.815);
 }
 .background_img{
     position: relative;
@@ -98,7 +98,7 @@ header .top-header .social {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: aqua;
+    background-color: orange;
     z-index: -2;
     border-radius: 0.375rem;
 }
@@ -136,6 +136,17 @@ header .top-header .social {
     }
     to{
         transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes down {
+    from{
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
         opacity: 1;
     }
 }

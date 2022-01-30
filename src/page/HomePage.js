@@ -14,7 +14,7 @@ const HomePage = {
             ${Background.print()}
             ${OurProduct.print()}
             ${CateBranch.print()}
-            ${CateProduct.print()}
+            ${await CateProduct.print()}
             ${await AllProduct.print()}
             ${Introduce.print()}
             ${Footer.print()}

@@ -2,7 +2,7 @@ const Header =  {
     print() {
         return /* html */ `
                     <!-- header -->
-        <header class="w-[100%] sticky top-0 z-10 bg-[#ffffffcf] backdrop-blur">
+        <header class="w-[100%] top-0 z-10 bg-[#ffffff94] backdrop-blur-md">
             <div class="wrap-top-header bg-[#f8f9fa]">
             <div class="top-header flex justify-between items-center w-[90%] m-auto p-[10px] hidden">
                 <div class="social cursor-pointer">
@@ -47,7 +47,7 @@ const Header =  {
                         
                         <ul class="absolute z-10">
                             <li>
-                            <div class="toast w-[300px] rounded-md text-[#fff] p-[5px]">
+                            <div class="toast w-[300px] rounded-md text-[#fff] p-[5px] shadow-md">
                                 <div class="title flex justify-between border-b">
                                 <h1>Notification</h1>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 close" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -79,7 +79,8 @@ const Header =  {
             </div>
       </header>
         `; 
-    }
+    },
+   
 };
 
 export default Header;
