@@ -15,6 +15,14 @@
         {
           "src": "/detailPr/(.*)",
           "dest": "/"
+        },
+        {
+          "src": "/admin/index",
+          "dest": "/"
+        },
+        {
+          "src": "/admin/addpr",
+          "dest": "/"
         }
       ]
 }

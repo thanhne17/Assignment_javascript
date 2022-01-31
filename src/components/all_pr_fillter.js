@@ -1,18 +1,11 @@
 const Fillter = {
     print(){
         return /* html */ `
-        <div class="sticky top-[20px] ">
+        <div class="sticky top-[100px] ">
         <h3 class="mt-[20px] text-xl font-bold">Khoảng giá: </h3>
         <div class="price">
           <div class="w-[80%] mx-auto">
-            <input type="text" id="js-range-slider" name="my_range" value=""
-                data-type="double"
-                data-min="0"
-                data-max="1000"
-                data-from="0"
-                data-to="1000"
-                data-grid="true"
-            />
+            <input type="range" id="js-range-slider" name="my_range" value=""/>
           </div>
         </div>
         <h3 class="mt-[20px] text-xl font-bold">Thương hiệu</h3>

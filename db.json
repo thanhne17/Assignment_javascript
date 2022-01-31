@@ -1,6 +1,5 @@
 {
-  "posts": 
-  [
+  "posts": [
     {
       "name_prodcut": "ASUS ROG Strix G15 ",
       "cpu": "cpu 1",
@@ -36,18 +35,6 @@
       "pin": "pin 3",
       "price": "39.490.000đ",
       "id": "3"
-    },
-    {
-      "name_prodcut": "HP ZBook Studio G3",
-      "cpu": "cpu 4",
-      "img": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2020/7/17/hp-zbook-studio-g3-StudioG301NU-4zK.jpg",
-      "ram": "ram 4",
-      "rom": "rom 4",
-      "display": 54,
-      "card": "card 4",
-      "pin": "pin 4",
-      "price": "39.490.000đ",
-      "id": "4"
     },
     {
       "name_prodcut": "Dell Inspiron 15 5515 AMD",
@@ -86,18 +73,6 @@
       "id": "7"
     },
     {
-      "name_prodcut": "ASUS TUF Dash F15",
-      "cpu": "cpu 8",
-      "img": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/5/13/tufdashf15-den-1.jpg",
-      "ram": "ram 8",
-      "rom": "rom 8",
-      "display": 45,
-      "card": "card 8",
-      "pin": "pin 8",
-      "price": "39.490.000đ",
-      "id": "8"
-    },
-    {
       "name_prodcut": "dolorem soluta voluptatem",
       "cpu": "cpu 9",
       "img": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/19/HP-Victus-16-Intel-04.png",
@@ -131,7 +106,7 @@
       "card": "card 1",
       "pin": "pin 1",
       "price": "39.490.000đ",
-      "id": "1"
+      "id": "11"
     },
     {
       "name_prodcut": "MSI Modern 15 AMD",
@@ -143,7 +118,7 @@
       "card": "card 2",
       "pin": "pin 2",
       "price": "39.490.000đ",
-      "id": "2"
+      "id": "12"
     },
     {
       "name_prodcut": "Lenovo ThinkPad X1 Carbon Gen 5",
@@ -155,19 +130,7 @@
       "card": "card 3",
       "pin": "pin 3",
       "price": "39.490.000đ",
-      "id": "3"
-    },
-    {
-      "name_prodcut": "HP ZBook Studio G3",
-      "cpu": "cpu 4",
-      "img": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2020/7/17/hp-zbook-studio-g3-StudioG301NU-4zK.jpg",
-      "ram": "ram 4",
-      "rom": "rom 4",
-      "display": 54,
-      "card": "card 4",
-      "pin": "pin 4",
-      "price": "39.490.000đ",
-      "id": "4"
+      "id": "13"
     },
     {
       "name_prodcut": "Dell Inspiron 15 5515 AMD",
@@ -179,7 +142,7 @@
       "card": "card 5",
       "pin": "pin 5",
       "price": "39.490.000đ",
-      "id": "5"
+      "id": "15"
     },
     {
       "name_prodcut": "Lenovo IdeaPad Slim 5 Pro 14 AMD (Chính hãng) (82L700L5VN)",
@@ -191,7 +154,7 @@
       "card": "card 6",
       "pin": "pin 6",
       "price": "39.490.000đ",
-      "id": "6"
+      "id": "16"
     },
     {
       "name_prodcut": "MSI Modern 14 B11 (1030VN)",
@@ -203,19 +166,7 @@
       "card": "card 7",
       "pin": "pin 7",
       "price": "39.490.000đ",
-      "id": "7"
-    },
-    {
-      "name_prodcut": "ASUS TUF Dash F15",
-      "cpu": "cpu 8",
-      "img": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/5/13/tufdashf15-den-1.jpg",
-      "ram": "ram 8",
-      "rom": "rom 8",
-      "display": 45,
-      "card": "card 8",
-      "pin": "pin 8",
-      "price": "39.490.000đ",
-      "id": "8"
+      "id": "17"
     },
     {
       "name_prodcut": "dolorem soluta voluptatem",
@@ -227,7 +178,7 @@
       "card": "card 9",
       "pin": "pin 9",
       "price": "39.490.000đ",
-      "id": "9"
+      "id": "19"
     },
     {
       "name_prodcut": "et modi qui",
@@ -239,7 +190,7 @@
       "card": "card 10",
       "pin": "pin 10",
       "price": "39.490.000đ0",
-      "id": "10"
+      "id": "20"
     },
     {
       "name_prodcut": "ASUS ROG Strix G15 ",
@@ -251,7 +202,7 @@
       "card": "card 1",
       "pin": "pin 1",
       "price": "39.490.000đ",
-      "id": "1"
+      "id": "21"
     },
     {
       "name_prodcut": "MSI Modern 15 AMD",
@@ -263,7 +214,7 @@
       "card": "card 2",
       "pin": "pin 2",
       "price": "39.490.000đ",
-      "id": "2"
+      "id": "22"
     },
     {
       "name_prodcut": "Lenovo ThinkPad X1 Carbon Gen 5",
@@ -275,7 +226,7 @@
       "card": "card 3",
       "pin": "pin 3",
       "price": "39.490.000đ",
-      "id": "3"
+      "id": "23"
     },
     {
       "name_prodcut": "HP ZBook Studio G3",
@@ -287,7 +238,7 @@
       "card": "card 4",
       "pin": "pin 4",
       "price": "39.490.000đ",
-      "id": "4"
+      "id": "24"
     },
     {
       "name_prodcut": "Dell Inspiron 15 5515 AMD",
@@ -299,7 +250,7 @@
       "card": "card 5",
       "pin": "pin 5",
       "price": "39.490.000đ",
-      "id": "5"
+      "id": "25"
     },
     {
       "name_prodcut": "Lenovo IdeaPad Slim 5 Pro 14 AMD (Chính hãng) (82L700L5VN)",
@@ -311,7 +262,7 @@
       "card": "card 6",
       "pin": "pin 6",
       "price": "39.490.000đ",
-      "id": "6"
+      "id": "26"
     },
     {
       "name_prodcut": "MSI Modern 14 B11 (1030VN)",
@@ -323,7 +274,7 @@
       "card": "card 7",
       "pin": "pin 7",
       "price": "39.490.000đ",
-      "id": "7"
+      "id": "27"
     },
     {
       "name_prodcut": "ASUS TUF Dash F15",
@@ -335,7 +286,7 @@
       "card": "card 8",
       "pin": "pin 8",
       "price": "39.490.000đ",
-      "id": "8"
+      "id": "28"
     },
     {
       "name_prodcut": "dolorem soluta voluptatem",
@@ -347,7 +298,7 @@
       "card": "card 9",
       "pin": "pin 9",
       "price": "39.490.000đ",
-      "id": "9"
+      "id": "29"
     },
     {
       "name_prodcut": "et modi qui",
@@ -359,7 +310,7 @@
       "card": "card 10",
       "pin": "pin 10",
       "price": "39.490.000đ0",
-      "id": "10"
+      "id": "30"
     },
     {
       "name_prodcut": "ASUS ROG Strix G15 ",
@@ -371,7 +322,7 @@
       "card": "card 1",
       "pin": "pin 1",
       "price": "39.490.000đ",
-      "id": "1"
+      "id": "31"
     },
     {
       "name_prodcut": "MSI Modern 15 AMD",
@@ -383,7 +334,7 @@
       "card": "card 2",
       "pin": "pin 2",
       "price": "39.490.000đ",
-      "id": "2"
+      "id": "32"
     },
     {
       "name_prodcut": "Lenovo ThinkPad X1 Carbon Gen 5",
@@ -395,7 +346,7 @@
       "card": "card 3",
       "pin": "pin 3",
       "price": "39.490.000đ",
-      "id": "3"
+      "id": "33"
     },
     {
       "name_prodcut": "HP ZBook Studio G3",
@@ -407,7 +358,7 @@
       "card": "card 4",
       "pin": "pin 4",
       "price": "39.490.000đ",
-      "id": "4"
+      "id": "34"
     },
     {
       "name_prodcut": "Dell Inspiron 15 5515 AMD",
@@ -419,7 +370,7 @@
       "card": "card 5",
       "pin": "pin 5",
       "price": "39.490.000đ",
-      "id": "5"
+      "id": "35"
     },
     {
       "name_prodcut": "Lenovo IdeaPad Slim 5 Pro 14 AMD (Chính hãng) (82L700L5VN)",
@@ -431,7 +382,7 @@
       "card": "card 6",
       "pin": "pin 6",
       "price": "39.490.000đ",
-      "id": "6"
+      "id": "36"
     },
     {
       "name_prodcut": "MSI Modern 14 B11 (1030VN)",
@@ -443,7 +394,7 @@
       "card": "card 7",
       "pin": "pin 7",
       "price": "39.490.000đ",
-      "id": "7"
+      "id": "37"
     },
     {
       "name_prodcut": "ASUS TUF Dash F15",
@@ -455,7 +406,7 @@
       "card": "card 8",
       "pin": "pin 8",
       "price": "39.490.000đ",
-      "id": "8"
+      "id": "38"
     },
     {
       "name_prodcut": "dolorem soluta voluptatem",
@@ -467,7 +418,7 @@
       "card": "card 9",
       "pin": "pin 9",
       "price": "39.490.000đ",
-      "id": "9"
+      "id": "39"
     },
     {
       "name_prodcut": "et modi qui",
@@ -479,7 +430,7 @@
       "card": "card 10",
       "pin": "pin 10",
       "price": "39.490.000đ0",
-      "id": "10"
+      "id": "40"
     },
     {
       "name_prodcut": "ASUS ROG Strix G15 ",
@@ -491,7 +442,7 @@
       "card": "card 1",
       "pin": "pin 1",
       "price": "39.490.000đ",
-      "id": "1"
+      "id": "41"
     },
     {
       "name_prodcut": "MSI Modern 15 AMD",
@@ -503,7 +454,7 @@
       "card": "card 2",
       "pin": "pin 2",
       "price": "39.490.000đ",
-      "id": "2"
+      "id": "42"
     },
     {
       "name_prodcut": "Lenovo ThinkPad X1 Carbon Gen 5",
@@ -515,7 +466,7 @@
       "card": "card 3",
       "pin": "pin 3",
       "price": "39.490.000đ",
-      "id": "3"
+      "id": "43"
     },
     {
       "name_prodcut": "HP ZBook Studio G3",
@@ -527,7 +478,7 @@
       "card": "card 4",
       "pin": "pin 4",
       "price": "39.490.000đ",
-      "id": "4"
+      "id": "44"
     },
     {
       "name_prodcut": "Dell Inspiron 15 5515 AMD",
@@ -539,7 +490,7 @@
       "card": "card 5",
       "pin": "pin 5",
       "price": "39.490.000đ",
-      "id": "5"
+      "id": "45"
     },
     {
       "name_prodcut": "Lenovo IdeaPad Slim 5 Pro 14 AMD (Chính hãng) (82L700L5VN)",
@@ -551,7 +502,7 @@
       "card": "card 6",
       "pin": "pin 6",
       "price": "39.490.000đ",
-      "id": "6"
+      "id": "46"
     },
     {
       "name_prodcut": "MSI Modern 14 B11 (1030VN)",
@@ -563,7 +514,7 @@
       "card": "card 7",
       "pin": "pin 7",
       "price": "39.490.000đ",
-      "id": "7"
+      "id": "47"
     },
     {
       "name_prodcut": "ASUS TUF Dash F15",
@@ -575,7 +526,7 @@
       "card": "card 8",
       "pin": "pin 8",
       "price": "39.490.000đ",
-      "id": "8"
+      "id": "48"
     },
     {
       "name_prodcut": "dolorem soluta voluptatem",
@@ -587,7 +538,7 @@
       "card": "card 9",
       "pin": "pin 9",
       "price": "39.490.000đ",
-      "id": "9"
+      "id": "49"
     },
     {
       "name_prodcut": "et modi qui",
@@ -599,7 +550,7 @@
       "card": "card 10",
       "pin": "pin 10",
       "price": "39.490.000đ0",
-      "id": "10"
+      "id": "50"
     },
     {
       "name_prodcut": "ASUS ROG Strix G15 ",
@@ -611,7 +562,7 @@
       "card": "card 1",
       "pin": "pin 1",
       "price": "39.490.000đ",
-      "id": "1"
+      "id": "51"
     },
     {
       "name_prodcut": "MSI Modern 15 AMD",
@@ -623,7 +574,7 @@
       "card": "card 2",
       "pin": "pin 2",
       "price": "39.490.000đ",
-      "id": "2"
+      "id": "52"
     },
     {
       "name_prodcut": "Lenovo ThinkPad X1 Carbon Gen 5",
@@ -635,7 +586,7 @@
       "card": "card 3",
       "pin": "pin 3",
       "price": "39.490.000đ",
-      "id": "3"
+      "id": "53"
     },
     {
       "name_prodcut": "HP ZBook Studio G3",
@@ -647,7 +598,7 @@
       "card": "card 4",
       "pin": "pin 4",
       "price": "39.490.000đ",
-      "id": "4"
+      "id": "54"
     },
     {
       "name_prodcut": "Dell Inspiron 15 5515 AMD",
@@ -659,7 +610,7 @@
       "card": "card 5",
       "pin": "pin 5",
       "price": "39.490.000đ",
-      "id": "5"
+      "id": "55"
     },
     {
       "name_prodcut": "Lenovo IdeaPad Slim 5 Pro 14 AMD (Chính hãng) (82L700L5VN)",
@@ -671,7 +622,7 @@
       "card": "card 6",
       "pin": "pin 6",
       "price": "39.490.000đ",
-      "id": "6"
+      "id": "56"
     },
     {
       "name_prodcut": "MSI Modern 14 B11 (1030VN)",
@@ -683,7 +634,7 @@
       "card": "card 7",
       "pin": "pin 7",
       "price": "39.490.000đ",
-      "id": "7"
+      "id": "57"
     },
     {
       "name_prodcut": "ASUS TUF Dash F15",
@@ -695,7 +646,7 @@
       "card": "card 8",
       "pin": "pin 8",
       "price": "39.490.000đ",
-      "id": "8"
+      "id": "58"
     },
     {
       "name_prodcut": "dolorem soluta voluptatem",
@@ -707,7 +658,7 @@
       "card": "card 9",
       "pin": "pin 9",
       "price": "39.490.000đ",
-      "id": "9"
+      "id": "59"
     },
     {
       "name_prodcut": "et modi qui",
@@ -719,7 +670,7 @@
       "card": "card 10",
       "pin": "pin 10",
       "price": "39.490.000đ0",
-      "id": "10"
+      "id": "60"
     },
     {
       "name_prodcut": "ASUS ROG Strix G15 ",
@@ -731,7 +682,7 @@
       "card": "card 1",
       "pin": "pin 1",
       "price": "39.490.000đ",
-      "id": "1"
+      "id": "651"
     },
     {
       "name_prodcut": "MSI Modern 15 AMD",
@@ -743,7 +694,7 @@
       "card": "card 2",
       "pin": "pin 2",
       "price": "39.490.000đ",
-      "id": "2"
+      "id": "62"
     },
     {
       "name_prodcut": "Lenovo ThinkPad X1 Carbon Gen 5",
@@ -755,7 +706,7 @@
       "card": "card 3",
       "pin": "pin 3",
       "price": "39.490.000đ",
-      "id": "3"
+      "id": "63"
     },
     {
       "name_prodcut": "HP ZBook Studio G3",
@@ -767,7 +718,7 @@
       "card": "card 4",
       "pin": "pin 4",
       "price": "39.490.000đ",
-      "id": "4"
+      "id": "64"
     },
     {
       "name_prodcut": "Dell Inspiron 15 5515 AMD",
@@ -779,7 +730,7 @@
       "card": "card 5",
       "pin": "pin 5",
       "price": "39.490.000đ",
-      "id": "5"
+      "id": "65"
     },
     {
       "name_prodcut": "Lenovo IdeaPad Slim 5 Pro 14 AMD (Chính hãng) (82L700L5VN)",
@@ -791,7 +742,7 @@
       "card": "card 6",
       "pin": "pin 6",
       "price": "39.490.000đ",
-      "id": "6"
+      "id": "66"
     },
     {
       "name_prodcut": "MSI Modern 14 B11 (1030VN)",
@@ -803,7 +754,7 @@
       "card": "card 7",
       "pin": "pin 7",
       "price": "39.490.000đ",
-      "id": "7"
+      "id": "67"
     },
     {
       "name_prodcut": "ASUS TUF Dash F15",
@@ -815,7 +766,7 @@
       "card": "card 8",
       "pin": "pin 8",
       "price": "39.490.000đ",
-      "id": "8"
+      "id": "68"
     },
     {
       "name_prodcut": "dolorem soluta voluptatem",
@@ -827,7 +778,7 @@
       "card": "card 9",
       "pin": "pin 9",
       "price": "39.490.000đ",
-      "id": "9"
+      "id": "69"
     },
     {
       "name_prodcut": "et modi qui",
@@ -839,11 +790,10 @@
       "card": "card 10",
       "pin": "pin 10",
       "price": "39.490.000đ0",
-      "id": "10"
+      "id": "70"
     }
   ],
-  "cate_pr":
-  [
+  "cate_pr": [
     {
       "title": "Văn phòng & học tập",
       "img": "https://thinkpro.vn/_nuxt/img/van-phong.e9c8981.png",
@@ -875,5 +825,4 @@
       "color": "#fff0f6"
     }
   ]
-  
 }

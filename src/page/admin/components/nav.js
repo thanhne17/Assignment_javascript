@@ -15,10 +15,10 @@ const NavDashboad = {
             <i class="fas fa-bars"></i>
         </button>
         <a
-            class="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0"
-            href="../../index.html"
+            class="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-3xl uppercase font-bold p-4 px-0"
+            href="/"
         >
-            LAPShop.
+            LAPShop<span class="text-[orange]">.</span>
         </a>
         <ul class="md:hidden items-center flex flex-wrap list-none">
             <li class="inline-block relative">
@@ -108,7 +108,7 @@ const NavDashboad = {
                 <div class="w-6/12">
                 <a
                     class="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0"
-                    href="../../index.html"
+                    href="/"
                 >
                     Notus JS
                 </a>
@@ -139,15 +139,14 @@ const NavDashboad = {
             <h6
             class="md:min-w-full text-blueGray-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline"
             >
-            Admin Layout Pages
             </h6>
             <!-- Navigation -->
 
             <ul class="md:flex-col md:min-w-full flex flex-col list-none">
             <li class="items-center">
                 <a
-                href="./dashboard.html"
-                class="text-xs uppercase py-3 font-bold block text-pink-500 hover:text-pink-600"
+                href="/dashboad"
+                class="text-xs uppercase py-3 font-bold block hover:text-pink-600"
                 >
                 <i class="fas fa-tv mr-2 text-sm opacity-75"></i>
                 Dashboard
@@ -159,18 +158,18 @@ const NavDashboad = {
                 href="/admin/index"
                 class="text-xs uppercase py-3 font-bold block text-blueGray-700 hover:text-blueGray-500"
                 >
-                <i class="fas fa-tools mr-2 text-sm text-blueGray-300"></i>
+                <i class="fas fa-kaaba mr-2 text-sm text-blueGray-300"></i>
                 product
                 </a>
             </li>
 
             <li class="items-center">
                 <a
-                href="./tables.html"
+                href="/"
                 class="text-xs uppercase py-3 font-bold block text-blueGray-700 hover:text-blueGray-500"
                 >
                 <i class="fas fa-table mr-2 text-sm text-blueGray-300"></i>
-                Tables
+                Danh mục sản phẩm
                 </a>
             </li>
 
