@@ -31,9 +31,9 @@ route.on({
     "/admin/index": ()=>{
         render(IndexProduct);
     },
-    "/admin/editProduct": ( {data} )=>{
-        render();
-    },
+    // "/admin/editProduct": ( {data} )=>{
+    //     render();
+    // },
     "/admin/addpr": ()=>{
         render(AddProduct);
     }
