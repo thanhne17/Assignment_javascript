@@ -791,6 +791,14 @@
       "pin": "pin 10",
       "price": "39.490.000đ0",
       "id": "70"
+    },
+    {
+      "name_prodcut": "thành",
+      "cpu": "8300",
+      "ram": "8",
+      "rom": "512",
+      "img": "http://placeimg.com/640/480",
+      "id": "Hkoew1e"
     }
   ],
   "cate_pr": [
