@@ -2,7 +2,8 @@ import NavDashboad from "../components/nav";
 import axios from "axios";
 
 const AddProduct = {
-    print(){
+    async print(){
+        const { data } = await axios.get("http://localhost:3001/cate_pr");
         return /* html */ `
             ${NavDashboad.print()}
             <div class="relative md:ml-64 bg-blueGray-50">
@@ -34,9 +35,10 @@ const AddProduct = {
                         <div class="col-span-6 sm:col-span-3">
                           <label for="country" class="block text-sm font-medium text-gray-700">Thể loại</label>
                           <select id="category" name="category" autocomplete="country-name" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                            <option>2D cơ bản</option>
-                            <option>3D đồ họa</option>
-                            <option>Lập trình</option>
+                            ${data.map((Element)=> /* html */ `
+                              <option value=${Element.id_cate}>${Element.title}</option>
+                            `
+    ).join("")}
                           </select>
                         </div>
           
@@ -47,17 +49,17 @@ const AddProduct = {
           
                         <div class="col-span-6 sm:col-span-6 lg:col-span-2">
                           <label for="cpu" class="block text-sm font-medium text-gray-700">Cpu</label>
-                          <input type="number" name="cpu" id="cpu" autocomplete="address-level2" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                          <input type="text" name="cpu" id="cpu" autocomplete="address-level2" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                         </div>
           
                         <div class="col-span-6 sm:col-span-3 lg:col-span-2">
                           <label for="ram" class="block text-sm font-medium text-gray-700">Ram</label>
-                          <input type="number" name="ram" id="ram" autocomplete="address-level1" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                          <input type="text" name="ram" id="ram" autocomplete="address-level1" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                         </div>
           
                         <div class="col-span-6 sm:col-span-3 lg:col-span-2">
                           <label for="rom" class="block text-sm font-medium text-gray-700">Rom</label>
-                          <input type="number" name="rom" id="rom" autocomplete="postal-code" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                          <input type="text" name="rom" id="rom" autocomplete="postal-code" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                         </div>
                       </div>
                     </div>
@@ -77,17 +79,10 @@ const AddProduct = {
         `;
     },
     after(){
-        const name_prodcut = document.querySelector("#name_prodcut");
-        // const price = document.querySelector("#price");
-        // const category = document.querySelector("#category");
-        // const img = document.querySelector("#img");
-        // const ram = document.querySelector("#ram");
-        // const cpu = document.querySelector("#cpu");
-        // const rom = document.querySelector("#rom");
         const btn = document.querySelector(".btn-add");
         btn.addEventListener("click", (e)=>{
             e.preventDefault();
-            console.log(name_prodcut.value);
+            console.log(document.querySelector("#category").value);
             const apiFake = {
                 name_prodcut: document.querySelector("#name_prodcut").value,
                 cpu: document.querySelector("#cpu").value,

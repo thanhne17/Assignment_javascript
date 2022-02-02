@@ -5,11 +5,12 @@ import DetailProduct from "./page/detailProduct";
 import Dashboad from "./page/admin/dashboad";
 import IndexProduct from "./page/admin/product";
 import AddProduct from "./page/admin/product/addProduct";
+import EditProduct from "./page/admin/product/editProduct";
 
 const render = async (content,id) => {
     document.querySelector(".container").innerHTML = await content.print(id);
     if (content.after) {
-        content.after();
+        content.after(id);
     }
 };
 
@@ -31,13 +32,12 @@ route.on({
     "/admin/index": ()=>{
         render(IndexProduct);
     },
-    // "/admin/editProduct": ( {data} )=>{
-    //     render();
-    // },
+    "/admin/:id/editProduct": ( {data} )=>{
+        render(EditProduct, data.id);
+    },
     "/admin/addpr": ()=>{
         render(AddProduct);
-    }
-    
+    },
 });
 
 route.resolve();

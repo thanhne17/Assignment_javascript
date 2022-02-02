@@ -21,6 +21,10 @@
           "dest": "/"
         },
         {
+          "src": "/admin/(.*)/editProduct",
+          "dest": "/"
+        },
+        {
           "src": "/admin/addpr",
           "dest": "/"
         }

@@ -32,7 +32,7 @@ const AllProduct = {
                           </div>
                           <div class="price">
                             <p class="py-[10px]">Từ <span class="text-[red] font-semibold" id="saled" value="23690000">23.690.000đ</span></p>
-                            <del id="sale" value="27990000" class="font-xs">27.990.000đ</del>  -<span class="phanTram font-bold"></span>
+                            <del id="sale" value="${Element.price}" class="font-xs">${Element.price_text}</del>  -<span class="phanTram font-bold"></span>
                     
                           </div>
                         </div>

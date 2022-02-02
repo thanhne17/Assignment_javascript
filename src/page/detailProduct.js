@@ -47,7 +47,7 @@ const DetailProduct = {
                             </svg>
                             <div class="ml-[10px]">
                             <h1 class="font-semibold block">Vi xử lý</h1>
-                            <p>AMD Ryzen™ 9 5900HX, 8 nhân, 16 luồng</p>
+                            <p>${result.cpu}</p>
                             </div>
                         </div>
                         <div class="flex w-[50%]">
@@ -56,7 +56,7 @@ const DetailProduct = {
                             </svg>
                             <div class="ml-[10px]">
                             <h1 class="font-semibold block">Ram</h1>
-                            <p>16GB, DDR4, 3200 MHz</p>
+                            <p>${result.ram}</p>
                             </div>
                         </div>
                         </div>
@@ -68,7 +68,7 @@ const DetailProduct = {
                             </svg>
                             <div class="ml-[10px]">
                             <h1 class="font-semibold block">Màn hình</h1>
-                            <p>15.6 inchs, fullHd, Ips</p>
+                            <p>${result.display}</p>
                             </div>
                         </div>
                         <div class="flex w-[50%]">
