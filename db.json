@@ -54,25 +54,15 @@
     },
     {
       "name_prodcut": "Lenovo IdeaPad Slim 5 Pro 14 AMD (Chính hãng) (82L700L5VN)",
-      "id_cate": "1",
-      "cpu": "cpu 6",
-      "img": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/25/IdeaPad_5_Pro_14ACN6_82L700L7VN_01.png",
-      "ram": "16GB, DDR4, 3200 MHz 6",
-      "rom": "516",
-      "display": "15.6 Inchs FullHD ips",
-      "card": "card 6",
-      "pin": "pin 6",
-      "price_text": "39.490.000đ",
-      "price": "39490000",
-      "id": "6"
-    },
-    {
-      "name_prodcut": "MSI Modern 14 B11 (1030VN)",
+      "id": "6",
       "cpu": "Intel Core I5 8300H",
-      "ram": "16GB, DDR4, 3200 MHz ",
+      "ram": "16GB, DDR4, 3200 MHz",
       "rom": "512GB SSD SAMSSUNG EVO",
-      "img": "http://placeimg.com/640/480",
-      "id": "7"
+      "price_text": "25.150.000 đ",
+      "pin": "pin 6",
+      "card": "MX450",
+      "img": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/25/IdeaPad_5_Pro_14ACN6_82L700L7VN_01.png",
+      "price": "25150000"
     },
     {
       "name_prodcut": "dolorem soluta voluptatem",
@@ -878,6 +868,18 @@
       "pin": "pin 10",
       "price": "394900000",
       "id": "70"
+    },
+    {
+      "name_prodcut": "thành",
+      "id": "2e3bFV9",
+      "cpu": "Ha Noi",
+      "ram": "ha noi",
+      "rom": "100000",
+      "price": "83.000đ",
+      "pin": "65W",
+      "card": "MX450",
+      "img": "https://scontent.fhan3-3.fna.fbcdn.net/v/t1.6435-9/148895284_2607026006262326_5585827337693730071_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=e3f864&_nc_ohc=ZF0DE6nP6m8AX_oUOLz&_nc_ht=scontent.fhan3-3.fna&oh=00_AT9PIp0G-kaGUf23kwkvznJfe1cDJMeX9jACSjdpk4QYUQ&oe=62226E31",
+      "price_text": "83000"
     }
   ],
   "cate_pr": [

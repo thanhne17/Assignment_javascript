@@ -17,6 +17,8 @@ const EditProduct = {
                       <div class="shadow overflow-hidden sm:rounded-md">
                         <div class="px-4 py-5 bg-white sm:p-6">
                           <div class="grid grid-cols-6 gap-6">
+                            <input type="hidden" value="${data.id}" id="id">
+                            <input type="hidden" value="${data.price}" id="price">
                             <div class="col-span-6 sm:col-span-3">
                               <label for="first-name" class="block text-sm font-medium text-gray-700">Tên sản phẩm</label>
                               <input value="${data.name_prodcut}" type="text" name="name_prodcut" id="name_prodcut" autocomplete="given-name" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
@@ -36,7 +38,7 @@ const EditProduct = {
               
                             <div class="col-span-6">
                               <label for="img" class="block text-sm font-medium text-gray-700">Ảnh</label>
-                              <input type="text" name="img" id="img" autocomplete="img" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                              <input value="${data.img}" type="text" name="img" id="img" autocomplete="img" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                               <img class="w-[30%]" src="${data.img}">
                             </div>
               
@@ -54,6 +56,16 @@ const EditProduct = {
                               <label for="rom" class="block text-sm font-medium text-gray-700">Rom</label>
                               <input value="${data.rom}" type="text" name="rom" id="rom" autocomplete="postal-code" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                             </div>
+
+                            <div class="col-span-6 sm:col-span-3">
+                            <label for="first-name" class="block text-sm font-medium text-gray-700">Card màn hình</label>
+                            <input value="${data.card}" type="text" name="card" id="card" autocomplete="given-name" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                          </div>
+            
+                          <div class="col-span-6 sm:col-span-3">
+                            <label for="last-name" class="block text-sm font-medium text-gray-700">Pin và sạc</label>
+                            <input value="${data.pin}" type="text" name="pin" id="pin" autocomplete="family-name" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                          </div>
                           </div>
                         </div>
                         <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
@@ -77,11 +89,16 @@ const EditProduct = {
             e.preventDefault();
             const apiFake = {
                 name_prodcut: document.querySelector("#name_prodcut").value,
+                id: document.querySelector("#id").value,
                 cpu: document.querySelector("#cpu").value,
                 ram: document.querySelector("#ram").value,
                 rom: document.querySelector("#rom").value,
                 price: document.querySelector("#price").value,
-                img: "http://placeimg.com/640/480",
+                pin: document.querySelector("#pin").value,
+                card: document.querySelector("#card").value,
+                img: document.querySelector("#img").value,
+                price_text: document.querySelector("#price").value.replace(/[^0-9]/g, ""),
+                
             };
             console.log(apiFake);
             axios.put("http://localhost:3001/posts/"+id, apiFake);

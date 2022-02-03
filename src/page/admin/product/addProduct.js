@@ -27,11 +27,6 @@ const AddProduct = {
                           <input type="number" name="price" id="price" autocomplete="family-name" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                         </div>
           
-                        <div class="col-span-6 sm:col-span-4">
-                          <label for="email-address" class="block text-sm font-medium text-gray-700">Email address</label>
-                          <input type="text" name="email-address" id="email-address" autocomplete="email" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                        </div>
-          
                         <div class="col-span-6 sm:col-span-3">
                           <label for="country" class="block text-sm font-medium text-gray-700">Thể loại</label>
                           <select id="category" name="category" autocomplete="country-name" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
@@ -61,6 +56,16 @@ const AddProduct = {
                           <label for="rom" class="block text-sm font-medium text-gray-700">Rom</label>
                           <input type="text" name="rom" id="rom" autocomplete="postal-code" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                         </div>
+
+                        <div class="col-span-6 sm:col-span-3">
+                        <label for="first-name" class="block text-sm font-medium text-gray-700">Card màn hình</label>
+                        <input type="text" name="card" id="card" autocomplete="given-name" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                      </div>
+        
+                      <div class="col-span-6 sm:col-span-3">
+                        <label for="last-name" class="block text-sm font-medium text-gray-700">Pin và sạc</label>
+                        <input type="text" name="pin" id="pin" autocomplete="family-name" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                      </div>
                       </div>
                     </div>
                     <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
@@ -82,14 +87,19 @@ const AddProduct = {
         const btn = document.querySelector(".btn-add");
         btn.addEventListener("click", (e)=>{
             e.preventDefault();
-            console.log(document.querySelector("#category").value);
             const apiFake = {
                 name_prodcut: document.querySelector("#name_prodcut").value,
+                id: "",
                 cpu: document.querySelector("#cpu").value,
                 ram: document.querySelector("#ram").value,
                 rom: document.querySelector("#rom").value,
-                img: "http://placeimg.com/640/480",
+                price: document.querySelector("#price").value+"đ",
+                pin: document.querySelector("#pin").value,
+                card: document.querySelector("#card").value,
+                img: document.querySelector("#img").value,
+                price_text: document.querySelector("#price").value.replace(/[^0-9]/g, ""),
             };
+            console.log(apiFake);
             axios.post("http://localhost:3001/posts", apiFake);
         });
     }
