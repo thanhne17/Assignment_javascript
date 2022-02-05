@@ -26,6 +26,11 @@ const AddProduct = {
                           <label for="last-name" class="block text-sm font-medium text-gray-700">Giá</label>
                           <input type="number" name="price" id="price" autocomplete="family-name" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                         </div>
+
+                        <div class="col-span-6 sm:col-span-3">
+                          <label for="last-name" class="block text-sm font-medium text-gray-700">Giảm giá</label>
+                          <input value="0" type="number" name="price_sale" id="price_sale" autocomplete="family-name" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                        </div>
           
                         <div class="col-span-6 sm:col-span-3">
                           <label for="country" class="block text-sm font-medium text-gray-700">Thể loại</label>
@@ -98,6 +103,7 @@ const AddProduct = {
                 card: document.querySelector("#card").value,
                 img: document.querySelector("#img").value,
                 price_text: document.querySelector("#price").value.replace(/[^0-9]/g, ""),
+                price_sale: document.querySelector("#price_sale").value,
             };
             console.log(apiFake);
             axios.post("http://localhost:3001/posts", apiFake);

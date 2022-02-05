@@ -26,7 +26,12 @@ const EditProduct = {
               
                             <div class="col-span-6 sm:col-span-3">
                               <label for="last-name" class="block text-sm font-medium text-gray-700">Giá</label>
-                              <input value="${data.price_text}" type="text" name="price" id="price" autocomplete="family-name" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                              <input value="${data.price_text}" type="text" name="price_text" id="price_text" autocomplete="family-name" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                            </div>
+
+                            <div class="col-span-6 sm:col-span-3">
+                              <label for="last-name" class="block text-sm font-medium text-gray-700">Giảm giá</label>
+                              <input value="${data.price_sale}đ" type="text" name="price_sale" id="price_sale" autocomplete="family-name" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                             </div>
               
                             <div class="col-span-6 sm:col-span-3">
@@ -93,14 +98,15 @@ const EditProduct = {
                 cpu: document.querySelector("#cpu").value,
                 ram: document.querySelector("#ram").value,
                 rom: document.querySelector("#rom").value,
-                price: document.querySelector("#price").value,
+                price_text: document.querySelector("#price_text").value,
                 pin: document.querySelector("#pin").value,
                 card: document.querySelector("#card").value,
                 img: document.querySelector("#img").value,
-                price_text: document.querySelector("#price").value.replace(/[^0-9]/g, ""),
+                price: document.querySelector("#price_text").value.replace(/[^0-9]/g, ""),
+                price_sale: document.querySelector("#price_sale").value,
                 
             };
-            console.log(apiFake);
+            // console.log(apiFake);
             axios.put("http://localhost:3001/posts/"+id, apiFake);
         });
     }

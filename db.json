@@ -2,17 +2,16 @@
   "posts": [
     {
       "name_prodcut": "ASUS ROG Strix G15 ",
-      "id_cate": "1",
+      "id": "1",
       "cpu": "cpu 1",
-      "img": "https://media-api-beta.thinkpro.vn/backend/sku-import/laptop/ASUS%20ROG%20Strix%20G15%20(G513)%20(G513QM-HQ283T)/StrixG51303CF/ASUS-ROG-Strix-G15-(G513)-(G513QM-HQ283T)-001.jpg",
       "ram": "16GB, DDR4, 3200 MHz 1",
-      "rom": "511",
-      "display": "15.6 Inchs FullHD ips",
-      "card": "card 1",
+      "rom": "512",
+      "price_text": "17.102.002đ",
+      "price_sale": "4000000",
       "pin": "pin 1",
-      "price_text": "39.490.000đ",
-      "price": "39490000",
-      "id": "1"
+      "card": "card 1",
+      "img": "https://media-api-beta.thinkpro.vn/backend/sku-import/laptop/ASUS%20ROG%20Strix%20G15%20(G513)%20(G513QM-HQ283T)/StrixG51303CF/ASUS-ROG-Strix-G15-(G513)-(G513QM-HQ283T)-001.jpg",
+      "price": "17102002"
     },
     {
       "name_prodcut": "Asus ZenBook F571",
@@ -21,6 +20,7 @@
       "rom": "256GB + 2.5Inchs sata",
       "price": "25550000",
       "price_text": "25.550.000đ",
+      "price_sale": "4000000",
       "img": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/asus-zenbook-q408ug.jpg",
       "id": "2"
     },
@@ -35,6 +35,7 @@
       "card": "card 3",
       "pin": "pin 3",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "3"
     },
@@ -49,6 +50,7 @@
       "card": "card 5",
       "pin": "pin 5",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "5"
     },
@@ -59,6 +61,7 @@
       "ram": "16GB, DDR4, 3200 MHz",
       "rom": "512GB SSD SAMSSUNG EVO",
       "price_text": "25.150.000 đ",
+      "price_sale": "4000000",
       "pin": "pin 6",
       "card": "MX450",
       "img": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/25/IdeaPad_5_Pro_14ACN6_82L700L7VN_01.png",
@@ -75,21 +78,22 @@
       "card": "card 9",
       "pin": "pin 9",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "9"
     },
     {
       "name_prodcut": "et modi qui",
-      "id_cate": "1",
+      "id": "10",
       "cpu": "cpu 10",
-      "img": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/15/asus-vivobook-a515-oled-thinkpro.jpg",
       "ram": "16GB, DDR4, 3200 MHz 10",
       "rom": "5110",
-      "display": "15.6 Inchs FullHD ips",
-      "card": "card 10",
+      "price_text": "19.999.000đ",
+      "price_sale": "4000000",
       "pin": "pin 10",
-      "price": "394900000",
-      "id": "10"
+      "card": "card 10",
+      "img": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/15/asus-vivobook-a515-oled-thinkpro.jpg",
+      "price": "19999000"
     },
     {
       "name_prodcut": "ASUS ROG Strix G15 ",
@@ -102,6 +106,7 @@
       "card": "card 1",
       "pin": "pin 1",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "11"
     },
@@ -116,6 +121,7 @@
       "card": "card 2",
       "pin": "pin 2",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "12"
     },
@@ -130,6 +136,7 @@
       "card": "card 3",
       "pin": "pin 3",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "13"
     },
@@ -144,6 +151,7 @@
       "card": "card 5",
       "pin": "pin 5",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "15"
     },
@@ -158,6 +166,7 @@
       "card": "card 6",
       "pin": "pin 6",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "16"
     },
@@ -172,6 +181,7 @@
       "card": "card 7",
       "pin": "pin 7",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "17"
     },
@@ -186,21 +196,22 @@
       "card": "card 9",
       "pin": "pin 9",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "19"
     },
     {
-      "name_prodcut": "et modi qui",
-      "id_cate": "1",
+      "name_prodcut": "Asus A512 Oled",
+      "id": "20",
       "cpu": "cpu 10",
-      "img": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/15/asus-vivobook-a515-oled-thinkpro.jpg",
       "ram": "16GB, DDR4, 3200 MHz 10",
       "rom": "5110",
-      "display": "15.6 Inchs FullHD ips",
-      "card": "card 10",
+      "price_text": "11.550.000đ",
+      "price_sale": "4000000",
       "pin": "pin 10",
-      "price": "394900000",
-      "id": "20"
+      "card": "card 10",
+      "img": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/15/asus-vivobook-a515-oled-thinkpro.jpg",
+      "price": "11550000"
     },
     {
       "name_prodcut": "ASUS ROG Strix G15 ",
@@ -213,6 +224,7 @@
       "card": "card 1",
       "pin": "pin 1",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "21"
     },
@@ -227,6 +239,7 @@
       "card": "card 2",
       "pin": "pin 2",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "22"
     },
@@ -241,6 +254,7 @@
       "card": "card 3",
       "pin": "pin 3",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "23"
     },
@@ -255,6 +269,7 @@
       "card": "card 4",
       "pin": "pin 4",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "24"
     },
@@ -269,6 +284,7 @@
       "card": "card 5",
       "pin": "pin 5",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "25"
     },
@@ -283,6 +299,7 @@
       "card": "card 6",
       "pin": "pin 6",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "26"
     },
@@ -297,6 +314,7 @@
       "card": "card 7",
       "pin": "pin 7",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "27"
     },
@@ -311,6 +329,7 @@
       "card": "card 9",
       "pin": "pin 9",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "29"
     },
@@ -338,6 +357,7 @@
       "card": "card 1",
       "pin": "pin 1",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "31"
     },
@@ -352,6 +372,7 @@
       "card": "card 2",
       "pin": "pin 2",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "32"
     },
@@ -366,6 +387,7 @@
       "card": "card 3",
       "pin": "pin 3",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "33"
     },
@@ -380,6 +402,7 @@
       "card": "card 4",
       "pin": "pin 4",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "34"
     },
@@ -394,6 +417,7 @@
       "card": "card 5",
       "pin": "pin 5",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "35"
     },
@@ -408,6 +432,7 @@
       "card": "card 6",
       "pin": "pin 6",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "36"
     },
@@ -422,6 +447,7 @@
       "card": "card 7",
       "pin": "pin 7",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "37"
     },
@@ -436,6 +462,7 @@
       "card": "card 8",
       "pin": "pin 8",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "38"
     },
@@ -450,6 +477,7 @@
       "card": "card 9",
       "pin": "pin 9",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "39"
     },
@@ -477,6 +505,7 @@
       "card": "card 1",
       "pin": "pin 1",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "41"
     },
@@ -491,6 +520,7 @@
       "card": "card 2",
       "pin": "pin 2",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "42"
     },
@@ -505,6 +535,7 @@
       "card": "card 3",
       "pin": "pin 3",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "43"
     },
@@ -519,6 +550,7 @@
       "card": "card 4",
       "pin": "pin 4",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "44"
     },
@@ -533,6 +565,7 @@
       "card": "card 5",
       "pin": "pin 5",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "45"
     },
@@ -547,6 +580,7 @@
       "card": "card 6",
       "pin": "pin 6",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "46"
     },
@@ -561,6 +595,7 @@
       "card": "card 7",
       "pin": "pin 7",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "47"
     },
@@ -575,6 +610,7 @@
       "card": "card 8",
       "pin": "pin 8",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "48"
     },
@@ -589,6 +625,7 @@
       "card": "card 9",
       "pin": "pin 9",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "49"
     },
@@ -616,6 +653,7 @@
       "card": "card 1",
       "pin": "pin 1",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "51"
     },
@@ -630,6 +668,7 @@
       "card": "card 2",
       "pin": "pin 2",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "52"
     },
@@ -644,6 +683,7 @@
       "card": "card 3",
       "pin": "pin 3",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "53"
     },
@@ -658,6 +698,7 @@
       "card": "card 4",
       "pin": "pin 4",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "54"
     },
@@ -672,6 +713,7 @@
       "card": "card 5",
       "pin": "pin 5",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "55"
     },
@@ -686,6 +728,7 @@
       "card": "card 6",
       "pin": "pin 6",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "56"
     },
@@ -700,6 +743,7 @@
       "card": "card 7",
       "pin": "pin 7",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "57"
     },
@@ -714,6 +758,7 @@
       "card": "card 8",
       "pin": "pin 8",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "58"
     },
@@ -728,6 +773,7 @@
       "card": "card 9",
       "pin": "pin 9",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "59"
     },
@@ -755,6 +801,7 @@
       "card": "card 1",
       "pin": "pin 1",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "651"
     },
@@ -769,6 +816,7 @@
       "card": "card 2",
       "pin": "pin 2",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "62"
     },
@@ -783,6 +831,7 @@
       "card": "card 3",
       "pin": "pin 3",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "63"
     },
@@ -797,6 +846,7 @@
       "card": "card 5",
       "pin": "pin 5",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "65"
     },
@@ -811,6 +861,7 @@
       "card": "card 6",
       "pin": "pin 6",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "66"
     },
@@ -825,6 +876,7 @@
       "card": "card 7",
       "pin": "pin 7",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "67"
     },
@@ -839,6 +891,7 @@
       "card": "card 8",
       "pin": "pin 8",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "68"
     },
@@ -853,21 +906,22 @@
       "card": "card 9",
       "pin": "pin 9",
       "price_text": "39.490.000đ",
+      "price_sale": "4000000",
       "price": "39490000",
       "id": "69"
     },
     {
-      "name_prodcut": "et modi qui",
-      "id_cate": "1",
+      "name_prodcut": "MacBook Pro 2021 16 256 Space Gray ",
+      "id": "70",
       "cpu": "cpu 10",
-      "img": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/15/asus-vivobook-a515-oled-thinkpro.jpg",
       "ram": "ram 10",
       "rom": "rom 10",
-      "display": "15.6 Inchs FullHD ips",
-      "card": "card 10",
-      "pin": "pin 10",
       "price": "394900000",
-      "id": "70"
+      "pin": "pin 10",
+      "card": "card 10",
+      "img": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/15/asus-vivobook-a515-oled-thinkpro.jpg",
+      "price_text": "394900000",
+      "price_sale": "4000000"
     },
     {
       "name_prodcut": "thành",
@@ -879,7 +933,8 @@
       "pin": "65W",
       "card": "MX450",
       "img": "https://scontent.fhan3-3.fna.fbcdn.net/v/t1.6435-9/148895284_2607026006262326_5585827337693730071_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=e3f864&_nc_ohc=ZF0DE6nP6m8AX_oUOLz&_nc_ht=scontent.fhan3-3.fna&oh=00_AT9PIp0G-kaGUf23kwkvznJfe1cDJMeX9jACSjdpk4QYUQ&oe=62226E31",
-      "price_text": "83000"
+      "price_text": "83000",
+      "price_sale": "4000000"
     }
   ],
   "cate_pr": [

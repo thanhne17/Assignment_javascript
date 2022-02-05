@@ -3,7 +3,7 @@ import Fillter from "./all_pr_fillter";
 const AllProduct = {
     print(){
         const currentPage = 1;
-        const itemsPerPage = 12;
+        const itemsPerPage = 24;
         const start = (currentPage - 1) * itemsPerPage;
         const end = currentPage * itemsPerPage;
         return fetch("http://localhost:3001/posts")
@@ -21,7 +21,7 @@ const AllProduct = {
                     <div class="product ml-[30px]">
                       <div class="wrap-product grid grid-cols-4 gap-[20px]">
                       ${result.slice(start, end).map((Element)=> /* html */ `
-                      <div class="product1 bg-[#fff] hover:shadow-lg duration-300 rounded-xl overflow-hidden p-[20px] relative">
+                      <div class="product1 bg-[#fff] hover:shadow-xl duration-300 rounded-xl overflow-hidden p-[20px] relative">
                       <a href="/detailPr/${Element.id}" class="">
                         <figure class="h-[50%]">
                           <img src="${Element.img}" alt="">
@@ -31,8 +31,8 @@ const AllProduct = {
                             ${Element.name_prodcut}
                           </div>
                           <div class="price">
-                            <p class="py-[10px]">Từ <span class="text-[red] font-semibold" id="saled" value="23690000">23.690.000đ</span></p>
-                            <del id="sale" value="${Element.price}" class="font-xs">${Element.price_text}</del>  -<span class="phanTram font-bold"></span>
+                            <p class="py-[10px]">Từ <span class="text-[red] font-semibold" id="saled" value="${Element.price-Element.price_sale}">${Element.price-Element.price_sale}đ</span></p>
+                            <del id="sale" value="${Element.price}" class="text-sm">${Element.price_text}</del><span class="phanTram font-bold"></span>
                     
                           </div>
                         </div>

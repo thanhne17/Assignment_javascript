@@ -12,22 +12,22 @@ const Footer = {
             </figure>
 
             <div class="flex flex-wrap ml-[30px] mt-[30px]">
-              <a href="#" class="about w-[30%] mb-[15px] hover:bg-[#ecf0f4] p-[5px] rounded-md ease-linear duration-300">
+              <a href="#" class="about w-[30%] mb-[15px] hover:bg-[#ecf0f4] rounded-md ease-linear duration-300 p-[5px]">
                 <h1 class="font-bold text-[#0065ee]">Về chúng tôi</h1>
               </a>
-              <a href="#" class="about w-[30%] mb-[15px] hover:bg-[#ecf0f4] p-[5px] rounded-md ease-linear duration-300">
+              <a href="#" class="about w-[30%] mb-[15px] hover:bg-[#ecf0f4] rounded-md ease-linear duration-300 p-[5px]">
                 <h1 class="font-bold text-[#0065ee]">Sứ mệnh</h1>
               </a>
-              <a href="#" class="about w-[30%] mb-[15px] hover:bg-[#ecf0f4] p-[5px] rounded-md ease-linear duration-300">
+              <a href="#" class="about w-[30%] mb-[15px] hover:bg-[#ecf0f4] rounded-md ease-linear duration-300 p-[5px]">
                 <h1 class="font-bold text-[#0065ee]">Tin tức</h1>
               </a>
-              <a href="#" class="about w-[30%] mb-[15px] hover:bg-[#ecf0f4] p-[5px] rounded-md ease-linear duration-300">
+              <a href="#" class="about w-[30%] mb-[15px] hover:bg-[#ecf0f4] rounded-md ease-linear duration-300 p-[5px]">
                 <h1 class="font-bold text-[#0065ee]">Giá trị cốt lõi</h1>
               </a>
-              <a href="#" class="about w-[30%] mb-[15px] hover:bg-[#ecf0f4] p-[5px] rounded-md ease-linear duration-300">
+              <a href="#" class="about w-[30%] mb-[15px] hover:bg-[#ecf0f4] rounded-md ease-linear duration-300 p-[5px]">
                 <h1 class="font-bold text-[#0065ee]">Tầm nhìn</h1>
               </a>
-              <a href="#" class="about w-[30%] mb-[10px] hover:bg-[#ecf0f4] p-[5px] rounded-md ease-linear duration-300">
+              <a href="#" class="about w-[30%] mb-[10px] hover:bg-[#ecf0f4] rounded-md ease-linear duration-300 p-[5px]">
                 <figure class="w-[100%]">
                   <img src="https://thinkpro.vn/_nuxt/img/think-bocongthuong.08b4936.png" alt="">
                 </figure>
