@@ -9,7 +9,7 @@ const AllProduct = {
         return fetch("http://localhost:3001/posts")
             .then((res)=>res.json())
             .then((result)=> /* html */ `
-              <div class="all-product bg-[#f8fafc] mt-[70px] p-[10px]">
+              <div class="all-product bg-[#f8fafc] pt-[70px] p-[10px]">
                 <div class="wrap-product mx-auto w-[80%]">
                   <h1 class="text-3xl font-black mb-[10px] whitespace-nowrap border-b pb-[10px]">Tất cả laptop</h1>
                   <div class="wrap-all flex">

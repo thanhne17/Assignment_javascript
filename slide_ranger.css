@@ -124,10 +124,6 @@
   .slider .active svg path {
     stroke-width: 2;
   }
-  
-  * {
-    box-sizing: inherit;
-  }
   *:before, *:after {
     box-sizing: inherit;
   }
