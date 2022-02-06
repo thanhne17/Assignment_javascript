@@ -5,7 +5,6 @@ setTimeout(() => {
     for (let i = 0; i < gia_da_giam.length; i++) {
         const gia_goc_gt = gia_goc[i].getAttribute("value");
         const gia_da_giam_gt = gia_da_giam[i].getAttribute("value");
-        console.log(gia_goc_gt);     
         if (gia_goc_gt > 0) {
             const result =  ((gia_goc_gt - gia_da_giam_gt)*100)/gia_goc_gt;
             phanTram[i].innerHTML = `   -${Math.floor(result)}%`;        
