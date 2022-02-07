@@ -9,11 +9,11 @@ const Fillter = {
           <div class="box">
 
               <div class="values">
-                  <div>$<span id="first"></span></div> - <div>$<span id="second"></span></div>
+                  <div><span id="first"></span></div> - <div><span id="second"></span>VND</div>
               </div>
               <small>
                   Current Range:
-                  <div>$<span id="third"></span></div>
+                  <div><span id="third"></span>VND</div>
               </small>
           
               <div class="slider" data-value-0="#first" data-value-1="#second" data-range="#third"></div>

@@ -935,6 +935,32 @@
       "img": "https://scontent.fhan3-3.fna.fbcdn.net/v/t1.6435-9/148895284_2607026006262326_5585827337693730071_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=e3f864&_nc_ohc=ZF0DE6nP6m8AX_oUOLz&_nc_ht=scontent.fhan3-3.fna&oh=00_AT9PIp0G-kaGUf23kwkvznJfe1cDJMeX9jACSjdpk4QYUQ&oe=62226E31",
       "price_text": "83000",
       "price_sale": "4000000"
+    },
+    {
+      "name_prodcut": "Asus ZenBook F571",
+      "id": "AsWgWHP",
+      "cpu": "Ha Noi",
+      "ram": "ha noi",
+      "rom": "100000",
+      "price": "16990000đ",
+      "pin": "65W",
+      "card": "MX450",
+      "img": "https://res.cloudinary.com/djsbi0bma/image/upload/v1644215995/l8r7mcax8q5qlkektqf9.jpg",
+      "price_text": "16990000",
+      "price_sale": "0"
+    },
+    {
+      "name_prodcut": "Apple Macbook Pro 13 2020",
+      "id": "8rmOCiQ",
+      "cpu": "Intel Core i5, 4 nhân, 8 luồng",
+      "ram": "8GB, LPDDR3, 2133 MHz",
+      "rom": "SSD 128GB",
+      "price": "25.990000đ",
+      "pin": "58WHr",
+      "card": "Intel Iris Plus 645",
+      "img": "https://res.cloudinary.com/djsbi0bma/image/upload/v1644251289/wl2ssbibfoj1zz1v2g2t.jpg",
+      "price_text": "25990000",
+      "price_sale": "0"
     }
   ],
   "cate_pr": [
