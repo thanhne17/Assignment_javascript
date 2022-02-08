@@ -779,16 +779,16 @@
     },
     {
       "name_prodcut": "et modi qui",
-      "id_cate": "1",
+      "id": "60",
       "cpu": "cpu 10",
-      "img": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/15/asus-vivobook-a515-oled-thinkpro.jpg",
       "ram": "ram 10",
       "rom": "rom 10",
-      "display": "15.6 Inchs FullHD Amoled",
-      "card": "card 10",
+      "price_text": "15.690.000",
       "pin": "pin 10",
-      "price": "394900000",
-      "id": "60"
+      "card": "card 10",
+      "img": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/15/asus-vivobook-a515-oled-thinkpro.jpg",
+      "price": "15690000",
+      "price_sale": "undefinedđ"
     },
     {
       "name_prodcut": "ASUS ROG Strix G15 ",
@@ -924,19 +924,6 @@
       "price_sale": "4000000"
     },
     {
-      "name_prodcut": "thành",
-      "id": "2e3bFV9",
-      "cpu": "Ha Noi",
-      "ram": "ha noi",
-      "rom": "100000",
-      "price": "83.000đ",
-      "pin": "65W",
-      "card": "MX450",
-      "img": "https://scontent.fhan3-3.fna.fbcdn.net/v/t1.6435-9/148895284_2607026006262326_5585827337693730071_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=e3f864&_nc_ohc=ZF0DE6nP6m8AX_oUOLz&_nc_ht=scontent.fhan3-3.fna&oh=00_AT9PIp0G-kaGUf23kwkvznJfe1cDJMeX9jACSjdpk4QYUQ&oe=62226E31",
-      "price_text": "83000",
-      "price_sale": "4000000"
-    },
-    {
       "name_prodcut": "Asus ZenBook F571",
       "id": "AsWgWHP",
       "cpu": "Ha Noi",
@@ -960,6 +947,45 @@
       "card": "Intel Iris Plus 645",
       "img": "https://res.cloudinary.com/djsbi0bma/image/upload/v1644251289/wl2ssbibfoj1zz1v2g2t.jpg",
       "price_text": "25990000",
+      "price_sale": "0"
+    },
+    {
+      "name_prodcut": "Bàn phím Keychron K1 v4 (Gateron Red Switch)",
+      "id": "9D7ygN7",
+      "cpu": "Ha Noi",
+      "ram": "ha noi",
+      "rom": "100000",
+      "price": "1.940000đ",
+      "pin": "65W",
+      "card": "MX450",
+      "img": "https://res.cloudinary.com/djsbi0bma/image/upload/v1644299384/uduyouos1tsqfqekyjqc.jpg",
+      "price_text": "1940000",
+      "price_sale": "0"
+    },
+    {
+      "name_prodcut": "",
+      "id": "nPNpykv",
+      "cpu": "Intel Core i7 1065G7, 4 nhân, 8 luồng",
+      "ram": "16GB, LPDDR4X, 3733 MHz",
+      "rom": "SSD 512GB",
+      "price_text": "29.990.000",
+      "pin": "51WHr",
+      "card": "Intel Iris Plus G7",
+      "img": "https://res.cloudinary.com/djsbi0bma/image/upload/v1644309023/nsbfauwdhiqqf7kvn6dr.jpg",
+      "price": "29990000",
+      "price_sale": "0đ"
+    },
+    {
+      "name_prodcut": "Dell XPS 15 7590",
+      "id": "awETrvS",
+      "cpu": "Intel Core i5 9300H, 4 nhân, 8 luồng",
+      "ram": "8GB, DDR4, 2666 MHz",
+      "rom": "SSD 256GB",
+      "price": "29.990000đ",
+      "pin": "57WHr",
+      "card": "Intel UHD 630",
+      "img": "https://res.cloudinary.com/djsbi0bma/image/upload/v1644309156/xmhyhzudwplry7f2ouie.jpg",
+      "price_text": "29990000",
       "price_sale": "0"
     }
   ],

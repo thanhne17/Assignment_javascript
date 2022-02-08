@@ -1,4 +1,5 @@
 import NavDashboad from "../components/nav";
+import { add } from "../../../api/product";
 import axios from "axios";
 
 const AddProduct = {
@@ -46,7 +47,6 @@ const AddProduct = {
                           <label for="img" class="block text-sm font-medium text-gray-700">Ảnh</label>
                           <input type="file" name="img" id="img" autocomplete="img" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                         </div>
-                        <img id="preview">
           
                         <div class="col-span-6 sm:col-span-6 lg:col-span-2">
                           <label for="cpu" class="block text-sm font-medium text-gray-700">Cpu</label>
@@ -90,13 +90,15 @@ const AddProduct = {
         `;
     },
     after(){
+        const btn = document.querySelector(".btn-add");
         const img = document.querySelector("#img");
-        img.addEventListener("change", (e)=>{
-            const file = e.target.files[0];
+        btn.addEventListener("click", (e)=>{
+            e.preventDefault();
+            const file = img.files[0];
             const formData = new FormData();
             formData.append("file", file);
             formData.append("upload_preset", "edlvdeks");
-
+            console.log(file);
             axios({
                 url: "https://api.cloudinary.com/v1_1/djsbi0bma/image/upload",
                 method: "POST",
@@ -105,26 +107,21 @@ const AddProduct = {
                 // },
                 data: formData,
             }).then((res)=>{
-                const btn = document.querySelector(".btn-add");
-                btn.addEventListener("click", (e)=>{
-                    e.preventDefault();
-                    const apiFake = {
-                        name_prodcut: document.querySelector("#name_prodcut").value,
-                        id: "",
-                        cpu: document.querySelector("#cpu").value,
-                        ram: document.querySelector("#ram").value,
-                        rom: document.querySelector("#rom").value,
-                        price: document.querySelector("#price").value+"đ",
-                        pin: document.querySelector("#pin").value,
-                        card: document.querySelector("#card").value,
-                        img:  res.data.secure_url,
-                        price_text: document.querySelector("#price").value.replace(/[^0-9]/g, ""),
-                        price_sale: document.querySelector("#price_sale").value,
-                    };
-                    console.log(apiFake);
-                    axios.post("http://localhost:3001/posts", apiFake);
-                });
-                document.querySelector("#preview").src = res.data.secure_url;
+                const apiFake = {
+                    name_prodcut: document.querySelector("#name_prodcut").value,
+                    id: "",
+                    cpu: document.querySelector("#cpu").value,
+                    ram: document.querySelector("#ram").value,
+                    rom: document.querySelector("#rom").value,
+                    price: document.querySelector("#price").value+"đ",
+                    pin: document.querySelector("#pin").value,
+                    card: document.querySelector("#card").value,
+                    img:  res.data.secure_url,
+                    price_text: document.querySelector("#price").value.replace(/[^0-9]/g, ""),
+                    price_sale: document.querySelector("#price_sale").value,
+                };
+                console.log(apiFake);
+                add(apiFake);
             });
         });
     }
