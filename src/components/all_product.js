@@ -1,4 +1,5 @@
 import Fillter from "./all_pr_fillter";
+import fillter from "../slide_range";
 import axios from "axios";
 
 const AllProduct = {
@@ -8,6 +9,7 @@ const AllProduct = {
         const start = (currentPage - 1) * itemsPerPage;
         const end = currentPage * itemsPerPage;
         const { data } = await axios.get("http://localhost:3001/posts");
+        fillter.print();
         return  /* html */ `
               <div class="all-product bg-[#f8fafc] pt-[70px] p-[10px]">
                 <div class="wrap-product mx-auto w-[80%]">

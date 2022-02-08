@@ -1,5 +1,8 @@
+import home from "../home";
+
 const Header =  {
     print() {
+        home.print();
         return /* html */ `
                     <!-- header -->
         <header class="w-[100%] top-0 z-10 bg-[#ffffff94] backdrop-blur-md">

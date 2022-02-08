@@ -27,26 +27,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" charset="utf-8"></script>
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
     <script type="module" src="./src/main.js"></script>
-    <script type="module" src="./src/home.js"></script> 
     <script type="module"  src="./src/sale.js"></script>
 
-    <script type="module" src="./src/slide_range.js"></script>
-    <script>
-      setTimeout(() => {
-        const btnSelect = document.querySelector("#btn-select");
-        var toastStatus = "close";
-        btnSelect.addEventListener("click", ()=>{
-          if (toastStatus == "close") {
-            document.querySelector("#toast").style.display = "block"
-            document.querySelector("#toast").style.animation = "toTop 0.5s"
-            toastStatus = "open"
-          }
-          else{
-            document.querySelector("#toast").style.display = "none";
-            toastStatus = "close"
-          }
-        })
-      }, 1000);
-    </script>
   </body>
 </html>

@@ -122,6 +122,7 @@ const AddProduct = {
                 };
                 console.log(apiFake);
                 add(apiFake);
+                document.location.href="/admin/index";
             });
         });
     }

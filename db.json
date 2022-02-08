@@ -335,16 +335,16 @@
     },
     {
       "name_prodcut": "et modi qui",
-      "id_cate": "1",
-      "cpu": "cpu 10",
-      "img": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/15/asus-vivobook-a515-oled-thinkpro.jpg",
+      "id": "30",
+      "cpu": "AMD Ryzen 5 3500U",
       "ram": "16GB, DDR4, 3200 MHz 10",
-      "rom": "5110",
-      "display": "15.6 Inchs FullHD ips",
-      "card": "card 10",
-      "pin": "pin 10",
-      "price": "394900000",
-      "id": "30"
+      "rom": "256GB",
+      "price_text": "15.000.000đ",
+      "pin": "65W",
+      "card": "",
+      "img": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/15/asus-vivobook-a515-oled-thinkpro.jpg",
+      "price": "15000000",
+      "price_sale": "undefinedđ"
     },
     {
       "name_prodcut": "ASUS ROG Strix G15 ",
@@ -987,6 +987,32 @@
       "img": "https://res.cloudinary.com/djsbi0bma/image/upload/v1644309156/xmhyhzudwplry7f2ouie.jpg",
       "price_text": "29990000",
       "price_sale": "0"
+    },
+    {
+      "name_prodcut": "Dell XPS 13 9310 (Chính hãng) (JGNH61)",
+      "id": "wlDR_pS",
+      "cpu": "Ha Noi",
+      "ram": "ha noi",
+      "rom": "100000",
+      "price": "93.000đ",
+      "pin": "51WHr",
+      "card": "Intel Iris Plus G7",
+      "img": "https://res.cloudinary.com/djsbi0bma/image/upload/v1644331031/dkxtymhdbtdtzyo3ceho.jpg",
+      "price_text": "93000",
+      "price_sale": "0"
+    },
+    {
+      "name_prodcut": "Asus ZenBook F571",
+      "id": "FucVoHi",
+      "cpu": "Ha Noi",
+      "ram": "ha noi",
+      "rom": "100000",
+      "price_text": "16990000đ",
+      "pin": "57WHr",
+      "card": "Intel UHD 630",
+      "img": "https://res.cloudinary.com/djsbi0bma/image/upload/v1644331132/dle0jpratiokulrpvydn.png",
+      "price": "16990000",
+      "price_sale": "0đ"
     }
   ],
   "cate_pr": [
