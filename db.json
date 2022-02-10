@@ -1052,5 +1052,22 @@
       "img": "https://thinkpro.vn/_nuxt/img/lap-trinh.881ebc3.png",
       "color": "#fff0f6"
     }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "email": "thanhntph15251@fpt.edu.vn",
+      "password": "1234560"
+    },
+    {
+      "email": "thanne@gmail.com",
+      "password": "$2a$10$uq6LxBA1/WIbGf46H1DiPuNgNDMXWzuQd3v6oUawOKFYua5G90XVK",
+      "id": "UypObw3"
+    },
+    {
+      "email": "binh@gmail.com",
+      "password": "$2a$10$3VtTvDrXMK6iX45.2zzZG.R04JFocYFSvJIR4odE64a8KUZSRk8.O",
+      "id": "EiHmUdj"
+    }
   ]
 }

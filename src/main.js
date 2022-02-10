@@ -6,6 +6,8 @@ import Dashboad from "./page/admin/dashboad";
 import IndexProduct from "./page/admin/product";
 import AddProduct from "./page/admin/product/addProduct";
 import EditProduct from "./page/admin/product/editProduct";
+import Sign_in from "./page/sign_in";
+import SignUp from "./page/sign_up";
 
 const render = async (content,id) => {
     document.querySelector(".container").innerHTML = await content.print(id);
@@ -38,6 +40,12 @@ route.on({
     "/admin/addpr": ()=>{
         render(AddProduct);
     },
+    "/signup": ()=>{
+        render(SignUp);
+    },
+    "/signin": ()=>{
+        render(Sign_in);
+    }
 });
 
 route.resolve();
