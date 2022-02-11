@@ -630,17 +630,17 @@
       "id": "49"
     },
     {
-      "name_prodcut": "et modi qui",
-      "id_cate": "1",
-      "cpu": "cpu 10",
+      "name_prodcut": "Iphone 13 Pro Max",
+      "id": "50",
+      "cpu": "Apple A14 Bionic",
+      "ram": "4GB",
+      "rom": "256GB ",
+      "price_text": "39.990.000đ",
+      "pin": "4500mAh",
+      "card": "Radeon RX350",
       "img": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/15/asus-vivobook-a515-oled-thinkpro.jpg",
-      "ram": "ram 10",
-      "rom": "rom 10",
-      "display": "15.6 Inchs FullHD Oled",
-      "card": "card 10",
-      "pin": "pin 10",
-      "price": "394900000",
-      "id": "50"
+      "price": "39990000",
+      "price_sale": "0"
     },
     {
       "name_prodcut": "ASUS ROG Strix G15 ",
@@ -1062,12 +1062,17 @@
     {
       "email": "thanne@gmail.com",
       "password": "$2a$10$uq6LxBA1/WIbGf46H1DiPuNgNDMXWzuQd3v6oUawOKFYua5G90XVK",
-      "id": "UypObw3"
+      "id": "2"
     },
     {
       "email": "binh@gmail.com",
       "password": "$2a$10$3VtTvDrXMK6iX45.2zzZG.R04JFocYFSvJIR4odE64a8KUZSRk8.O",
-      "id": "EiHmUdj"
+      "id": "3"
+    },
+    {
+      "email": "nguyentuanthanh@gmail.com",
+      "password": "$2a$10$7deGJ2X7HvAKad3SNz.29ueZzhueehPgzx306P1QLkkOs..GKrnsq",
+      "id": "zGzZ2FX"
     }
   ]
 }

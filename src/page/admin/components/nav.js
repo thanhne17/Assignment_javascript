@@ -145,7 +145,7 @@ const NavDashboad = {
             <ul class="md:flex-col md:min-w-full flex flex-col list-none">
             <li class="items-center">
                 <a
-                href="/dashboad"
+                href="/admin"
                 class="text-xs uppercase py-3 font-bold block hover:text-pink-600"
                 >
                 <i class="fas fa-tv mr-2 text-sm opacity-75"></i>

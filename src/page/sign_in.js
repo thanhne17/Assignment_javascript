@@ -27,6 +27,7 @@ const SignIn = {
                 <input id="re-password" name="password" type="password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Xác nhận mật khẩu">
               </div>
             </div>
+            <p id="err"></p>
       
             <div class="flex items-center justify-between">
               <div class="flex items-center">
@@ -61,12 +62,24 @@ const SignIn = {
     },
     after(){
         const btn = document.querySelector(".btn-submit");
-        btn.addEventListener("click", ()=>{
-            signin({
-                email: document.querySelector("#email-address").value,
-                password: document.querySelector("#password").value,
-            }).then(()=> alert("Đăng nhập thành công"))
-                .catch(()=>alert("Có lỗi xảy ra"));
+        btn.addEventListener("click", async ()=>{
+            try {
+                const { data } = await signin({
+                    email: document.querySelector("#email-address").value,
+                    password: document.querySelector("#password").value,
+                });
+                localStorage.setItem("user", JSON.stringify(data.user));
+                if (data.user.id == 2) {
+                    document.location.href = "/admin";
+                }
+                else{
+                    document.location.href = "/";
+                }
+            } catch (error) {
+                console.log(error.response.data);
+                document.querySelector("#err").innerHTML = error.response.data;
+                document.querySelector("#err").style.color = "red";
+            }
         });
     }
 };

@@ -65,7 +65,6 @@ const SignUp = {
             signup({
                 email: document.querySelector("#email-address").value,
                 password: document.querySelector("#password").value,
-                id: ""
             });
         });
     }

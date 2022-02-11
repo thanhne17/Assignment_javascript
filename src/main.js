@@ -18,6 +18,24 @@ const render = async (content,id) => {
 
 const route = new Navigo("/");
 
+route.on("/admin", () => {}, {
+    before(done, match){
+        if (JSON.parse(localStorage.getItem("user"))) {
+            const id = JSON.parse(localStorage.getItem("user")).id;
+            if (id == 2) {
+                done();
+                console.log(id);
+            }
+            else{
+                document.location.href = "/";
+            }
+        }
+        else{
+            document.location.href = "/";
+        }
+    }
+});
+
 route.on({
     "/": ()=>{
         render(HomePage);
@@ -28,7 +46,7 @@ route.on({
     "/detailPr/:id": ({data}) => {
         render(DetailProduct,data.id);
     },
-    "/dashboad": ()=>{
+    "/admin": ()=>{
         render(Dashboad);
     },
     "/admin/index": ()=>{
