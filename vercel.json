@@ -1,7 +1,7 @@
 {
     "routes": [
         {
-          "src": "/dashboad",
+          "src": "/admin",
           "dest": "/"
         },
         {
