@@ -11,6 +11,9 @@ const Product = {
             ${Introduce.print()}
             ${Footer.print()}
          `;
+    },
+    after(){
+        Header.after();
     }
 };
 

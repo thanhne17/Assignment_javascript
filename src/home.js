@@ -20,6 +20,7 @@ const home = {
         
             const myBtn = document.querySelector(".btn-top");
             const header = document.querySelector("header");
+            const top_header = document.querySelector(".top-header");
             window.onscroll = ()=>{
                 scrollFunction();
             };
@@ -31,6 +32,7 @@ const home = {
                     header.classList.add("sticky");
                     header.style.animation = "down .5s";
                     header.classList.add("shadow-md");
+                    top_header.classList.add("hidden");
         
                 }
                 else{
@@ -38,6 +40,8 @@ const home = {
                     header.classList.remove("sticky");
                     header.style.animation = "";
                     header.classList.remove("shadow-md");
+                    top_header.classList.remove("hidden");
+
                     
                 }
             }

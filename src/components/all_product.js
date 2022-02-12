@@ -85,6 +85,9 @@ const AllProduct = {
               </div>
             `;
     },
+    after(){
+        // console.log(1);
+    }
 };
 
 export default AllProduct;

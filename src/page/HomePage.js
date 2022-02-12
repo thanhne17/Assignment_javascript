@@ -19,6 +19,10 @@ const HomePage = {
             ${Introduce.print()}
             ${Footer.print()}
         `;
+    },
+    after(){
+        Header.after();
+        AllProduct.after();
     }
 };
 

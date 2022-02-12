@@ -1,12 +1,13 @@
+import axios from "axios";
+
 const CateProduct = {
-    print(){
-        return fetch("http://localhost:3001/cate_pr")
-            .then((Response)=>Response.json())
-            .then((result)=> /* html */ `
+    async print(){
+        const { data } = await axios.get("http://localhost:3001/cate_pr");
+        return /* html */ `
             <section class="cateory w-[80%] mx-auto mb-[70px] mt-[50px]">
             <h1 class="text-3xl font-black mb-[10px]">Laptop theo nhu cầu</h1>
             <div class="wrap-cate flex">
-            ${result.map((Element)=> /* html */ `
+            ${data.map((Element)=> /* html */ `
             <div class="asus p-[20px] shadow-2xl mx-[10px] rounded-md text-center">
             <figure>
               <a href="#">
@@ -22,7 +23,7 @@ const CateProduct = {
       
             </div>
           </section>
-            `);
+            `;
 
     }
 };

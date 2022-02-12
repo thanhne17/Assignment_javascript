@@ -1,4 +1,5 @@
 import home from "../home";
+import IconSignIn from "./handle_icon_signIn";
 
 const Header =  {
     print() {
@@ -7,7 +8,7 @@ const Header =  {
                     <!-- header -->
         <header class="w-[100%] top-0 z-10 bg-[#ffffff94] backdrop-blur-md">
             <div class="wrap-top-header bg-[#f8f9fa]">
-            <div class="top-header flex justify-between items-center w-[90%] m-auto p-[10px] hidden">
+            <div class="top-header flex justify-between items-center w-[90%] m-auto p-[10px] ">
                 <div class="social cursor-pointer">
                 <i data-color="blue" class="fab fa-facebook hover:text-[blue]"></i>
                 <i data-color="#1c96e8" class="fab fa-twitter hover:text-[#1c96e8]"></i>
@@ -30,18 +31,23 @@ const Header =  {
                 </div>
             </div>
             </div>
-            <div class="bottom-header flex justify-between w-[75%] m-auto items-center">
-                <div class="logo">
+            <div class="bottom-header flex justify-between w-[80%] m-auto items-center">
+                <div class="logo ">
                 <a href="/" class="text-[3rem] min-w-[150px] font-black">
                     LAPShop<span class="text-[orange]">.</span>
                 </a>
                 </div>
-                <div class="menu">
-                <ul class="flex">
-                    <li><a href="/">Home</a> </li>
-                    <li><a href="/product">Product</a> </li>
-                    <li><a href="/admin">Admin</a> </li>
-                    <li class="relative chuong">
+                <div class="">
+                    <form>
+                        <input type="text" class="rounded-3xl px-[10px] py-[5px] bg-[#eee] text-[black]" placeholder="Tìm kiếm">
+                    </form>
+                </div>
+                <div class="menu ">
+                <ul class="flex items-center justify-end">
+                    <li class="bg-[#eee] px-[10px] py-[7px] rounded-3xl"><a href="/">Home</a> </li>
+                    <li class="bg-[#eee] px-[10px] py-[7px] rounded-3xl"><a href="/product">Product</a> </li>
+                    <li class="bg-[#eee] px-[10px] py-[7px] rounded-3xl"><a href="/admin">Admin</a> </li>
+                    <li class="relative chuong bg-[#eee] p-[5px] rounded-3xl">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
                         </svg>
@@ -65,24 +71,28 @@ const Header =  {
                         </ul>
             
                     </li>
-                    <li class="">
-                        <a href="/signin">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
+                    <li class="bg-[#eee] px-[10px] py-[7px] rounded-3xl">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                     </svg>
                     </li>
+                    <li class="signIn bg-[#eee] p-[5px] rounded-3xl">
+                    <a href="/signin">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg>
+                    </a>
+                </li>
                 </ul>
                 </div>
             </div>
       </header>
         `; 
     },
+    after(){
+        IconSignIn.print();
+
+    }
    
 };
 

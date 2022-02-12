@@ -41,7 +41,7 @@ header .top-header .social {
     @apply mx-[3px];
 }
 .menu > ul > li {
-    @apply mx-[30px];
+    @apply mx-[10px];
     @apply text-base;
     @apply font-bold;
     @apply hover:text-[orange];
