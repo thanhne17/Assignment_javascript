@@ -9,11 +9,12 @@ import EditProduct from "./page/admin/product/editProduct";
 import Sign_in from "./page/sign_in";
 import SignUp from "./page/sign_up";
 import PersonalPage from "./page/personalPage";
+import { data } from "autoprefixer";
 
 const render = async (content,id) => {
     document.querySelector(".container").innerHTML = await content.print(id);
     if (content.after) {
-        content.after(id);
+        await content.after(id);
     }
 };
 
@@ -41,11 +42,11 @@ route.on({
     "/": ()=>{
         render(HomePage);
     },
-    "/personalPage": ()=>{
-        render(PersonalPage);
-    },
     "/product": ()=>{
         render(Product);
+    },
+    "/personalPage": ()=>{
+        render(PersonalPage);
     },  
     "/detailPr/:id": ({data}) => {
         render(DetailProduct,data.id);
@@ -67,7 +68,11 @@ route.on({
     },
     "/signin": ()=>{
         render(Sign_in);
+    },   
+    "/product/:id": ({ data })=>{
+        render(Product, data.id);
     }
+    
 });
 
 route.resolve();

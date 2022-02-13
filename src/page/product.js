@@ -2,6 +2,7 @@ import AllProduct from "../components/all_product";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import Introduce from "../components/introduce";
+import Fillter from "../components/all_pr_fillter";
 
 const Product = {
     async print(){
@@ -14,6 +15,8 @@ const Product = {
     },
     after(){
         Header.after();
+        AllProduct.after();
+        Fillter.after();
     }
 };
 

@@ -40,6 +40,13 @@ header .top-header .social {
 .social *{
     @apply mx-[3px];
 }
+.user-menu > ul >li{
+    @apply m-[10px];
+    @apply text-base;
+    @apply font-bold;
+    @apply hover:text-[orange];
+    @apply cursor-pointer;
+}
 .menu > ul > li {
     @apply mx-[10px];
     @apply text-base;
@@ -117,6 +124,14 @@ header .top-header .social {
 }
 .catebr .Casus img{
     width: 60px;
+}
+
+.active{
+    @apply block;
+}
+.tab-active{
+    @apply text-lg;
+    @apply text-[orange]
 }
 @keyframes fadeIn {
     from{

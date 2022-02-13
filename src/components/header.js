@@ -1,13 +1,11 @@
-import home from "../home";
 import IconSignIn from "./handle_icon_signIn";
-
+// import axios from "axios";
 const Header =  {
     print() {
-        home.print();
         return /* html */ `
                     <!-- header -->
         <header class="w-[100%] top-0 z-10 bg-[#ffffff94] backdrop-blur-md">
-            <div class="wrap-top-header bg-[#f8f9fa]">
+            <div class="wrap-top-header hidden">
             <div class="top-header flex justify-between items-center w-[90%] m-auto p-[10px] ">
                 <div class="social cursor-pointer">
                 <i data-color="blue" class="fab fa-facebook hover:text-[blue]"></i>
@@ -17,13 +15,13 @@ const Header =  {
                 </div>
                 <div class="contact">
                 <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block" fill="orange" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block" fill="none" viewBox="0 0 24 24" stroke="orange">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
                 </span>
                 0354170252
                     <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block" fill="yellow" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block" fill="none" viewBox="0 0 24 24" stroke="green">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                     </span>
@@ -37,14 +35,18 @@ const Header =  {
                     LAPShop<span class="text-[orange]">.</span>
                 </a>
                 </div>
-                <div class="">
-                    <form>
-                        <input type="text" class="rounded-3xl px-[10px] py-[5px] bg-[#eee] text-[black]" placeholder="Tìm kiếm">
+                <div>
+                    <form class="relative">
+                        <input type="text" class="rounded-3xl px-[10px] py-[5px] bg-[#eee] text-[black] focus:outline-[#1876f2]" placeholder="Tìm kiếm">
+                        <button class="inline absolute translate-y-[-50%] top-[50%] right-[-40px] bg-[#eee] p-[4px] rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </button>
                     </form>
                 </div>
                 <div class="menu ">
                 <ul class="flex items-center justify-end">
-                    <li class="bg-[#eee] px-[10px] py-[7px] rounded-3xl"><a href="/">Home</a> </li>
                     <li class="bg-[#eee] px-[10px] py-[7px] rounded-3xl"><a href="/product">Product</a> </li>
                     <li class="bg-[#eee] px-[10px] py-[7px] rounded-3xl"><a href="/admin">Admin</a> </li>
                     <li class="relative chuong bg-[#eee] p-[5px] rounded-3xl">
@@ -89,7 +91,61 @@ const Header =  {
       </header>
         `; 
     },
-    after(){
+    async after(){
+        const btnBell = document.querySelector(".chuong");
+        const toast = document.querySelector(".menu > ul > li ul");
+        // const btnClose = document.querySelector(".close");
+        var status_toast = "close";
+        if (btnBell) {
+            btnBell.onclick = () => {
+                if (status_toast == "close") {
+                    toast.style.display = "block";
+                    status_toast = "open";
+                }
+                else if(status_toast == "open"){
+                    toast.style.display = "none";
+                    status_toast = "close";
+                }
+            };
+        }
+        
+        const myBtn = document.querySelector(".btn-top");
+        const header = document.querySelector("header");
+        const top_header = document.querySelector(".top-header");
+        window.onscroll = ()=>{
+            scrollFunction();
+        };
+        
+        function scrollFunction () {
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                myBtn.style.display = "block";
+                myBtn.style.animation = "toTop .5s";
+                header.classList.add("sticky");
+                header.style.animation = "down .5s";
+                header.classList.add("shadow-md");
+                top_header.classList.add("hidden");
+        
+            }
+            else{
+                myBtn.style.display = "none";
+                header.classList.remove("sticky");
+                header.style.animation = "";
+                header.classList.remove("shadow-md");
+                top_header.classList.remove("hidden");
+
+                    
+            }
+        }
+        
+        if (myBtn) {
+            myBtn.addEventListener("click", ()=>{
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            });
+        }
+        // const { data } = await axios.get("http://localhost:3001/posts?q=msi");
+        // console.log(data);
+        
         IconSignIn.print();
 
     }

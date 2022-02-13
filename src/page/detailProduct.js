@@ -3,6 +3,7 @@ import Introduce from "../components/introduce";
 import Footer from "../components/footer";
 
 const DetailProduct = {
+
     print(id){
         return fetch(`http://localhost:3001/posts/${id}`)
             .then((res)=>  res.json())
@@ -160,6 +161,10 @@ const DetailProduct = {
             `
             );
     },
+    after(){
+        Header.after();
+
+    }
     
 };
 

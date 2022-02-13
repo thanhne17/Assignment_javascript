@@ -35,6 +35,10 @@
         {
           "src": "/admin/addpr",
           "dest": "/"
+        },
+        {
+          "src": "/personalPage",
+          "dest": "/"
         }
       ]
 }
