@@ -3,10 +3,8 @@ import fillter from "../slide_range";
 import axios from "axios";
 
 const AllProduct = {
-    async print(){
-        var id = 3;
-        console.log(id);
-        const { data } = await axios.get(`http://localhost:3001/posts?_page=${id}&_limit=16`);
+    async print(id){
+        const { data } = await axios.get(`http://localhost:3001/posts?_page=${id}&_limit=12`);
         fillter.print();
         return  /* html */ `
               <div class="all-product bg-[#f8fafc] pt-[70px] p-[10px]">
@@ -47,7 +45,7 @@ const AllProduct = {
                       <div class="wrap-product grid grid-cols-4 gap-[20px]">
                       ${data.map((Element)=> /* html */ `
                       <div class="product1 bg-[#fff] hover:shadow-xl duration-300 rounded-xl overflow-hidden p-[20px] relative">
-                      <a href="/detailPr/${Element.id}" class="">
+                      <a href="/#/detailPr/${Element.id}" class="">
                         <figure class="h-[50%]">
                           <img src="${Element.img}" alt="">
                         </figure>
@@ -67,7 +65,7 @@ const AllProduct = {
 
                         </div>
                         <div class="flex justify-between mt-[20px] items-center"> 
-                          <a href="/product/2" class="bg-[#fe3464] py-[10px] px-[195px] text-[#fff] rounded-lg cursor-pointer" id="btn-next">Trang tiếp</a>
+                          <a href="/#/product/2" class="bg-[#fe3464] py-[10px] px-[195px] text-[#fff] rounded-lg cursor-pointer" id="btn-next">Trang tiếp</a>
                           <div class="flex">
                           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
@@ -87,9 +85,23 @@ const AllProduct = {
     },
     after(){
         Fillter.after();
-        // document.querySelector("#btn-next").addEventListener("click", ()=>{
-        //     document.querySelector("#btn-next").setAttribute("href", "/#/product/");
-        // });
+        // const btn_next = document.querySelector("#btn-next"); 
+        // btn_next.addEventListener("click", (e)=>{
+        //     e.preventDefault();
+        // }); 
+        const gia_goc = document.querySelectorAll("#sale");
+        const gia_da_giam = document.querySelectorAll("#saled");
+        const phanTram = document.querySelectorAll(".phanTram");
+        for (let i = 0; i < gia_da_giam.length; i++) {
+            const gia_goc_gt = gia_goc[i].getAttribute("value");
+            const gia_da_giam_gt = gia_da_giam[i].getAttribute("value");
+            if (gia_goc_gt > 0) {
+                const result =  ((gia_goc_gt - gia_da_giam_gt)*100)/gia_goc_gt;
+                phanTram[i].innerHTML = `   -${Math.floor(result)}%`;        
+            }     
+        }
+        // console.log(id);
+        // return id++;
     }
 };
 

@@ -9,7 +9,7 @@ import EditProduct from "./page/admin/product/editProduct";
 import Sign_in from "./page/sign_in";
 import SignUp from "./page/sign_up";
 import PersonalPage from "./page/personalPage";
-import { data } from "autoprefixer";
+import SearchProduct from "./components/product_form";
 
 const render = async (content,id) => {
     document.querySelector(".container").innerHTML = await content.print(id);
@@ -48,8 +48,8 @@ route.on({
     "/personalPage": ()=>{
         render(PersonalPage);
     },  
-    "/detailPr/:id": ({data}) => {
-        render(DetailProduct,data.id);
+    "/detailPr/:id": (res) => {
+        render(DetailProduct,res.data.id);
     },
     "/admin": ()=>{
         render(Dashboad);
@@ -69,9 +69,13 @@ route.on({
     "/signin": ()=>{
         render(Sign_in);
     },   
-    "/product/:id": ({ data })=>{
-        render(Product, data.id);
-    }
+    "/product/:id": (res)=>{
+        render(Product, res.data.id);
+    },
+    "/product?(.*)": (res)=>{
+        console.log(res.queryString);
+        render(SearchProduct, res.queryString);
+    },
     
 });
 

@@ -24,3 +24,8 @@ export const update = ((id,post) => {
     const url = `posts/${id}`;
     return instance.put(url, post);
 });
+
+export const search = ((id) => {
+    const url = `posts?q=${id}`;
+    return instance.get(url);
+});

@@ -13,6 +13,10 @@
             "dest": "/"
         },
         {
+          "src": "/product/(.*)",
+          "dest": "/"
+      },
+        {
           "src": "/detailPr/(.*)",
           "dest": "/"
         },

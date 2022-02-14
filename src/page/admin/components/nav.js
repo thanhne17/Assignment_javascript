@@ -16,7 +16,7 @@ const NavDashboad = {
         </button>
         <a
             class="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-3xl uppercase font-bold p-4 px-0"
-            href="/"
+            href="/#/"
         >
             LAPShop<span class="text-[orange]">.</span>
         </a>

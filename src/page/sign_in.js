@@ -70,10 +70,10 @@ const SignIn = {
                 });
                 localStorage.setItem("user", JSON.stringify(data.user));
                 if (data.user.id == 2) {
-                    document.location.href = "/admin";
+                    document.location.href = "/#/admin";
                 }
                 else{
-                    document.location.href = "/";
+                    document.location.href = "/#/";
                 }
             } catch (error) {
                 console.log(error.response.data);

@@ -5,17 +5,18 @@ import Introduce from "../components/introduce";
 import Fillter from "../components/all_pr_fillter";
 
 const Product = {
-    async print(){
+    async print(id){
         return /* html */ `
             ${Header.print()}
-            ${await AllProduct.print()}
+            ${await AllProduct.print(id)}
             ${Introduce.print()}
             ${Footer.print()}
          `;
     },
-    after(){
+    after(id){
         Header.after();
-        AllProduct.after();
+        AllProduct.after(id);
+        // console.log(AllProduct.after(id));
         Fillter.after();
     }
 };
