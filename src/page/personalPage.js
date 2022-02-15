@@ -151,6 +151,9 @@ const PersonalPage = {
             <div class="text-sm text-gray-900">${Element.price_text}</div>
             <div class="text-sm text-gray-500"><del>${Element.price_sale}</del></div>
         </td>
+        <td class="px-6 py-4 whitespace-nowrap">
+        <div class="text-sm text-gray-900">X${Element.quantily}</div>
+    </td>
         </tr>       
     `; }).join("")}
 
