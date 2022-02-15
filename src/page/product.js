@@ -16,7 +16,6 @@ const Product = {
     after(id){
         Header.after();
         AllProduct.after(id);
-        // console.log(AllProduct.after(id));
         Fillter.after();
     }
 };

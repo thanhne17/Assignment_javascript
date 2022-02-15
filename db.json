@@ -26,18 +26,16 @@
     },
     {
       "name_prodcut": "Lenovo ThinkPad X1 Carbon Gen 5",
-      "id_cate": "1",
+      "id": "3",
       "cpu": "cpu 3",
-      "img": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/Lenovo-thinkpad-x1-carbon-gen-5.jpg",
       "ram": "16GB, DDR4, 3200 MHz 3",
-      "rom": "513",
-      "display": "15.6 Inchs FullHD ips",
-      "card": "card 3",
+      "rom": "512GB SSD SAMSSUNG EVO",
+      "price_text": "29.490.000đ",
       "pin": "pin 3",
-      "price_text": "39.490.000đ",
-      "price_sale": "4000000",
-      "price": "39490000",
-      "id": "3"
+      "card": "card 3",
+      "img": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/Lenovo-thinkpad-x1-carbon-gen-5.jpg",
+      "price": "29490000",
+      "price_sale": "4000000đ"
     },
     {
       "name_prodcut": "Dell Inspiron 15 5515 AMD",

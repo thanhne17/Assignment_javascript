@@ -84,11 +84,7 @@ const AllProduct = {
             `;
     },
     after(){
-        Fillter.after();
-        // const btn_next = document.querySelector("#btn-next"); 
-        // btn_next.addEventListener("click", (e)=>{
-        //     e.preventDefault();
-        // }); 
+        Fillter.after(); 
         const gia_goc = document.querySelectorAll("#sale");
         const gia_da_giam = document.querySelectorAll("#saled");
         const phanTram = document.querySelectorAll(".phanTram");
@@ -100,8 +96,6 @@ const AllProduct = {
                 phanTram[i].innerHTML = `   -${Math.floor(result)}%`;        
             }     
         }
-        // console.log(id);
-        // return id++;
     }
 };
 

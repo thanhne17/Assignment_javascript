@@ -73,7 +73,6 @@ route.on({
         render(Product, res.data.id);
     },
     "/product?(.*)": (res)=>{
-        console.log(res.queryString);
         render(SearchProduct, res.queryString);
     },
     

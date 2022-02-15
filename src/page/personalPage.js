@@ -3,13 +3,13 @@ import Footer from "../components/footer";
 import Introduce from "../components/introduce";
 import LogOut from "../components/logout";
 import axios from "axios";
+import { data } from "autoprefixer";
 
 const PersonalPage = {
     async print(){
         if (localStorage.user) {
             const id = JSON.parse(localStorage.getItem("user")).id;
             const{ data } = await axios.get(`http://localhost:3001/users/${id}`);
-            console.log(data);
         }
         else{
             document.location.href = "/";
@@ -20,7 +20,7 @@ const PersonalPage = {
             <div class="l m-[10px]">
             <div class="border-b pb-[10px]">
                 <img class="rounded-full w-[50px] inline" src="https://cf.shopee.vn/file/a2346a9cb342e1786ce0aa2b56318855_tn" alt="">
-                <span class="text-xl font-black">Thanhneeeee</span>
+                <span class="text-xl font-black">${data.email}</span>
             </div>
             <div class="user-menu pt-[10px]">
                 <ul>
@@ -61,7 +61,7 @@ const PersonalPage = {
             </div>
             </div>
             <div class="w-[80%]">
-            <div class="tab-content active w-[100%] border py-[10px] px-[20px] rounded ml-[50px]">
+            <div class="tab-content hidden w-[100%] border py-[10px] px-[20px] rounded ml-[50px]">
                 <div class="border-b pb-[10px]">
                 <h1 class="text-xl">Hồ sơ của tôi</h1>
                 <p>Quản lý thông tin hồ sơ để bảo mật tài khoản</p>
@@ -121,15 +121,48 @@ const PersonalPage = {
             </div>
 
             <!-- đơn mua -->
-            <div class="tab-content hidden w-[100%] border py-[10px] px-[20px] rounded ml-[50px]">
-                <header>
-                <ul class="flex justify-between">
-                    <li>Tất cả</li>
-                    <li>Đang giao</li>
-                    <li>Đã giao</li>
-                    <li>Đã hủy</li>
-                </ul>
-                </header>
+            <div class="tab-content w-[100%] py-[10px] px-[20px] ml-[50px] active">
+            <ul class="flex justify-between p-[10px] border rounded">
+                <li>Tất cả</li>
+                <li>Đang giao</li>
+                <li>Đã giao</li>
+                <li>Đã hủy</li>
+            </ul>
+                <div class="flex flex-col">
+                <div class="-my-2 overflow-x-auto">
+                    <div class="py-2 align-middle inline-block min-w-full">
+                    <div class="overflow-hidden border-b border-gray-200 sm:rounded-lg mt-[20px]">
+                        <table class="min-w-full divide-y divide-gray-200">
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            ${JSON.parse(localStorage.getItem("cart")).map((Element)=>{
+        return /* html */ `
+        <tr>
+        <td class="px-6 py-4 whitespace-nowrap">
+            <div class="flex items-center">
+            <div class="flex-shrink-0 h-10 w-10">
+                <img class="h-10 w-10 rounded-full" src="${Element.img}" alt="">
+            </div>
+            <div class="ml-4">
+                <div class="text-sm font-medium text-gray-900">${Element.name_prodcut}</div>
+            </div>
+            </div>
+        </td>
+        <td class="px-6 py-4 whitespace-nowrap">
+            <div class="text-sm text-gray-900">${Element.price_text}</div>
+            <div class="text-sm text-gray-500"><del>${Element.price_sale}</del></div>
+        </td>
+        </tr>       
+    `; }).join("")}
+
+
+                            <!-- More people... -->
+                        </tbody>
+                        </table>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
             </div>
 
             <!-- thông báo -->
@@ -154,8 +187,8 @@ const PersonalPage = {
                 tab_content[i].classList.remove("hidden");
                 tab_content[i].classList.add("active");
 
-                document.querySelector(".tab.tab-active").classList.remove("active");
-                tab[i].classList.add("active");
+                // document.querySelector(".tab.tab-active").classList.remove("active");
+                // tab[i].classList.add("active");
 
             });            
         }
@@ -164,6 +197,7 @@ const PersonalPage = {
             LogOut.print();
             document.location.href = "/";
         });
+        console.log(JSON.parse(localStorage.getItem("cart")));
     }
 };
 
