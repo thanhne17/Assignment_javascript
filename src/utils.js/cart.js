@@ -17,3 +17,19 @@ export const addToCart = (newProduct)=>{
     }
     localStorage.setItem("cart", JSON.stringify(cart));
 };
+
+export const increaseCart = (id)=>{
+    cart.find(Element => Element.id === id).quantily++;
+    localStorage.setItem("cart", JSON.stringify(cart));
+};
+
+export const decreaseCart = (id)=>{
+    const currentCart = cart.find((element)=> element.id === id);
+    currentCart.quantily--;
+    if (currentCart.quantily < 1) {
+        if (window.confirm("Xóa sản phẩm này?")) {
+            cart = cart.filter(element => element.id !== id);
+        }
+    }
+    localStorage.setItem("cart", JSON.stringify(cart));
+};

@@ -1,6 +1,8 @@
 import Header from "../components/header";
 import Introduce from "../components/introduce";
 import Footer from "../components/footer";
+import toastr from "toastr";
+import "toastr/build/toastr.min.css";
 import { get } from "../api/product";
 import { addToCart } from "../utils.js/cart";
 
@@ -152,7 +154,7 @@ const DetailProduct = {
                     </div>
                     <div class="absolute bottom-0 left-0 right-0 text-center border-t">
                     39.490.000đ
-                    <a class="add-to-cart block py-[10px] bg-[#f43e6a] font-bold text-[#fff] m-[10px] rounded-lg">Thêm vào giỏ hàng</a>
+                    <a class="cursor-pointer add-to-cart block py-[10px] bg-[#f43e6a] font-bold text-[#fff] m-[10px] rounded-lg">Thêm vào giỏ hàng</a>
                     </div>
                 </div>
                 </div>
@@ -168,6 +170,7 @@ const DetailProduct = {
         document.querySelector(".add-to-cart").addEventListener("click", async ()=>{
             const { data } = await get(id);
             addToCart({...data, quantily: 1});
+            toastr.success(`Bạn đã thêm ${data.name_prodcut} thành công`);
         });
 
     }

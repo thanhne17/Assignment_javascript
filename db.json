@@ -81,17 +81,17 @@
       "id": "9"
     },
     {
-      "name_prodcut": "et modi qui",
+      "name_prodcut": "Asus ZenBook A515",
       "id": "10",
       "cpu": "cpu 10",
       "ram": "16GB, DDR4, 3200 MHz 10",
-      "rom": "5110",
+      "rom": "256GB",
       "price_text": "19.999.000đ",
-      "price_sale": "4000000",
-      "pin": "pin 10",
-      "card": "card 10",
+      "pin": "56Wh",
+      "card": "Intel Iris Xe",
       "img": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/15/asus-vivobook-a515-oled-thinkpro.jpg",
-      "price": "19999000"
+      "price": "19999000",
+      "price_sale": "4000000đđđđ"
     },
     {
       "name_prodcut": "ASUS ROG Strix G15 ",

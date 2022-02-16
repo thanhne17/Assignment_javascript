@@ -1,5 +1,7 @@
 import axios from "axios";
 import NavDashboad from "../components/nav";
+import toastr from "toastr";
+import "toastr/build/toastr.min.css";
 
 const EditProduct = {
     async print(id){
@@ -107,7 +109,16 @@ const EditProduct = {
                 
             };
             // console.log(apiFake);
-            axios.put("http://localhost:3001/posts/"+id, apiFake);
+            axios.put("http://localhost:3001/posts/"+id, apiFake)
+                .then(()=>{
+                    toastr.success("Bạn đã cập nhật thành công");
+                    setTimeout(() => {
+                        document.location.href = "/#/admin/index";
+                    }, 2000);
+                })
+                .catch(()=>{
+                    toastr.error("Có lỗi xảy ra, vui lòng thử lại!");
+                });
         });
     }
         

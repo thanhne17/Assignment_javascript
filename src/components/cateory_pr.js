@@ -10,7 +10,7 @@ const CateProduct = {
             ${data.map((Element)=> /* html */ `
             <div class="asus p-[20px] shadow-2xl mx-[10px] rounded-md text-center">
             <figure>
-              <a href="#">
+              <a href="/#/product?${Element.id_cate}">
                 <img src="${Element.img}" alt="">
               </a>
             </figure>
