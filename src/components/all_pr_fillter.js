@@ -1,3 +1,7 @@
+import { IonRangeSliderEvent } from "ion-rangeslider";
+import { IonRangeSliderOptions } from "ion-rangeslider";
+import "ion-rangeslider/css/ion.rangeSlider.min.css";
+
 
 const Fillter = {
     print(){
@@ -7,18 +11,7 @@ const Fillter = {
           <h3 class="mt-[20px] text-xl font-bold">Khoảng giá: </h3>
           <div class="price">
             <div class="w-[100%] mx-auto">
-            <div class="box">
-                <div class="values">
-                    <div><span id="first"></span></div> - <div><span id="second"></span>VND</div>
-                </div>
-                <small>
-                    Current Range:
-                    <div><span id="third"></span>VND</div>
-                </small>
-          
-                <div class="slider" data-value-0="#first" data-value-1="#second" data-range="#third"></div>
-          
-            </div>
+              <input type="text" class="js-range-slider" name="my_range" value="" />
             </div>
           </div>
           <h3 class="mt-[20px] text-xl font-bold">Thương hiệu</h3>
@@ -47,7 +40,17 @@ const Fillter = {
     after(){
         const form = document.querySelector(".fillter");
         form.addEventListener("change", ()=>{
-            console.log(1);
+            console.log(document.querySelector(".js-range-slider").value);
+        });
+        $(".js-range-slider").ionRangeSlider({
+            type: "double",
+            skin: "round",
+            min: 0,
+            max: 1000,
+            from: 0,
+            to: 1000,
+            step:50,
+            grid: true
         });
     } 
 };

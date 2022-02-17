@@ -14,26 +14,49 @@ const DetailProduct = {
             .then((result)=> /* html */ `
             ${Header.print()}
             
-            <div class="bg-[#f8fafc] py-[70px]">
+            <div class="bg-[#f8fafc] py-[30px]">
                 <div class="w-[80%] mx-auto flex ">
                 <div class="">
-                    <div class="right bg-[#fff] rounded-2xl overflow-hidden shadow-2xl p-[15px] flex">
-                    <div class="swire flex flex-col w-[98px]">
-                        <div class="border-2 rounded mb-[10px] ">
-                        <img src="https://media-api-beta.thinkpro.vn/backend/sku-import/laptop/ASUS%20ROG%20Strix%20G15%20(G513)%20(G513QM-HQ283T)/StrixG51303CF/ASUS-ROG-Strix-G15-(G513)-(G513QM-HQ283T)-003.jpg" alt="">
-                        </div>
-                        <div class="border-2 rounded mb-[10px] ">
-                        <img src="https://media-api-beta.thinkpro.vn/backend/sku-import/laptop/ASUS%20ROG%20Strix%20G15%20(G513)%20(G513QM-HQ283T)/StrixG51303CF/ASUS-ROG-Strix-G15-(G513)-(G513QM-HQ283T)-003.jpg" alt="">
-                        </div>
-                        <div class="border-2 rounded mb-[10px] ">
-                        <img src="https://media-api-beta.thinkpro.vn/backend/sku-import/laptop/ASUS%20ROG%20Strix%20G15%20(G513)%20(G513QM-HQ283T)/StrixG51303CF/ASUS-ROG-Strix-G15-(G513)-(G513QM-HQ283T)-003.jpg" alt="">
-                        </div>
-                        <div class="border-2 rounded mb-[10px] ">
-                        <img src="https://media-api-beta.thinkpro.vn/backend/sku-import/laptop/ASUS%20ROG%20Strix%20G15%20(G513)%20(G513QM-HQ283T)/StrixG51303CF/ASUS-ROG-Strix-G15-(G513)-(G513QM-HQ283T)-003.jpg" alt="">
-                        </div>
+                    <div class="right bg-[#fff] rounded-2xl overflow-hidden shadow-2xl p-[15px]">
+                    <div class="">
+                    <div class="item">            
+                    <div class="clearfix" style="max-width:600px;">
+                        <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+                            <li data-thumb="${result.img}"> 
+                                <img src="${result.img}" />
+                                 </li>
+                            <li data-thumb="${result.img2}"> 
+                                <img src="${result.img2}" />
+                                 </li>
+                            <li data-thumb="${result.img3}"> 
+                                <img src="${result.img3}" />
+                                 </li>
+                            <li data-thumb="${result.img4}"> 
+                                <img src="${result.img4}" />
+                                 </li>
+                            <li data-thumb="${result.img}"> 
+                                <img src="${result.img}" />
+                                 </li>
+                            <li data-thumb="${result.img}"> 
+                                <img src="${result.img}" />
+                                 </li>
+                            <li data-thumb="${result.img}"> 
+                                <img src="${result.img}" />
+                                 </li>
+                            <li data-thumb="${result.img}"> 
+                                <img src="${result.img}" />
+                                 </li>
+                            <li data-thumb="${result.img}"> 
+                                <img src="${result.img}" />
+                                 </li>
+                            <li data-thumb="${result.img}"> 
+                                <img src="${result.img}" />
+                                 </li>
+                      
+                        </ul>
                     </div>
-                    <div class="w-[500px]">
-                        <img src="${result.img}" alt="">
+                </div>
+        
                     </div>
                     </div>
 
@@ -143,17 +166,25 @@ const DetailProduct = {
                         Bạn hãy Liên hệ tư vấn để yêu cầu hỗ trợ / đặt mua sản phẩm nhé.
                     </div>
                     <div class="info">
-                        <h1 class="font-bold pt-[20px] pb-[5px]">${result.name_prodcut}</h1>
-                        <p>39.490.000đ</p>
+                        <h1 class="font-bold text-xl pt-[20px] pb-[5px]">${result.name_prodcut}</h1>
+                        <p>${result.price_text}</p>
                     </div>
                     <h1 class="font-bold py-[20px]">Cấu hình</h1>
                     <div class="w-[50%] text-sm border border-[blue] p-[5px] rounded-lg">
-                        <p class="">Ryzen™ 9 5900HX • Radeon™ Graphics • GeForce RTX 3060 • RAM 16 • SSD 512GB</p>
-                        <p class="text-[red] pt-[10px] font-bold">${result.price}</p>
+                        <p class="">
+                            <ul>
+                                <li>${result.cpu}</li>
+                                <li>${result.card}</li>
+                                <li>${result.ram}</li>
+                                <li>${result.rom}</li>
+                                <li>${result.pin}</li>
+                            </ul>
+                        </p>
+                        <p class="text-[red] pt-[10px] font-bold">${result.price_text}</p>
                     </div>
                     </div>
                     <div class="absolute bottom-0 left-0 right-0 text-center border-t">
-                    39.490.000đ
+                    ${result.price_text}
                     <a class="cursor-pointer add-to-cart block py-[10px] bg-[#f43e6a] font-bold text-[#fff] m-[10px] rounded-lg">Thêm vào giỏ hàng</a>
                     </div>
                 </div>
@@ -171,6 +202,25 @@ const DetailProduct = {
             const { data } = await get(id);
             addToCart({...data, quantily: 1});
             toastr.success(`Bạn đã thêm ${data.name_prodcut} thành công`);
+        });
+
+        $(document).ready(function() {
+            $("#content-slider").lightSlider({
+                loop:true,
+                keyPress:true
+            });
+            $("#image-gallery").lightSlider({
+                gallery:true,
+                item:1,
+                thumbItem:9,
+                slideMargin: 0,
+                speed:500,
+                auto:true,
+                loop:true,
+                onSliderLoad: function() {
+                    $("#image-gallery").removeClass("cS-hidden");
+                }  
+            });
         });
 
     }

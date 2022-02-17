@@ -10,6 +10,7 @@ import Sign_in from "./page/sign_in";
 import SignUp from "./page/sign_up";
 import PersonalPage from "./page/personalPage";
 import SearchProduct from "./components/product_form";
+import CateBranchProduct from "./page/admin/cate/cate";
 
 const render = async (content,id) => {
     document.querySelector(".container").innerHTML = await content.print(id);
@@ -25,7 +26,6 @@ route.on("/admin/*", () => {}, {
         if (JSON.parse(localStorage.getItem("user"))) {
             const id = JSON.parse(localStorage.getItem("user")).id;
             if (id == 2) {
-                console.log(id);
                 done();
             }
             else{
@@ -56,6 +56,9 @@ route.on({
     },
     "/admin/index": ()=>{
         render(IndexProduct);
+    },
+    "/admin/cate": ()=>{
+        render(CateBranchProduct);
     },
     "/admin/:id/editProduct": ( {data} )=>{
         render(EditProduct, data.id);

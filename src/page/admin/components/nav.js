@@ -148,27 +148,33 @@ const NavDashboad = {
                 href="/admin"
                 class="text-xs uppercase py-3 font-bold block hover:text-pink-600"
                 >
-                <i class="fas fa-tv mr-2 text-sm opacity-75"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
                 Dashboard
                 </a>
             </li>
 
             <li class="items-center">
                 <a
-                href="/admin/index"
+                href="/#/admin/index"
                 class="text-xs uppercase py-3 font-bold block text-blueGray-700 hover:text-blueGray-500"
                 >
-                <i class="fas fa-kaaba mr-2 text-sm text-blueGray-300"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                </svg>
                 product
                 </a>
             </li>
 
             <li class="items-center">
                 <a
-                href="/"
+                href="/#/admin/cate"
                 class="text-xs uppercase py-3 font-bold block text-blueGray-700 hover:text-blueGray-500"
                 >
-                <i class="fas fa-table mr-2 text-sm text-blueGray-300"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2" />
+                </svg>
                 Danh mục sản phẩm
                 </a>
             </li>
@@ -192,9 +198,9 @@ const NavDashboad = {
                 href="../auth/login.html"
                 class="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block"
                 >
-                <i
-                    class="fas fa-fingerprint text-blueGray-300 mr-2 text-sm"
-                ></i>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+                </svg>
                 Login
                 </a>
             </li>
@@ -204,9 +210,9 @@ const NavDashboad = {
                 href="../auth/register.html"
                 class="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block"
                 >
-                <i
-                    class="fas fa-clipboard-list text-blueGray-300 mr-2 text-sm"
-                ></i>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
+                </svg>
                 Register
                 </a>
             </li>
@@ -218,110 +224,6 @@ const NavDashboad = {
             <h6
             class="md:min-w-full text-blueGray-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline"
             >
-            Documentation
-            </h6>
-            <!-- Navigation -->
-            <ul
-            class="md:flex-col md:min-w-full flex flex-col list-none md:mb-4"
-            >
-            <li class="inline-flex">
-                <a
-                href="https://www.creative-tim.com/learning-lab/tailwind/js/colors/notus"
-                target="_blank"
-                class="text-blueGray-700 hover:text-blueGray-500 text-sm block mb-4 no-underline font-semibold"
-                >
-                <i
-                    class="fas fa-paint-brush mr-2 text-blueGray-300 text-base"
-                ></i>
-                Styles
-                </a>
-            </li>
-
-            <li class="inline-flex">
-                <a
-                href="https://www.creative-tim.com/learning-lab/tailwind/js/alerts/notus"
-                target="_blank"
-                class="text-blueGray-700 hover:text-blueGray-500 text-sm block mb-4 no-underline font-semibold"
-                >
-                <i
-                    class="fab fa-css3-alt mr-2 text-blueGray-300 text-base"
-                ></i>
-                CSS Components
-                </a>
-            </li>
-
-            <li class="inline-flex">
-                <a
-                href="https://www.creative-tim.com/learning-lab/tailwind/angular/overview/notus"
-                target="_blank"
-                class="text-blueGray-700 hover:text-blueGray-500 text-sm block mb-4 no-underline font-semibold"
-                >
-                <i
-                    class="fab fa-angular mr-2 text-blueGray-300 text-base"
-                ></i>
-                Angular
-                </a>
-            </li>
-
-            <li class="inline-flex">
-                <a
-                href="https://www.creative-tim.com/learning-lab/tailwind/js/overview/notus"
-                target="_blank"
-                class="text-blueGray-700 hover:text-blueGray-500 text-sm block mb-4 no-underline font-semibold"
-                >
-                <i
-                    class="fab fa-js-square mr-2 text-blueGray-300 text-base"
-                ></i>
-                Javascript
-                </a>
-            </li>
-
-            <li class="inline-flex">
-                <a
-                href="https://www.creative-tim.com/learning-lab/tailwind/nextjs/overview/notus"
-                target="_blank"
-                class="text-blueGray-700 hover:text-blueGray-500 text-sm block mb-4 no-underline font-semibold"
-                >
-                <i class="fab fa-react mr-2 text-blueGray-300 text-base"></i>
-                NextJS
-                </a>
-            </li>
-
-            <li class="inline-flex">
-                <a
-                href="https://www.creative-tim.com/learning-lab/tailwind/react/overview/notus"
-                target="_blank"
-                class="text-blueGray-700 hover:text-blueGray-500 text-sm block mb-4 no-underline font-semibold"
-                >
-                <i class="fab fa-react mr-2 text-blueGray-300 text-base"></i>
-                React
-                </a>
-            </li>
-
-            <li class="inline-flex">
-                <a
-                href="https://www.creative-tim.com/learning-lab/tailwind/svelte/overview/notus"
-                target="_blank"
-                class="text-blueGray-700 hover:text-blueGray-500 text-sm block mb-4 no-underline font-semibold"
-                >
-                <i class="fas fa-link mr-2 text-blueGray-300 text-base"></i>
-                Svelte
-                </a>
-            </li>
-
-            <li class="inline-flex">
-                <a
-                href="https://www.creative-tim.com/learning-lab/tailwind/vue/overview/notus"
-                target="_blank"
-                class="text-blueGray-700 hover:text-blueGray-500 text-sm block mb-4 no-underline font-semibold"
-                >
-                <i class="fab fa-vuejs mr-2 text-blueGray-300 text-base"></i>
-                VueJS
-                </a>
-            </li>
-            </ul>
-        </div>
-        </div>
     </nav>
         `;
     }
