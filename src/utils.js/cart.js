@@ -33,3 +33,10 @@ export const decreaseCart = (id)=>{
     }
     localStorage.setItem("cart", JSON.stringify(cart));
 };
+
+export const removeCart = (id)=>{
+    if (window.confirm("Xóa sản phẩm này?")) {
+        cart = cart.filter(element => element.id !== id);
+    }
+    localStorage.setItem("cart", JSON.stringify(cart));
+};

@@ -167,10 +167,12 @@
     opacity: 1;
 }
 .lSAction > .lSPrev {
+    color: #000;
     background-position: 0 0;
     left: 10px;
 }
 .lSAction > .lSNext {
+    color: #000;
     background-position: -32px 0;
     right: 10px;
 }

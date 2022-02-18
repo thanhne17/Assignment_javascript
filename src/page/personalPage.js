@@ -3,7 +3,7 @@ import Footer from "../components/footer";
 import Introduce from "../components/introduce";
 import LogOut from "../components/logout";
 import { reRender } from "../utils.js";
-import { decreaseCart, increaseCart } from "../utils.js/cart";
+import { decreaseCart, increaseCart, removeCart } from "../utils.js/cart";
 
 const PersonalPage = {
     print(){
@@ -16,44 +16,46 @@ const PersonalPage = {
         <div class="bg-[#f8fafc] pt-[50px] pb-[40px]">
             <main class="w-[80%] mx-auto shadow-xl rounded-xl flex bg-[#fff]">
                 <div class="l m-[10px]">
-                <div class="border-b pb-[10px]">
-                    <img class="rounded-full w-[50px] inline" src="https://cf.shopee.vn/file/a2346a9cb342e1786ce0aa2b56318855_tn" alt="">
-                    <span class="text-xl font-black">${user.email}</span>
-                </div>
-                <div class="user-menu pt-[10px]">
-                    <ul>
-                    <li class="tab relative">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline" fill="none" viewBox="0 0 24 24" stroke="#1856b5">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                <div class=" sticky top-[80px]">
+                    <div class="border-b pb-[10px]">
+                        <img class="rounded-full w-[50px] inline" src="https://cf.shopee.vn/file/a2346a9cb342e1786ce0aa2b56318855_tn" alt="">
+                        <span class="text-xl font-black">${user.email}</span>
+                    </div>
+                    <div class="user-menu pt-[10px]">
+                        <ul>
+                        <li class="tab relative">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline" fill="none" viewBox="0 0 24 24" stroke="#1856b5">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                            </svg>
+                            Tài khoản của tôi
+                            <!-- <div class="">
+                            <ul class="">
+                                <li class="tab">
+                                cc
+                                </li>
+                            </ul>
+                            </div> -->
+                        </li>
+                        <li class="tab tab-active">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block" fill="none" viewBox="0 0 24 24" stroke="red">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                            </svg>
+                            Đơn mua
+                        </li>
+                        <li class="tab">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6  inline-block" fill="none" viewBox="0 0 24 24" stroke="green">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                            </svg>
+                            Thông báo
+                        </li>
+                        <li class="logout pt-[50px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
                         </svg>
-                        Tài khoản của tôi
-                        <!-- <div class="">
-                        <ul class="">
-                            <li class="tab">
-                            cc
-                            </li>
+                        Đăng xuất
+                    </li>
                         </ul>
-                        </div> -->
-                    </li>
-                    <li class="tab tab-active">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block" fill="none" viewBox="0 0 24 24" stroke="red">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-                        </svg>
-                        Đơn mua
-                    </li>
-                    <li class="tab">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6  inline-block" fill="none" viewBox="0 0 24 24" stroke="green">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
-                        </svg>
-                        Thông báo
-                    </li>
-                    <li class="logout pt-[50px]">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
-                    </svg>
-                    Đăng xuất
-                </li>
-                    </ul>
+                </div>
             
                 </div>
                 </div>
@@ -149,13 +151,14 @@ const PersonalPage = {
                     </td>
                     <td class="px-6 py-4 whitespace-nowrap">
                     <div class="text-sm text-gray-900">
+                    <svg data-id="${Element.id}" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer decrease btn h-6 w-6 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+                    </svg>
+                    X${Element.quantily}
                     <svg data-id="${Element.id}" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer increase btn h-6 w-6 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
                     </svg>
-                    X${Element.quantily}
-                    <svg data-id="${Element.id}" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer decrease btn h-6 w-6 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
-                    </svg>
+                    <button data-id="${Element.id}" class="btn btn-remove py-[5px] px-[10px] rounded bg-[#ff00009e] text-[#fff] hover:bg-[red]">Xóa</button>
                     </div>
                         </td>
                     </tr>       
@@ -212,6 +215,10 @@ const PersonalPage = {
                 }
                 else if(element.classList.contains("decrease")){
                     decreaseCart(dataId);
+                    reRender(PersonalPage, ".container");
+                }
+                else{
+                    removeCart(dataId);
                     reRender(PersonalPage, ".container");
                 }
             });

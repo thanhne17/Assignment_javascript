@@ -8,10 +8,10 @@ const EditProduct = {
         const { data } = await axios.get(`http://localhost:3001/posts/${id}`);
         return /* html */ `
                 ${NavDashboad.print()}
-                <div class="relative md:ml-64 bg-blueGray-50">
+                <div class="relative md:ml-64 bg-blueGray-50 mx-[30px] shadow-2xl rounded-xl border">
                 <h1 class="py-[20px] text-xl font-bold sm:px-6 lg:px-8">Cập nhật sản phẩm</h1>
     
-            <form action="" class="overflow-hidden border-b border-gray-200 w-[100%] mx-auto form">
+            <form enctype="multipart/form-data" action="" class="overflow-hidden border-b border-gray-200 w-[100%] mx-auto form">
               <div class="mt-10 sm:mt-0">
                 <div class="md:grid md:grid-cols-2 md:gap-6">
                   <div class="mt-5 md:mt-0 md:col-span-2">
@@ -33,20 +33,26 @@ const EditProduct = {
 
                             <div class="col-span-6 sm:col-span-3">
                               <label for="last-name" class="block text-sm font-medium text-gray-700">Giảm giá</label>
-                              <input value="${data.price_sale}đ" type="text" name="price_sale" id="price_sale" autocomplete="family-name" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                              <input value="${data.price_sale}" type="text" name="price_sale" id="price_sale" autocomplete="family-name" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                             </div>
               
                             <div class="col-span-6 sm:col-span-3">
                               <label for="country" class="block text-sm font-medium text-gray-700">Thể loại</label>
                               <select id="category" name="category" autocomplete="country-name" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                               <option>1</option>
+                                ${await axios.get("http://localhost:3001/cate_pr")
+        .then(res => res.data.map((Element)=>{
+            return /* html */ `
+              <option value="${Element.id_cate}">${Element.title}</option>
+          `;
+        }).join(""))
+}
                               </select>
                             </div>
               
-                            <div class="col-span-6">
+                            <div class="col-span-6 border p-[5px] rounded-xl">
                               <label for="img" class="block text-sm font-medium text-gray-700">Ảnh</label>
-                              <input value="${data.img}" type="text" name="img" id="img" autocomplete="img" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                              <img class="w-[30%]" src="${data.img}">
+                              <input type="file" name="img" id="img" autocomplete="img" class="mt-1 border border-gray-300 block w-full py-2 px-3 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                              <img class="w-[30%] text-center preview rounded-lg m-[5px]" src="${data.img}">
                             </div>
               
                             <div class="col-span-6 sm:col-span-6 lg:col-span-2">
@@ -92,33 +98,52 @@ const EditProduct = {
     },
     after(id){
         const btn = document.querySelector(".btn-add");
+        const img = document.querySelector("#img");
+        console.log(img.files);
+        img.addEventListener("change", ()=>{
+            document.querySelector(".preview").src = URL.createObjectURL(img.files[0]);
+        });
         btn.addEventListener("click", (e)=>{
             e.preventDefault();
-            const apiFake = {
-                name_prodcut: document.querySelector("#name_prodcut").value,
-                id: document.querySelector("#id").value,
-                cpu: document.querySelector("#cpu").value,
-                ram: document.querySelector("#ram").value,
-                rom: document.querySelector("#rom").value,
-                price_text: document.querySelector("#price_text").value,
-                pin: document.querySelector("#pin").value,
-                card: document.querySelector("#card").value,
-                img: document.querySelector("#img").value,
-                price: document.querySelector("#price_text").value.replace(/[^0-9]/g, ""),
-                price_sale: document.querySelector("#price_sale").value,
-                
-            };
-            // console.log(apiFake);
-            axios.put("http://localhost:3001/posts/"+id, apiFake)
-                .then(()=>{
-                    toastr.success("Bạn đã cập nhật thành công");
-                    setTimeout(() => {
-                        document.location.href = "/#/admin/index";
-                    }, 2000);
-                })
-                .catch(()=>{
-                    toastr.error("Có lỗi xảy ra, vui lòng thử lại!");
-                });
+            const file = img.files[0];
+            const formData = new FormData();
+            formData.append("file", file);
+            formData.append("upload_preset", "edlvdeks");
+            //call api upload img
+            axios({
+                url: "https://api.cloudinary.com/v1_1/djsbi0bma/image/upload",
+                headers: {
+                    "Content-Type": "applycation/x-www-formendcoded"
+                },
+                method: "POST",
+                data: formData,
+            }).then((res)=>{
+                const apiFake = {
+                    name_prodcut: document.querySelector("#name_prodcut").value,
+                    id: document.querySelector("#id").value,
+                    cpu: document.querySelector("#cpu").value,
+                    ram: document.querySelector("#ram").value,
+                    rom: document.querySelector("#rom").value,
+                    price_text: document.querySelector("#price_text").value,
+                    pin: document.querySelector("#pin").value,
+                    card: document.querySelector("#card").value,
+                    img: res.data.secure_url,
+                    price: document.querySelector("#price_text").value.replace(/[^0-9]/g, ""),
+                    price_sale: document.querySelector("#price_sale").value,
+                };
+                axios.put("http://localhost:3001/posts/"+id, apiFake)
+                    .then(()=>{
+                        toastr.success("Bạn đã cập nhật thành công");
+                        setTimeout(() => {
+                            document.location.href = "/#/admin/index";
+                        }, 2000);
+                    })
+                    .catch(()=>{
+                        toastr.error("Có lỗi xảy ra, vui lòng thử lại!");
+                    });
+
+                console.log(apiFake);
+            });
         });
     }
         

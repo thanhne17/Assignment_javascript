@@ -43,9 +43,10 @@ const AddProduct = {
                           </select>
                         </div>
           
-                        <div class="col-span-6">
+                        <div class="col-span-6 border rounded-lg p-[5px]">
                           <label for="img" class="block text-sm font-medium text-gray-700">Ảnh</label>
                           <input type="file" name="img" id="img" autocomplete="img" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                          <img id="preview" class="w-[30%] text-center mt-[5px] rounded-lg">
                         </div>
           
                         <div class="col-span-6 sm:col-span-6 lg:col-span-2">
@@ -92,13 +93,16 @@ const AddProduct = {
     after(){
         const btn = document.querySelector(".btn-add");
         const img = document.querySelector("#img");
+        img.addEventListener("change", ()=>{
+            console.log(URL.createObjectURL(img.files[0]));
+            document.querySelector("#preview").src = URL.createObjectURL(img.files[0]);
+        });
         btn.addEventListener("click", (e)=>{
             e.preventDefault();
             const file = img.files[0];
             const formData = new FormData();
             formData.append("file", file);
             formData.append("upload_preset", "edlvdeks");
-            console.log(file);
             axios({
                 url: "https://api.cloudinary.com/v1_1/djsbi0bma/image/upload",
                 method: "POST",
@@ -113,7 +117,7 @@ const AddProduct = {
                     cpu: document.querySelector("#cpu").value,
                     ram: document.querySelector("#ram").value,
                     rom: document.querySelector("#rom").value,
-                    price: document.querySelector("#price").value+"đ",
+                    price: document.querySelector("#price").value,
                     pin: document.querySelector("#pin").value,
                     card: document.querySelector("#card").value,
                     img:  res.data.secure_url,

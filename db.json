@@ -3,18 +3,15 @@
     {
       "name_prodcut": "ASUS ROG Strix G15 ",
       "id": "1",
-      "cpu": "cpu 1",
+      "cpu": "A15 Bionic",
       "ram": "16GB, DDR4, 3200 MHz 1",
-      "rom": "512",
+      "rom": "512GB ",
       "price_text": "17.102.002đ",
-      "price_sale": "4000000",
-      "pin": "pin 1",
-      "card": "card 1",
-      "img": "https://media-api-beta.thinkpro.vn/backend/sku-import/laptop/ASUS%20ROG%20Strix%20G15%20(G513)%20(G513QM-HQ283T)/StrixG51303CF/ASUS-ROG-Strix-G15-(G513)-(G513QM-HQ283T)-001.jpg",
-      "img4": "https://media-api-beta.thinkpro.vn/backend/sku-import/laptop/Asus%20Zenbook%20Q408UG/ZenbookQ408ug01NS/Asus-Zenbook-Q408UG-004.png",
-      "img2": "https://media-api-beta.thinkpro.vn/backend/sku-import/laptop/Asus%20Zenbook%20Q408UG/ZenbookQ408ug01NS/Asus-Zenbook-Q408UG-002.png",
-      "img3": "https://media-api-beta.thinkpro.vn/backend/sku-import/laptop/Asus%20Zenbook%20Q408UG/ZenbookQ408ug01NS/Asus-Zenbook-Q408UG-003.png",
-      "price": "17102002"
+      "pin": "5000mHa",
+      "card": "Adeno 17",
+      "img": "https://res.cloudinary.com/djsbi0bma/image/upload/v1645199688/zilke1j7rfsd3jdi4bga.jpg",
+      "price": "17102002",
+      "price_sale": "4000000"
     },
     {
       "name_prodcut": "Asus ZenBook F571",
@@ -102,11 +99,8 @@
       "pin": "56Wh",
       "card": "Intel Iris Xe",
       "img": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/15/asus-vivobook-a515-oled-thinkpro.jpg",
-      "img4": "https://media-api-beta.thinkpro.vn/backend/sku-import/laptop/Asus%20Zenbook%20Q408UG/ZenbookQ408ug01NS/Asus-Zenbook-Q408UG-004.png",
-      "img2": "https://media-api-beta.thinkpro.vn/backend/sku-import/laptop/Asus%20Zenbook%20Q408UG/ZenbookQ408ug01NS/Asus-Zenbook-Q408UG-002.png",
-      "img3": "https://media-api-beta.thinkpro.vn/backend/sku-import/laptop/Asus%20Zenbook%20Q408UG/ZenbookQ408ug01NS/Asus-Zenbook-Q408UG-003.png",
       "price": "19999000",
-      "price_sale": "4000000đđđđ"
+      "price_sale": "4000000"
     },
     {
       "name_prodcut": "ASUS ROG Strix G15 ",

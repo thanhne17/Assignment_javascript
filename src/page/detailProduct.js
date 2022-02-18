@@ -170,16 +170,16 @@ const DetailProduct = {
                         <p>${result.price_text}</p>
                     </div>
                     <h1 class="font-bold py-[20px]">Cấu hình</h1>
-                    <div class="w-[50%] text-sm border border-[blue] p-[5px] rounded-lg">
-                        <p class="">
-                            <ul>
-                                <li>${result.cpu}</li>
-                                <li>${result.card}</li>
-                                <li>${result.ram}</li>
-                                <li>${result.rom}</li>
-                                <li>${result.pin}</li>
+                    <div class="w-[70%] text-sm p-[5px] rounded-lg shadow-lg border-[#eee] border">
+                        <div class="">
+                            <ul class="">
+                                <li class="font-semibold">${result.cpu}</li>
+                                <li class="font-semibold">${result.card}</li>
+                                <li class="font-semibold">${result.ram}</li>
+                                <li class="font-semibold">${result.rom}</li>
+                                <li class="font-semibold">${result.pin}</li>
                             </ul>
-                        </p>
+                        </div>
                         <p class="text-[red] pt-[10px] font-bold">${result.price_text}</p>
                     </div>
                     </div>

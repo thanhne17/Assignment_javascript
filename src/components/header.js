@@ -38,7 +38,7 @@ const Header =  {
                 </div>
                 <div>
                     <form class="relative" method="get">
-                        <input type="text" class="words rounded-3xl px-[10px] py-[5px] bg-[#eee] text-[black] focus:outline-[#1876f2]" placeholder="Tìm kiếm">
+                        <input type="text" class="words rounded-3xl px-[10px] py-[5px] bg-[#eee] text-[black] border hover:border-[#1876f2] focus:outline-[#1876f2]" placeholder="Tìm kiếm">
                         <button class="btn-search inline absolute translate-y-[-50%] top-[50%] right-[-40px] bg-[#eee] p-[4px] rounded-full">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
