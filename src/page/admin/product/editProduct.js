@@ -50,7 +50,7 @@ const EditProduct = {
                             </div>
               
                             <div class="col-span-6 border p-[5px] rounded-xl">
-                              <label for="img" class="block text-sm font-medium text-gray-700">Ảnh</label>
+                              <label for="img" class="block text-sm font-medium text-gray-700">Ảnh sản phẩm</label>
                               <input type="file" name="img" id="img" autocomplete="img" class="mt-1 border border-gray-300 block w-full py-2 px-3 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                               <img class="w-[30%] text-center preview rounded-lg m-[5px]" src="${data.img}">
                             </div>

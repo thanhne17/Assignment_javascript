@@ -3,7 +3,7 @@ import axios from "axios";
 
 const AllProduct = {
     async print(id){
-        const { data } = await axios.get(`http://localhost:3001/posts?_page=${id}&_limit=12`);
+        const { data } = await axios.get(`http://localhost:3001/posts?_page=${id}&_limit=12`); 
         Fillter.print();
         return  /* html */ `
               <div class="all-product bg-[#f8fafc] pt-[70px] p-[10px]">
@@ -40,10 +40,12 @@ const AllProduct = {
                       <div class="wrap-product grid grid-cols-4 gap-[20px]">
                       ${data.map((Element)=> /* html */ `
                       <div class="product1 bg-[#fff] hover:shadow-xl duration-300 rounded-xl overflow-hidden p-[20px] relative">
-                      <a href="/#/detailPr/${Element.id}" class="">
-                        <figure class="h-[50%]">
-                          <img src="${Element.img}" alt="">
-                        </figure>
+                      <a href="/#/detailPr/${Element.id}">
+                        <div class="clearfix" style="max-width:600px;">
+                            <ul id="image-gallery" class="image-gallery gallery list-unstyled cS-hidden">
+                                ${Element.img.map(res => /* html */ `<img src=${res} />`).join("")}
+                            </ul>
+                    </div>
                         <div class="info h-[50%] bottom-[5px] ">
                           <div class="name text-xl font-bold">
                             ${Element.name_prodcut}
@@ -56,7 +58,7 @@ const AllProduct = {
                         </div>
                       </a>
                     </div>
-                      `).join(" ")}
+                      `).join("")}
 
                         </div>
                         <div class="flex justify-between mt-[20px] items-center"> 
@@ -91,6 +93,23 @@ const AllProduct = {
                 phanTram[i].innerHTML = `   -${Math.floor(result)}%`;        
             }     
         }
+        $(document).ready(function() {
+            $("#content-slider").lightSlider({
+                loop:true,
+                keyPress:true
+            });
+            $(".image-gallery").lightSlider({
+                item:1,
+                thumbItem:9,
+                slideMargin: 0,
+                speed:1000,
+                auto:true,
+                loop:true,
+                onSliderLoad: function() {
+                    $(".image-gallery").removeClass("cS-hidden");
+                }  
+            });
+        });
     }
 };
 

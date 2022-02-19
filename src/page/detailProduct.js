@@ -22,36 +22,15 @@ const DetailProduct = {
                     <div class="item">            
                     <div class="clearfix" style="max-width:600px;">
                         <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
-                            <li data-thumb="${result.img}"> 
-                                <img src="${result.img}" />
-                                 </li>
-                            <li data-thumb="${result.img2}"> 
-                                <img src="${result.img2}" />
-                                 </li>
-                            <li data-thumb="${result.img3}"> 
-                                <img src="${result.img3}" />
-                                 </li>
-                            <li data-thumb="${result.img4}"> 
-                                <img src="${result.img4}" />
-                                 </li>
-                            <li data-thumb="${result.img}"> 
-                                <img src="${result.img}" />
-                                 </li>
-                            <li data-thumb="${result.img}"> 
-                                <img src="${result.img}" />
-                                 </li>
-                            <li data-thumb="${result.img}"> 
-                                <img src="${result.img}" />
-                                 </li>
-                            <li data-thumb="${result.img}"> 
-                                <img src="${result.img}" />
-                                 </li>
-                            <li data-thumb="${result.img}"> 
-                                <img src="${result.img}" />
-                                 </li>
-                            <li data-thumb="${result.img}"> 
-                                <img src="${result.img}" />
-                                 </li>
+
+                            ${result.img.map((res)=>{
+        console.log(res);
+        return /* html */ `
+        <li data-thumb="${res}"> 
+        <img src="${res}" />
+         </li>        
+                                `;
+    }).join("")}
                       
                         </ul>
                     </div>
