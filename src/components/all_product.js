@@ -3,7 +3,7 @@ import axios from "axios";
 
 const AllProduct = {
     async print(id){
-        const { data } = await axios.get(`http://localhost:3001/posts?_page=${id}&_limit=12`); 
+        const { data } = await axios.get(`http://localhost:3001/posts?_page=${id}&_limit=20`); 
         Fillter.print();
         return  /* html */ `
               <div class="all-product bg-[#f8fafc] pt-[70px] p-[10px]">

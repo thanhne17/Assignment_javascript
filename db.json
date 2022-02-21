@@ -2,6 +2,7 @@
   "posts": [
     {
       "name_prodcut": "Asus ZenBook F571",
+      "id_cate": "1",
       "cpu": "AMD Ryzen5 5500u",
       "ram": "8GB, DDR4, 3200 MHz",
       "rom": "256GB + 2.5Inchs sata",
@@ -18,6 +19,7 @@
     },
     {
       "name_prodcut": "ASUS ROG Strix G15 ",
+      "id_cate": "1",
       "id": "1",
       "cpu": "A15 Bionic",
       "ram": "16GB, DDR4, 3200 MHz 1",
@@ -34,6 +36,7 @@
     },
     {
       "name_prodcut": "Lenovo ThinkPad X1 Carbon Gen 5",
+      "id_cate": "1",
       "id": "3",
       "cpu": "cpu 3",
       "ram": "16GB, DDR4, 3200 MHz 3",
@@ -50,6 +53,7 @@
     },
     {
       "name_prodcut": "Dell Inspiron 15 5515 AMD",
+      "id_cate": "1",
       "id": "5",
       "cpu": "cpu 5",
       "ram": "16GB, DDR4, 3200 MHz 5",
@@ -66,6 +70,7 @@
     },
     {
       "name_prodcut": "Lenovo IdeaPad Slim 5 Pro 14 AMD (Chính hãng) (82L700L5VN)",
+      "id_cate": "1",
       "id": "6",
       "cpu": "Intel Core I5 8300H",
       "ram": "16GB, DDR4, 3200 MHz",
@@ -100,6 +105,7 @@
     },
     {
       "name_prodcut": "Asus ZenBook A515",
+      "id_cate": "1",
       "id": "10",
       "cpu": "cpu 10",
       "ram": "16GB, DDR4, 3200 MHz 10",
@@ -108,6 +114,7 @@
       "pin": "56Wh",
       "card": "Intel Iris Xe",
       "img": [
+        "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/15/asus-vivobook-a515-oled-thinkpro.jpg",
         "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/15/asus-vivobook-a515-oled-thinkpro.jpg"
       ],
       "price": "19999000",
@@ -132,7 +139,7 @@
     },
     {
       "name_prodcut": "MSI Modern 15 AMD",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 2",
       "img": [
         "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/asus-zenbook-q408ug.jpg"
@@ -149,7 +156,7 @@
     },
     {
       "name_prodcut": "Lenovo ThinkPad X1 Carbon Gen 5",
-      "id_cate": "1",
+      "id_cate": "3",
       "cpu": "cpu 3",
       "img": [
         "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/Lenovo-thinkpad-x1-carbon-gen-5.jpg"
@@ -166,7 +173,7 @@
     },
     {
       "name_prodcut": "Dell Inspiron 15 5515 AMD",
-      "id_cate": "1",
+      "id_cate": "3",
       "cpu": "cpu 5",
       "img": [
         "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/6/18/inspiron5515-mistblue-1.jpg"
@@ -183,7 +190,7 @@
     },
     {
       "name_prodcut": "Lenovo IdeaPad Slim 5 Pro 14 AMD (Chính hãng) (82L700L5VN)",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 6",
       "img": [
         "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/25/IdeaPad_5_Pro_14ACN6_82L700L7VN_01.png"
@@ -200,7 +207,7 @@
     },
     {
       "name_prodcut": "MSI Modern 14 B11 (1030VN)",
-      "id_cate": "1",
+      "id_cate": "4",
       "cpu": "cpu 7",
       "img": [
         "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/9/5/msi-nb-modern14b-carbon-gray-thinkpro-1.jpg"
@@ -217,7 +224,7 @@
     },
     {
       "name_prodcut": "dolorem soluta voluptatem",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 9",
       "img": [
         "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/19/HP-Victus-16-Intel-04.png"
@@ -234,6 +241,7 @@
     },
     {
       "name_prodcut": "Asus A512 Oled",
+      "id_cate": "1",
       "id": "20",
       "cpu": "cpu 10",
       "ram": "16GB, DDR4, 3200 MHz 10",
@@ -249,7 +257,7 @@
     },
     {
       "name_prodcut": "ASUS ROG Strix G15 ",
-      "id_cate": "1",
+      "id_cate": "4",
       "cpu": "cpu 1",
       "img": [
         "https://media-api-beta.thinkpro.vn/backend/sku-import/laptop/ASUS%20ROG%20Strix%20G15%20(G513)%20(G513QM-HQ283T)/StrixG51303CF/ASUS-ROG-Strix-G15-(G513)-(G513QM-HQ283T)-001.jpg"
@@ -266,7 +274,7 @@
     },
     {
       "name_prodcut": "MSI Modern 15 AMD",
-      "id_cate": "1",
+      "id_cate": "4",
       "cpu": "cpu 2",
       "img": [
         "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/asus-zenbook-q408ug.jpg"
@@ -283,7 +291,7 @@
     },
     {
       "name_prodcut": "Lenovo ThinkPad X1 Carbon Gen 5",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 3",
       "img": [
         "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/Lenovo-thinkpad-x1-carbon-gen-5.jpg"
@@ -300,7 +308,7 @@
     },
     {
       "name_prodcut": "HP ZBook Studio G3",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 4",
       "img": [
         "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2020/7/17/hp-zbook-studio-g3-StudioG301NU-4zK.jpg"
@@ -317,7 +325,7 @@
     },
     {
       "name_prodcut": "Dell Inspiron 15 5515 AMD",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 5",
       "img": [
         "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/6/18/inspiron5515-mistblue-1.jpg"
@@ -334,7 +342,7 @@
     },
     {
       "name_prodcut": "Lenovo IdeaPad Slim 5 Pro 14 AMD (Chính hãng) (82L700L5VN)",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 6",
       "img": [
         "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/25/IdeaPad_5_Pro_14ACN6_82L700L7VN_01.png"
@@ -351,7 +359,7 @@
     },
     {
       "name_prodcut": "MSI Modern 14 B11 (1030VN)",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 7",
       "img": [
         "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/9/5/msi-nb-modern14b-carbon-gray-thinkpro-1.jpg"
@@ -368,7 +376,7 @@
     },
     {
       "name_prodcut": "dolorem soluta voluptatem",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 9",
       "img": [
         "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/19/HP-Victus-16-Intel-04.png"
@@ -385,6 +393,7 @@
     },
     {
       "name_prodcut": "et modi qui",
+      "id_cate": "1",
       "id": "30",
       "cpu": "AMD Ryzen 5 3500U",
       "ram": "16GB, DDR4, 3200 MHz 10",
@@ -400,7 +409,7 @@
     },
     {
       "name_prodcut": "ASUS ROG Strix G15 ",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 1",
       "img": [
         "https://media-api-beta.thinkpro.vn/backend/sku-import/laptop/ASUS%20ROG%20Strix%20G15%20(G513)%20(G513QM-HQ283T)/StrixG51303CF/ASUS-ROG-Strix-G15-(G513)-(G513QM-HQ283T)-001.jpg"
@@ -417,7 +426,7 @@
     },
     {
       "name_prodcut": "MSI Modern 15 AMD",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 2",
       "img": [
         "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/asus-zenbook-q408ug.jpg"
@@ -434,7 +443,7 @@
     },
     {
       "name_prodcut": "Lenovo ThinkPad X1 Carbon Gen 5",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 3",
       "img": [
         "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/Lenovo-thinkpad-x1-carbon-gen-5.jpg"
@@ -451,7 +460,7 @@
     },
     {
       "name_prodcut": "HP ZBook Studio G3",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 4",
       "img": [
         "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2020/7/17/hp-zbook-studio-g3-StudioG301NU-4zK.jpg"
@@ -468,7 +477,7 @@
     },
     {
       "name_prodcut": "Dell Inspiron 15 5515 AMD",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 5",
       "img": [
         "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/6/18/inspiron5515-mistblue-1.jpg"
@@ -485,7 +494,7 @@
     },
     {
       "name_prodcut": "Lenovo IdeaPad Slim 5 Pro 14 AMD (Chính hãng) (82L700L5VN)",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 6",
       "img": [
         "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/25/IdeaPad_5_Pro_14ACN6_82L700L7VN_01.png",
@@ -503,7 +512,7 @@
     },
     {
       "name_prodcut": "MSI Modern 14 B11 (1030VN)",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 7",
       "img": [
         "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/9/5/msi-nb-modern14b-carbon-gray-thinkpro-1.jpg"
@@ -520,7 +529,7 @@
     },
     {
       "name_prodcut": "ASUS TUF Dash F15",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 8",
       "img": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/5/13/tufdashf15-den-1.jpg",
       "ram": "ram 8",
@@ -535,7 +544,7 @@
     },
     {
       "name_prodcut": "dolorem soluta voluptatem",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 9",
       "img": [
         "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/19/HP-Victus-16-Intel-04.png"
@@ -552,6 +561,7 @@
     },
     {
       "name_prodcut": "Asus ZenBook Q521",
+      "id_cate": "1",
       "id": "40",
       "cpu": "Core I5 11th",
       "ram": "8GB",
@@ -568,7 +578,7 @@
     },
     {
       "name_prodcut": "ASUS ROG Strix G15 ",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 1",
       "img": [
         "https://media-api-beta.thinkpro.vn/backend/sku-import/laptop/ASUS%20ROG%20Strix%20G15%20(G513)%20(G513QM-HQ283T)/StrixG51303CF/ASUS-ROG-Strix-G15-(G513)-(G513QM-HQ283T)-001.jpg"
@@ -585,7 +595,7 @@
     },
     {
       "name_prodcut": "MSI Modern 15 AMD",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 2",
       "img": [
         "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/asus-zenbook-q408ug.jpg"
@@ -602,7 +612,7 @@
     },
     {
       "name_prodcut": "Lenovo ThinkPad X1 Carbon Gen 5",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 3",
       "img": [
         "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/Lenovo-thinkpad-x1-carbon-gen-5.jpg"
@@ -619,7 +629,7 @@
     },
     {
       "name_prodcut": "HP ZBook Studio G3",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 4",
       "img": [
         "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2020/7/17/hp-zbook-studio-g3-StudioG301NU-4zK.jpg"
@@ -636,7 +646,7 @@
     },
     {
       "name_prodcut": "Dell Inspiron 15 5515 AMD",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 5",
       "img": [
         "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/6/18/inspiron5515-mistblue-1.jpg"
@@ -653,7 +663,7 @@
     },
     {
       "name_prodcut": "Lenovo IdeaPad Slim 5 Pro 14 AMD (Chính hãng) (82L700L5VN)",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 6",
       "img": [
         "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/25/IdeaPad_5_Pro_14ACN6_82L700L7VN_01.png"
@@ -670,7 +680,7 @@
     },
     {
       "name_prodcut": "MSI Modern 14 B11 (1030VN)",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 7",
       "img": [
         "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/9/5/msi-nb-modern14b-carbon-gray-thinkpro-1.jpg"
@@ -687,7 +697,7 @@
     },
     {
       "name_prodcut": "ASUS TUF Dash F15",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 8",
       "img": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/5/13/tufdashf15-den-1.jpg",
       "ram": "ram 8",
@@ -702,7 +712,7 @@
     },
     {
       "name_prodcut": "dolorem soluta voluptatem",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 9",
       "img": [
         "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/19/HP-Victus-16-Intel-04.png"
@@ -719,6 +729,7 @@
     },
     {
       "name_prodcut": "Iphone 13 Pro Max",
+      "id_cate": "1",
       "id": "50",
       "cpu": "Apple A14 Bionic",
       "ram": "4GB",
@@ -734,7 +745,7 @@
     },
     {
       "name_prodcut": "ASUS ROG Strix G15 ",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 1",
       "img": [
         "https://media-api-beta.thinkpro.vn/backend/sku-import/laptop/ASUS%20ROG%20Strix%20G15%20(G513)%20(G513QM-HQ283T)/StrixG51303CF/ASUS-ROG-Strix-G15-(G513)-(G513QM-HQ283T)-001.jpg"
@@ -751,7 +762,7 @@
     },
     {
       "name_prodcut": "MSI Modern 15 AMD",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 2",
       "img": [
         "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/asus-zenbook-q408ug.jpg"
@@ -768,7 +779,7 @@
     },
     {
       "name_prodcut": "Lenovo ThinkPad X1 Carbon Gen 5",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 3",
       "img": [
         "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/Lenovo-thinkpad-x1-carbon-gen-5.jpg"
@@ -785,7 +796,7 @@
     },
     {
       "name_prodcut": "HP ZBook Studio G3",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 4",
       "img": [
         "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2020/7/17/hp-zbook-studio-g3-StudioG301NU-4zK.jpg"
@@ -802,7 +813,7 @@
     },
     {
       "name_prodcut": "Dell Inspiron 15 5515 AMD",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 5",
       "img": [
         "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/6/18/inspiron5515-mistblue-1.jpg"
@@ -819,7 +830,7 @@
     },
     {
       "name_prodcut": "Lenovo IdeaPad Slim 5 Pro 14 AMD (Chính hãng) (82L700L5VN)",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 6",
       "img": [
         "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/25/IdeaPad_5_Pro_14ACN6_82L700L7VN_01.png"
@@ -836,7 +847,7 @@
     },
     {
       "name_prodcut": "MSI Modern 14 B11 (1030VN)",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 7",
       "img": [
         "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/9/5/msi-nb-modern14b-carbon-gray-thinkpro-1.jpg"
@@ -853,7 +864,7 @@
     },
     {
       "name_prodcut": "ASUS TUF Dash F15",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 8",
       "img": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/5/13/tufdashf15-den-1.jpg",
       "ram": "ram 8",
@@ -868,7 +879,7 @@
     },
     {
       "name_prodcut": "dolorem soluta voluptatem",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 9",
       "img": [
         "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/19/HP-Victus-16-Intel-04.png"
@@ -885,6 +896,7 @@
     },
     {
       "name_prodcut": "et modi qui",
+      "id_cate": "1",
       "id": "60",
       "cpu": "SnapDragon 8 GEN 1",
       "ram": "16GB, DDR4, 3200 MHz",
@@ -901,7 +913,7 @@
     },
     {
       "name_prodcut": "ASUS ROG Strix G15 ",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 1",
       "img": [
         "https://media-api-beta.thinkpro.vn/backend/sku-import/laptop/ASUS%20ROG%20Strix%20G15%20(G513)%20(G513QM-HQ283T)/StrixG51303CF/ASUS-ROG-Strix-G15-(G513)-(G513QM-HQ283T)-001.jpg"
@@ -918,7 +930,7 @@
     },
     {
       "name_prodcut": "MSI Modern 15 AMD",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 2",
       "img": [
         "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/asus-zenbook-q408ug.jpg"
@@ -935,7 +947,7 @@
     },
     {
       "name_prodcut": "Lenovo ThinkPad X1 Carbon Gen 5",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 3",
       "img": [
         "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/Lenovo-thinkpad-x1-carbon-gen-5.jpg"
@@ -952,7 +964,7 @@
     },
     {
       "name_prodcut": "Dell Inspiron 15 5515 AMD",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 5",
       "img": [
         "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/6/18/inspiron5515-mistblue-1.jpg"
@@ -969,7 +981,7 @@
     },
     {
       "name_prodcut": "Lenovo IdeaPad Slim 5 Pro 14 AMD (Chính hãng) (82L700L5VN)",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 6",
       "img": [
         "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/25/IdeaPad_5_Pro_14ACN6_82L700L7VN_01.png"
@@ -986,7 +998,7 @@
     },
     {
       "name_prodcut": "MSI Modern 14 B11 (1030VN)",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 7",
       "img": [
         "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/9/5/msi-nb-modern14b-carbon-gray-thinkpro-1.jpg"
@@ -1003,7 +1015,7 @@
     },
     {
       "name_prodcut": "ASUS TUF Dash F15",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 8",
       "img": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/5/13/tufdashf15-den-1.jpg",
       "ram": "ram 8",
@@ -1018,7 +1030,7 @@
     },
     {
       "name_prodcut": "dolorem soluta voluptatem",
-      "id_cate": "1",
+      "id_cate": "2",
       "cpu": "cpu 9",
       "img": [
         "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/19/HP-Victus-16-Intel-04.png"
@@ -1035,6 +1047,7 @@
     },
     {
       "name_prodcut": "MacBook Pro 2021 16 256 Space Gray ",
+      "id_cate": "1",
       "id": "70",
       "cpu": "Ryzen AMD R5 5800H",
       "ram": "16GB 3200mHz",
@@ -1051,6 +1064,7 @@
     },
     {
       "name_prodcut": "Apple Macbook Pro 13 2020",
+      "id_cate": "1",
       "id": "8rmOCiQ",
       "cpu": "Intel Core i5, 4 nhân, 8 luồng",
       "ram": "8GB, LPDDR3, 2133 MHz",
@@ -1064,6 +1078,7 @@
     },
     {
       "name_prodcut": "Bàn phím Keychron K1 v4 (Gateron Red Switch)",
+      "id_cate": "1",
       "id": "9D7ygN7",
       "cpu": "Ha Noi",
       "ram": "ha noi",
@@ -1078,6 +1093,7 @@
     },
     {
       "name_prodcut": "",
+      "id_cate": "1",
       "id": "nPNpykv",
       "cpu": "Intel Core i7 1065G7, 4 nhân, 8 luồng",
       "ram": "16GB, LPDDR4X, 3733 MHz",
@@ -1092,6 +1108,7 @@
     },
     {
       "name_prodcut": "Dell XPS 15 7590",
+      "id_cate": "1",
       "id": "awETrvS",
       "cpu": "Intel Core i5 9300H, 4 nhân, 8 luồng",
       "ram": "8GB, DDR4, 2666 MHz",
@@ -1105,6 +1122,7 @@
     },
     {
       "name_prodcut": "Dell XPS 13 9310 (Chính hãng) (JGNH61)",
+      "id_cate": "1",
       "id": "wlDR_pS",
       "cpu": "Ha Noi",
       "ram": "ha noi",
@@ -1118,6 +1136,7 @@
     },
     {
       "name_prodcut": "Asus ZenBook F571",
+      "id_cate": "1",
       "id": "FucVoHi",
       "cpu": "Ha Noi",
       "ram": "ha noi",
@@ -1189,5 +1208,11 @@
       "password": "$2a$10$7deGJ2X7HvAKad3SNz.29ueZzhueehPgzx306P1QLkkOs..GKrnsq",
       "id": "zGzZ2FX"
     }
+  ],
+  "slider": [
+    "https://media-api-beta.thinkpro.vn/media/core/banners/2022/2/17/MS%20365%20866x374%20copy.jpg",
+    "https://media-api-beta.thinkpro.vn/media/core/banners/2022/2/16/image_2022-02-16_18-16-36%20(2)%20copy.jpg",
+    "https://media-api-beta.thinkpro.vn/media/core/banners/2022/1/29/reszie%2029.1%20copy.jpg",
+    "https://media-api-beta.thinkpro.vn/media/core/banners/2022/2/7/866x374%20copy.jpg"
   ]
 }

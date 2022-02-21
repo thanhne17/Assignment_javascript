@@ -3,7 +3,7 @@ const CateBranch = {
         return /* html */ `
                     <!-- cateory br -->
         <div class="wrap-catebr w-[80%] mx-auto ">
-        <h1 class="text-3xl font-black mb-[10px]">Thương hiệu nổi bật</h1>
+        <h1 class="text-xl font-black mb-[10px]">Thương hiệu nổi bật</h1>
         <div class="flex catebr text-center justify-between">
           <div class="Casus">
             <figure>

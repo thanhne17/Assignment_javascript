@@ -86,6 +86,7 @@ const SearchProduct = {
     },
     after(){
         Header.after();
+        Fillter.after();
     }
 };
 

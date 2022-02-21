@@ -196,9 +196,10 @@ const DetailProduct = {
                 speed:500,
                 auto:true,
                 loop:true,
+                adaptiveHeight:true,
                 onSliderLoad: function() {
                     $("#image-gallery").removeClass("cS-hidden");
-                }  
+                }
             });
         });
 

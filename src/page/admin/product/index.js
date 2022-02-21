@@ -42,7 +42,7 @@ const IndexProduct = {
                             <td class="px-6 py-4 whitespace-nowrap">
                             <div class="flex items-center">
                                 <div class="flex-shrink-0 h-20 w-20">
-                                <img class="h-20 w-20" src="${Element.img}" alt="">
+                                <img class="h-20 w-20" src="${Element.img[0]}" alt="">
                                 </div>
                                 <div class="ml-4">
                                 <div class="text-sm font-medium text-gray-900">

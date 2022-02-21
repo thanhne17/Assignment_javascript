@@ -5,31 +5,7 @@ const Header =  {
     print() {
         return /* html */ `
                     <!-- header -->
-        <header class="w-[100%] top-0 z-10 bg-[#ffffff94] backdrop-blur-md">
-            <div class="wrap-top-header hidden">
-            <div class="top-header flex justify-between items-center w-[90%] m-auto p-[10px] ">
-                <div class="social cursor-pointer">
-                <i data-color="blue" class="fab fa-facebook hover:text-[blue]"></i>
-                <i data-color="#1c96e8" class="fab fa-twitter hover:text-[#1c96e8]"></i>
-                <i data-color="#31a5d7" class="fab fa-telegram hover:text-[#31a5d7]"></i>
-                <i data-color="red" class="fab fa-youtube hover:text-[red]"></i>
-                </div>
-                <div class="contact">
-                <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block" fill="none" viewBox="0 0 24 24" stroke="orange">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                </span>
-                0354170252
-                    <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block" fill="none" viewBox="0 0 24 24" stroke="green">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    </span>
-                    thanhntph15251@fpt.edu.vn
-                </div>
-            </div>
-            </div>
+        <header class="w-[100%] top-0 bg-[#ffffff94] backdrop-blur-md shadow-md">
             <div class="bottom-header flex justify-between w-[80%] m-auto items-center">
                 <div class="logo ">
                 <a href="/#/" class="text-[3rem] min-w-[150px] font-black">
@@ -39,8 +15,8 @@ const Header =  {
                 <div>
                     <form class="relative" method="get">
                         <input type="text" class="words rounded-3xl px-[10px] py-[5px] bg-[#eee] text-[black] border hover:border-[#1876f2] focus:outline-[#1876f2]" placeholder="Tìm kiếm">
-                        <button class="btn-search inline absolute translate-y-[-50%] top-[50%] right-[-40px] bg-[#eee] p-[4px] rounded-full">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <button class="btn-search inline absolute top-[50%] translate-y-[-50%] right-[10px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                             </svg>
                         </button>
@@ -92,6 +68,28 @@ const Header =  {
                 </ul>
                 </div>
             </div>
+
+            <div class="wrap-top-header border-t">
+            <div class="top-header flex justify-between items-center w-[90%] m-auto">
+                    <div class="social cursor-pointer">
+                    
+                </div>
+                <div class="contact">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block" fill="none" viewBox="0 0 24 24" stroke="orange">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                </span>
+                0354170252
+                    <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block" fill="none" viewBox="0 0 24 24" stroke="green">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    </span>
+                    thanhntph15251@fpt.edu.vn
+                </div>
+            </div>
+            </div>
       </header>
         `; 
     },
@@ -116,30 +114,39 @@ const Header =  {
         const myBtn = document.querySelector(".btn-top");
         const header = document.querySelector("header");
         const top_header = document.querySelector(".top-header");
+
         window.onscroll = ()=>{
             scrollFunction();
+            // scrollBottomHeader();
         };
         
         function scrollFunction () {
-            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
                 myBtn.style.display = "block";
                 myBtn.style.animation = "toTop .5s";
                 header.classList.add("sticky");
-                header.style.animation = "down .5s";
-                header.classList.add("shadow-md");
+                header.style.animation = "down .5s"; 
                 top_header.classList.add("hidden");
-        
             }
             else{
                 myBtn.style.display = "none";
                 header.classList.remove("sticky");
                 header.style.animation = "";
-                header.classList.remove("shadow-md");
                 top_header.classList.remove("hidden");
-
-                    
+                top_header.classList.remove("hidden");
+                
             }
         }
+        
+        // function scrollBottomHeader () {
+        //     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        //     }
+        //     else {
+                
+        //     }
+        // }
+
+
         
         if (myBtn) {
             myBtn.addEventListener("click", ()=>{

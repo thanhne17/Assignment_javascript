@@ -6,11 +6,15 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Nunito Sans', sans-serif !important;
 }
 
 html{
     scroll-behavior: smooth;
+}
+
+header {
+    z-index: 99999;
 }
 
 header .top-header .social {
