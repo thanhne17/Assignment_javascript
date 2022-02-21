@@ -45,9 +45,11 @@ const SearchProduct = {
                     ${data.map((Element)=> /* html */ `
                     <div class="product1 bg-[#fff] hover:shadow-xl duration-300 rounded-xl overflow-hidden p-[20px] relative">
                     <a href="/#/detailPr/${Element.id}" class="">
-                        <figure class="h-[50%]">
-                        <img src="${Element.img}" alt="">
-                        </figure>
+                    <div class="clearfix" style="max-width:600px;">
+                    <ul id="image-gallery" class="image-gallery gallery list-unstyled cS-hidden">
+                        ${Element.img.map(res => /* html */ `<img src=${res} />`).join("")}
+                    </ul>
+            </div>
                         <div class="info h-[50%] bottom-[5px] ">
                         <div class="name text-xl font-bold">
                             ${Element.name_prodcut}
@@ -87,6 +89,17 @@ const SearchProduct = {
     after(){
         Header.after();
         Fillter.after();
+        const gia_goc = document.querySelectorAll("#sale");
+        const gia_da_giam = document.querySelectorAll("#saled");
+        const phanTram = document.querySelectorAll(".phanTram");
+        for (let i = 0; i < gia_da_giam.length; i++) {
+            const gia_goc_gt = gia_goc[i].getAttribute("value");
+            const gia_da_giam_gt = gia_da_giam[i].getAttribute("value");
+            if (gia_goc_gt > 0) {
+                const result =  ((gia_goc_gt - gia_da_giam_gt)*100)/gia_goc_gt;
+                phanTram[i].innerHTML = `   -${Math.floor(result)}%`;        
+            }     
+        }
     }
 };
 

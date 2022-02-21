@@ -18,7 +18,7 @@ const NavDashboad = {
             class="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-3xl uppercase font-bold p-4 px-0"
             href="/#/"
         >
-            LAPShop<span class="text-[orange]">.</span>
+            Think<span class="text-[orange]">Pro</span>.
         </a>
         <ul class="md:hidden items-center flex flex-wrap list-none">
             <li class="inline-block relative">
@@ -145,7 +145,7 @@ const NavDashboad = {
             <ul class="md:flex-col md:min-w-full flex flex-col list-none">
             <li class="items-center">
                 <a
-                href="/admin"
+                href="/#/admin"
                 class="text-xs uppercase py-3 font-bold block hover:text-pink-600"
                 >
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -173,11 +173,23 @@ const NavDashboad = {
                 class="text-xs uppercase py-3 font-bold block text-blueGray-700 hover:text-blueGray-500"
                 >
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
                 </svg>
                 Danh mục sản phẩm
                 </a>
             </li>
+
+            <li class="items-center">
+            <a
+            href="/#/admin/slide"
+            class="text-xs uppercase py-3 font-bold block text-blueGray-700 hover:text-blueGray-500"
+            >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2" />
+            </svg>
+            Slide
+            </a>
+        </li>
             </ul>
 
             <!-- Divider -->

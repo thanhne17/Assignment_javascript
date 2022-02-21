@@ -4,13 +4,36 @@ import Introduce from "../components/introduce";
 import LogOut from "../components/logout";
 import { reRender } from "../utils.js";
 import { decreaseCart, increaseCart, removeCart } from "../utils.js/cart";
+import axios from "axios";
+import toastr from "toastr";
+import "toastr/build/toastr.min.css";
 
 const PersonalPage = {
-    print(){
+    async print(){
         if (!localStorage.user) {
             document.location.href = "/";
         }
+        let number="";
+        let nameUser = "";
+        let date = "";
+        let month = "";
+        let year = "";
         const user = JSON.parse(localStorage.getItem("user"));
+        if (user.name) {
+            nameUser = user.name;
+        }
+        if (user.number) {
+            number = user.number;
+        }
+        if (user.month) {
+            month = user.month;
+        }
+        if (user.date) {
+            date = user.date;
+        }
+        if (user.year) {
+            year = user.year;
+        }
         return /* html */ `
         ${Header.print()}
         <div class="bg-[#f8fafc] pt-[50px] pb-[40px]">
@@ -18,7 +41,7 @@ const PersonalPage = {
                 <div class="l m-[10px]">
                 <div class=" sticky top-[80px]">
                     <div class="border-b pb-[10px]">
-                        <img class="rounded-full w-[50px] inline" src="https://cf.shopee.vn/file/a2346a9cb342e1786ce0aa2b56318855_tn" alt="">
+                        <img class="rounded-full w-[50px] h-[50px] inline" src="https://www.vhv.rs/dpng/d/421-4213525_png-file-svg-single-user-icon-png-transparent.png" alt="">
                         <span class="text-xl font-black">${user.email}</span>
                     </div>
                     <div class="user-menu pt-[10px]">
@@ -68,15 +91,16 @@ const PersonalPage = {
                     <form action="" class="px-[20px]" enctype="application/x-www-form-urlencoded">
                     <div class="flex justify-between my-[30px]">
                         <label class="min-w-[100px] mr-[20px]" for="name">Tên Đăng nhập</label>
-                        <input class="flex-1 border-b" type="text" name="name" id="name" placeholder="Thành">
+                        <input class="flex-1 border-b" type="text" name="name" id="name" value="${nameUser}">
+                        <input class="flex-1 border-b" type="hidden" name="id" id="id" value="${user.id}">
                     </div>
                     <div class="flex justify-between my-[30px]">
                         <label class="min-w-[100px] mr-[20px]" for="email">Email</label>
-                        <input class="flex-1 border-b" type="text" name="email" id="email" placeholder="" value="Lightspeedcdht7@gmail.com">
+                        <input class="flex-1 border-b" type="text" name="email" id="email" placeholder="" value="${user.email}">
                     </div>
                     <div class="flex justify-between my-[30px]">
                         <label class="min-w-[100px] mr-[20px]" for="number">Số điện thoại</label>
-                        <input class="flex-1 border-b" type="number" name="number" id="number" value="0354170252">
+                        <input class="flex-1 border-b" type="number" name="number" id="number" value="${number}">
                     </div>
                     <div class="flex justify-start my-[30px]">
                         <label class="min-w-[100px] mr-[20px]" for="name">Giới tính</label>
@@ -88,13 +112,13 @@ const PersonalPage = {
                     </div>
                     <div class="flex justify-between my-[30px]">
                         <label class="min-w-[100px] mr-[20px]" for="number">Ngày sinh</label>
-                        <input class="flex-1 border-b" type="number" name="date" id="date" value="17">
-                        <input class="flex-1 border-b" type="number" name="month" id="month" value="10">
-                        <input class="flex-1 border-b" type="number" name="year" id="year" value="2002">
+                        <input class="flex-1 border-b" type="number" name="date" id="date" value="${date}">
+                        <input class="flex-1 border-b" type="number" name="month" id="month" value="${month}">
+                        <input class="flex-1 border-b" type="number" name="year" id="year" value="${year}">
                     </div>
                     <div class="flex justify-between my-[30px]">
                         <label class="min-w-[100px] mr-[20px]" for="name">Ảnh đại diện</label>
-                        <img id="ava" class="w-[150px] h-[150px] rounded-full" src="https://cf.shopee.vn/file/a2346a9cb342e1786ce0aa2b56318855_tn" alt="">
+                        <img id="preview" class="w-[150px] h-[150px] rounded-full" src="https://www.vhv.rs/dpng/d/421-4213525_png-file-svg-single-user-icon-png-transparent.png" alt="">
                         <div class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
                         <div class="space-y-1 text-center">
                             <svg class="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48" aria-hidden="true">
@@ -112,8 +136,8 @@ const PersonalPage = {
                         </div>
                     </div>
             
-                    <div class="px-4 py-3 text-right sm:px-6">
-                        <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Save</button>
+                    <div class="px-4 py-3 text-right sm:px-6 border-t">
+                        <button id="btn-update" type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Lưu</button>
                     </div>
                     </form>
             
@@ -138,7 +162,7 @@ const PersonalPage = {
                     <td class="px-6 py-4 whitespace-nowrap">
                         <div class="flex items-center">
                         <div class="flex-shrink-0 h-20 w-20">
-                            <img class="h-20 w-20" src="${Element.img}" alt="">
+                            <img class="h-20 w-20" src="${Element.img[0]}" alt="">
                         </div>
                         <div class="ml-4">
                             <div class="text-sm font-medium text-gray-900">${Element.name_prodcut}</div>
@@ -163,6 +187,11 @@ const PersonalPage = {
                         </td>
                     </tr>       
                         `; }).join("")}
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap">Tổng: </td>
+                            <td class="px-6 py-4 whitespace-nowrap"><span id="total"></span> đ</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-[green]"><a href="#">Thanh toán</a></td>
+                        </tr>
                                         <!-- More people... -->
                                     </tbody>
                                     </table>
@@ -183,6 +212,12 @@ const PersonalPage = {
                 `;
     },
     after(){
+        function start(){
+            UpdateInfo();
+        }
+
+        start();
+
         Header.after();
         const tab = document.querySelectorAll(".tab");
         const tab_content = document.querySelectorAll(".tab-content");
@@ -224,6 +259,48 @@ const PersonalPage = {
             });
         });
 
+        const totalcart = JSON.parse(localStorage.getItem("cart"));
+        const result = totalcart.reduce((accument, currentValue)=>{
+            let total = accument + Number.parseInt(currentValue.price) * Number.parseInt(currentValue.quantily);
+            return total;
+        },0);
+        document.querySelector("#total").innerHTML = result;
+        function UpdateInfo (){
+            let imgUploadedLink = "";
+            const img = document.querySelector("#file-upload");
+            const file = img.files[0];
+            img.addEventListener("change", ()=>{
+                document.querySelector("#preview").src = URL.createObjectURL(img.files[0]);
+            });
+            document.querySelector("#btn-update").addEventListener("click",async (e)=>{
+                e.preventDefault();
+                if (file) {
+                    const file = img.files[0];
+                    const formData = new FormData();
+
+                    formData.append("file", file);
+                    formData.append("upload_preset", "edlvdeks");
+                
+                    const { data } = await axios.post("https://api.cloudinary.com/v1_1/djsbi0bma/image/upload", formData);
+                    imgUploadedLink = data.url;
+                }
+                const id = JSON.parse(localStorage.getItem("user")).id;
+                console.log(id);
+                axios.put("http://localhost:3001/users/"+id, {
+                    email: document.querySelector("#email").value,
+                    id: document.querySelector("#id").value,
+                    name: document.querySelector("#name").value,
+                    number: document.querySelector("#number").value,
+                    date: document.querySelector("#date").value,
+                    month: document.querySelector("#month").value,
+                    year: document.querySelector("#year"),
+                    img: imgUploadedLink ? imgUploadedLink : document.querySelector("#preview").src
+                })
+                    .then(()=>{
+                        toastr.success("Cập nhật tài khoản thành công");
+                    });
+            });
+        }
     }
 };
 

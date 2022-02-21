@@ -24,7 +24,7 @@ const Slider = {
                         <ul id="lightSlider">
                             ${data.map(res => /* html */ `
                             <li>
-                                <img class="w-[100%] h-[100%] rounded-xl" src="${res}">
+                                <img class="w-[100%] h-[100%] rounded-xl" src="${res.img}">
                             </li>
                             `).join("")}
                         </ul>

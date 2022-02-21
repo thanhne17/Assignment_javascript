@@ -144,7 +144,7 @@ const EditProduct = {
                 .then(()=>{
                     toastr.success("Bạn đã cập nhật thành công");
                     setTimeout(() => {
-                        // document.location.href = "/#/admin/index";
+                        document.location.href = "/#/admin/index";
                     }, 2000);
                 })
                 .catch(()=>{

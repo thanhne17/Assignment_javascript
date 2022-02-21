@@ -30,7 +30,7 @@ const Header =  {
             <div class="bottom-header flex justify-between w-[80%] m-auto items-center">
                 <div class="logo ">
                 <a href="/#/" class="text-[3rem] min-w-[150px] font-black">
-                    LAPShop<span class="text-[orange]">.</span>
+                    Think<span class="text-[orange]">Pro</span>.
                 </a>
                 </div>
                 <div>
@@ -93,32 +93,42 @@ const Header =  {
         `; 
     },
     async after(){
-        const btnBell = document.querySelector(".chuong");
-        const toast = document.querySelector(".menu > ul > li ul");
-        // const btnClose = document.querySelector(".close");
-        var status_toast = "close";
-        if (btnBell) {
-            btnBell.onclick = () => {
-                if (status_toast == "close") {
-                    toast.style.display = "block";
-                    status_toast = "open";
-                }
-                else if(status_toast == "open"){
-                    toast.style.display = "none";
-                    status_toast = "close";
-                }
-            };
+        function start(){
+            totalOrder();
+            openNoti();
+        }
+        start();
+        IconSignIn.print();
+        SearchProduct.print();
+
+        function openNoti(){
+            const btnBell = document.querySelector(".chuong");
+            const toast = document.querySelector(".menu > ul > li ul");
+            // const btnClose = document.querySelector(".close");
+            var status_toast = "close";
+            if (btnBell) {
+                btnBell.onclick = () => {
+                    if (status_toast == "close") {
+                        toast.style.display = "block";
+                        status_toast = "open";
+                    }
+                    else if(status_toast == "open"){
+                        toast.style.display = "none";
+                        status_toast = "close";
+                    }
+                };
+            }
         }
         
-        const myBtn = document.querySelector(".btn-top");
-        const header = document.querySelector("header");
-        const top_header = document.querySelector(".top-header");
-
+        
         window.onscroll = ()=>{
             scrollFunction();
             // scrollBottomHeader();
         };
         
+        const myBtn = document.querySelector(".btn-top");
+        const header = document.querySelector("header");
+        const top_header = document.querySelector(".top-header");
         function scrollFunction () {
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
                 myBtn.style.display = "block";
@@ -137,27 +147,13 @@ const Header =  {
             }
         }
         
-        // function scrollBottomHeader () {
-        //     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        //     }
-        //     else {
-                
-        //     }
-        // }
-
-
-        
         if (myBtn) {
             myBtn.addEventListener("click", ()=>{
                 document.body.scrollTop = 0;
                 document.documentElement.scrollTop = 0;
             });
         }
-        // const { data } = await axios.get("http://localhost:3001/posts?q=msi");
-        // console.log(data);
         
-        IconSignIn.print();
-        SearchProduct.print();
         const words = document.querySelector(".words");
         const btn_search = document.querySelector(".btn-search");
 
@@ -167,13 +163,15 @@ const Header =  {
             document.location.href = `/#/product?${wordSearch}`;
         });
 
-        if (localStorage.getItem("cart")) {
-            let countQuantily = 0;
-            const count = JSON.parse(localStorage.getItem("cart"));
-            count.forEach(element => {
-                countQuantily += element.quantily;
-            });
-            document.querySelector("#quantily").innerHTML=countQuantily;
+        function totalOrder (){
+            if (localStorage.getItem("cart")) {
+                let countQuantily = 0;
+                const count = JSON.parse(localStorage.getItem("cart"));
+                count.forEach(element => {
+                    countQuantily += element.quantily;
+                });
+                document.querySelector("#quantily").innerHTML=countQuantily;
+            }
         }
     }
    

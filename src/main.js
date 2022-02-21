@@ -11,6 +11,11 @@ import SignUp from "./page/sign_up";
 import PersonalPage from "./page/personalPage";
 import SearchProduct from "./components/product_form";
 import CateBranchProduct from "./page/admin/cate/cate";
+import Slider from "./page/admin/slide/slide";
+import EditCate from "./page/admin/cate/editCate";
+import AddCate from "./page/admin/cate/addCate";
+import AddSlide from "./page/admin/slide/addSlide";
+import EditSlide from "./page/admin/slide/editSlide";
 
 const render = async (content,id) => {
     document.querySelector(".container").innerHTML = await content.print(id);
@@ -78,6 +83,21 @@ route.on({
     "/product?(.*)": (res)=>{
         render(SearchProduct, res.queryString);
     },
+    "/admin/slide": ()=>{
+        render(Slider);
+    },
+    "/admin/:id/editCate": (res)=>{
+        render(EditCate, res.data.id);
+    },
+    "admin/addCate": ()=>{
+        render(AddCate);
+    },
+    "admin/addSlide":()=>{
+        render(AddSlide);
+    },
+    "admin/:id/editSlide": ({ data })=>{
+        render(EditSlide, data.id);
+    }
     
 });
 
