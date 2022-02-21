@@ -52,7 +52,8 @@ const EditProduct = {
                             <div class="col-span-6 border p-[5px] rounded-xl">
                               <label for="img" class="block text-sm font-medium text-gray-700">Ảnh sản phẩm</label>
                               <input type="file" name="img" id="img" autocomplete="img" class="mt-1 border border-gray-300 block w-full py-2 px-3 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                              <img class="w-[30%] text-center preview rounded-lg m-[5px]" src="${data.img}">
+                              <img class="w-[30%] text-center preview rounded-lg m-[5px]" src="${data.img[0]}">
+
                             </div>
               
                             <div class="col-span-6 sm:col-span-6 lg:col-span-2">
@@ -99,52 +100,100 @@ const EditProduct = {
     after(id){
         const btn = document.querySelector(".btn-add");
         const img = document.querySelector("#img");
-        console.log(img.files);
+        let imgUploadedLink = "";
+
         img.addEventListener("change", ()=>{
             document.querySelector(".preview").src = URL.createObjectURL(img.files[0]);
         });
-        btn.addEventListener("click", (e)=>{
-            e.preventDefault();
-            const file = img.files[0];
-            const formData = new FormData();
-            formData.append("file", file);
-            formData.append("upload_preset", "edlvdeks");
-            //call api upload img
-            axios({
-                url: "https://api.cloudinary.com/v1_1/djsbi0bma/image/upload",
-                headers: {
-                    "Content-Type": "applycation/x-www-formendcoded"
-                },
-                method: "POST",
-                data: formData,
-            }).then((res)=>{
-                const apiFake = {
-                    name_prodcut: document.querySelector("#name_prodcut").value,
-                    id: document.querySelector("#id").value,
-                    cpu: document.querySelector("#cpu").value,
-                    ram: document.querySelector("#ram").value,
-                    rom: document.querySelector("#rom").value,
-                    price_text: document.querySelector("#price_text").value,
-                    pin: document.querySelector("#pin").value,
-                    card: document.querySelector("#card").value,
-                    img: res.data.secure_url,
-                    price: document.querySelector("#price_text").value.replace(/[^0-9]/g, ""),
-                    price_sale: document.querySelector("#price_sale").value,
-                };
-                axios.put("http://localhost:3001/posts/"+id, apiFake)
-                    .then(()=>{
-                        toastr.success("Bạn đã cập nhật thành công");
-                        setTimeout(() => {
-                            document.location.href = "/#/admin/index";
-                        }, 2000);
-                    })
-                    .catch(()=>{
-                        toastr.error("Có lỗi xảy ra, vui lòng thử lại!");
-                    });
 
-                console.log(apiFake);
-            });
+        btn.addEventListener("click", async (e) => {
+            e.preventDefault();
+
+            const file = img.files[0];
+            if(file){
+                const formData = new FormData();
+                formData.append("file", file);
+                formData.append("upload_preset", "edlvdeks");
+  
+                const {data } = await axios({
+                    url: "https://api.cloudinary.com/v1_1/djsbi0bma/image/upload",
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/x-www-formendcoded",
+                    },
+                    data: formData,
+                });
+                imgUploadedLink = data.url;
+            }
+         
+            axios.put("http://localhost:3001/posts/"+id, {
+                name_prodcut: document.querySelector("#name_prodcut").value,
+                id: document.querySelector("#id").value,
+                cpu: document.querySelector("#cpu").value,
+                ram: document.querySelector("#ram").value,
+                rom: document.querySelector("#rom").value,
+                price_text: document.querySelector("#price_text").value,
+                pin: document.querySelector("#pin").value,
+                card: document.querySelector("#card").value,
+                img: [
+                    imgUploadedLink ? imgUploadedLink : document.querySelector(".preview").src
+                ],
+                price: document.querySelector("#price_text").value.replace(/[^0-9]/g, ""),
+                price_sale: document.querySelector("#price_sale").value,
+            })
+                .then(()=>{
+                    toastr.success("Bạn đã cập nhật thành công");
+                    setTimeout(() => {
+                        // document.location.href = "/#/admin/index";
+                    }, 2000);
+                })
+                .catch(()=>{
+                    toastr.error("Có lỗi xảy ra, vui lòng thử lại!");
+                });
         });
+
+        // btn.addEventListener("click", async (e)=>{
+        //     e.preventDefault();
+        //     const file = img.files[0];
+        //     if (file) {
+        //         const formData = new FormData();
+        //         formData.append("file", file);
+        //         formData.append("upload_preset", "edlvdeks");
+        //         //call api upload img
+        //         const {data} = await axios({
+        //             url: "https://api.cloudinary.com/v1_1/djsbi0bma/image/upload",
+        //             headers: {
+        //                 "Content-Type": "applycation/x-www-formendcoded"
+        //             },
+        //             method: "POST",
+        //             data: formData,
+        //         });
+        //         imgUploadedLink = data.url;
+        //     }
+        //     axios.put("http://localhost:3001/posts/"+id, {
+        //         name_prodcut: document.querySelector("#name_prodcut").value,
+        //         id: document.querySelector("#id").value,
+        //         cpu: document.querySelector("#cpu").value,
+        //         ram: document.querySelector("#ram").value,
+        //         rom: document.querySelector("#rom").value,
+        //         price_text: document.querySelector("#price_text").value,
+        //         pin: document.querySelector("#pin").value,
+        //         card: document.querySelector("#card").value,
+        //         img: imgUploadedLink ? imgUploadedLink : document.querySelector(".preview").src,
+        //         price: document.querySelector("#price_text").value.replace(/[^0-9]/g, ""),
+        //         price_sale: document.querySelector("#price_sale").value,
+        //     })
+        //         .then(()=>{
+        //             toastr.success("Bạn đã cập nhật thành công");
+        //             setTimeout(() => {
+        //                 // document.location.href = "/#/admin/index";
+        //             }, 2000);
+        //         })
+        //         .catch(()=>{
+        //             toastr.error("Có lỗi xảy ra, vui lòng thử lại!");
+        //         });
+
+        // });
     }
         
 };

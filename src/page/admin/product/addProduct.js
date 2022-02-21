@@ -120,7 +120,9 @@ const AddProduct = {
                     price: document.querySelector("#price").value,
                     pin: document.querySelector("#pin").value,
                     card: document.querySelector("#card").value,
-                    img:  res.data.secure_url,
+                    img:  [
+                        res.data.secure_url
+                    ],
                     price_text: document.querySelector("#price").value.replace(/[^0-9]/g, ""),
                     price_sale: document.querySelector("#price_sale").value,
                 };

@@ -10,27 +10,23 @@
       "price_text": "25.550.000đ",
       "price_sale": "4000000",
       "img": [
-         "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/asus-zenbook-q408ug.jpg",
-         "https://media-api-beta.thinkpro.vn/backend/sku-import/laptop/Asus%20Zenbook%20Q408UG/ZenbookQ408ug01NS/Asus-Zenbook-Q408UG-004.png",
-         "https://media-api-beta.thinkpro.vn/backend/sku-import/laptop/Asus%20Zenbook%20Q408UG/ZenbookQ408ug01NS/Asus-Zenbook-Q408UG-002.png",
-         "https://media-api-beta.thinkpro.vn/backend/sku-import/laptop/Asus%20Zenbook%20Q408UG/ZenbookQ408ug01NS/Asus-Zenbook-Q408UG-003.png"
+        "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/asus-zenbook-q408ug.jpg",
+        "https://media-api-beta.thinkpro.vn/backend/sku-import/laptop/Asus%20Zenbook%20Q408UG/ZenbookQ408ug01NS/Asus-Zenbook-Q408UG-004.png",
+        "https://media-api-beta.thinkpro.vn/backend/sku-import/laptop/Asus%20Zenbook%20Q408UG/ZenbookQ408ug01NS/Asus-Zenbook-Q408UG-002.png",
+        "https://media-api-beta.thinkpro.vn/backend/sku-import/laptop/Asus%20Zenbook%20Q408UG/ZenbookQ408ug01NS/Asus-Zenbook-Q408UG-003.png"
       ],
       "id": "2"
     },
     {
       "name_prodcut": "ASUS ROG Strix G15 ",
-      "id_cate": "1",
       "id": "1",
       "cpu": "A15 Bionic",
-      "ram": "16GB, DDR4, 3200 MHz 1",
+      "ram": "16GB, DDR4, 3200 MHz ",
       "rom": "512GB ",
       "price_text": "17.102.002đ",
       "pin": "5000mHa",
       "card": "Adeno 17",
-      "img": [
-        "https://media-api-beta.thinkpro.vn/backend/sku-import/laptop/ASUS%20ROG%20Strix%20G15%20(G513)%20(G513IH-HN015T)/StrixG51304CF/ASUS-ROG-Strix-G15-(G513)-(G513IH-HN015T)-001.jpg",
-        "https://media-api-beta.thinkpro.vn/backend/sku-import/laptop/Asus%20Zenbook%20Q408UG/ZenbookQ408ug01NS/Asus-Zenbook-Q408UG-002.png"
-      ],
+      "img": "http://res.cloudinary.com/djsbi0bma/image/upload/v1645423065/vy5cwqjuatf2as30tlbs.jpg",
       "price": "17102002",
       "price_sale": "4000000"
     },
@@ -1147,6 +1143,34 @@
       "img": "https://res.cloudinary.com/djsbi0bma/image/upload/v1644331132/dle0jpratiokulrpvydn.png",
       "price": "16990000",
       "price_sale": "0đ"
+    },
+    {
+      "name_prodcut": "Dell XPS 15 9510",
+      "id": "lE83yyO",
+      "cpu": "Ha Noi",
+      "ram": "ha noi",
+      "rom": "100000",
+      "price": "49990000",
+      "pin": "56Wh",
+      "card": "Intel Iris Plus G7",
+      "img": "https://res.cloudinary.com/djsbi0bma/image/upload/v1645421162/pxqpgw5oz7ry2kgmtrqm.png",
+      "price_text": "49990000",
+      "price_sale": "0"
+    },
+    {
+      "name_prodcut": "thành",
+      "id": "miYlOtm",
+      "cpu": "Ha Noi",
+      "ram": "ha noi",
+      "rom": "100000",
+      "price": "83.000",
+      "pin": "74wha",
+      "card": "GTX 1650Ti",
+      "img": [
+        "https://res.cloudinary.com/djsbi0bma/image/upload/v1645423215/azwxwjqbnronrbfk9xw5.png"
+      ],
+      "price_text": "83000",
+      "price_sale": "0"
     }
   ],
   "cate_pr": [
