@@ -1,6 +1,8 @@
 import NavDashboad from "../components/nav";
 import { add } from "../../../api/product";
 import axios from "axios";
+// import $ from "jquery";
+// import validate from "jquery-validation";
 
 const AddProduct = {
     async print(){

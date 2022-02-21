@@ -6,6 +6,27 @@ const Header =  {
         return /* html */ `
                     <!-- header -->
         <header class="w-[100%] top-0 bg-[#ffffff94] backdrop-blur-md shadow-md">
+        <div class="wrap-top-header border-b">
+        <div class="top-header flex justify-between items-center w-[90%] m-auto">
+                <div class="social cursor-pointer">
+                
+            </div>
+            <div class="contact">
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block" fill="none" viewBox="0 0 24 24" stroke="orange">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+            </span>
+            0354170252
+                <span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block" fill="none" viewBox="0 0 24 24" stroke="green">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                </span>
+                thanhntph15251@fpt.edu.vn
+            </div>
+        </div>
+        </div>
             <div class="bottom-header flex justify-between w-[80%] m-auto items-center">
                 <div class="logo ">
                 <a href="/#/" class="text-[3rem] min-w-[150px] font-black">
@@ -67,28 +88,6 @@ const Header =  {
                 </li>
                 </ul>
                 </div>
-            </div>
-
-            <div class="wrap-top-header border-t">
-            <div class="top-header flex justify-between items-center w-[90%] m-auto">
-                    <div class="social cursor-pointer">
-                    
-                </div>
-                <div class="contact">
-                <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block" fill="none" viewBox="0 0 24 24" stroke="orange">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                </span>
-                0354170252
-                    <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block" fill="none" viewBox="0 0 24 24" stroke="green">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    </span>
-                    thanhntph15251@fpt.edu.vn
-                </div>
-            </div>
             </div>
       </header>
         `; 
