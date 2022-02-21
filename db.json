@@ -26,7 +26,7 @@
       "price_text": "17.102.002đ",
       "pin": "5000mHa",
       "card": "Adeno 17",
-      "img": "http://res.cloudinary.com/djsbi0bma/image/upload/v1645423065/vy5cwqjuatf2as30tlbs.jpg",
+      "img": ["http://res.cloudinary.com/djsbi0bma/image/upload/v1645423065/vy5cwqjuatf2as30tlbs.jpg"],
       "price": "17102002",
       "price_sale": "4000000"
     },
@@ -527,7 +527,7 @@
       "name_prodcut": "ASUS TUF Dash F15",
       "id_cate": "2",
       "cpu": "cpu 8",
-      "img": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/5/13/tufdashf15-den-1.jpg",
+      "img": ["https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/5/13/tufdashf15-den-1.jpg"],
       "ram": "ram 8",
       "rom": "518",
       "display": "15.6 Inchs FullHD ips",
@@ -568,7 +568,6 @@
       "img": [
         "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/15/asus-vivobook-a515-oled-thinkpro.jpg"
       ],
-      "img4": "https://media-api-beta.thinkpro.vn/backend/sku-import/laptop/Asus%20Zenbook%20Q408UG/ZenbookQ408ug01NS/Asus-Zenbook-Q408UG-004.png",
       "price": "17990000",
       "price_sale": "0"
     },
@@ -690,21 +689,6 @@
       "price_sale": "4000000",
       "price": "39490000",
       "id": "47"
-    },
-    {
-      "name_prodcut": "ASUS TUF Dash F15",
-      "id_cate": "2",
-      "cpu": "cpu 8",
-      "img": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/5/13/tufdashf15-den-1.jpg",
-      "ram": "ram 8",
-      "rom": "518",
-      "display": "15.6 Inchs FullHD Oled",
-      "card": "card 8",
-      "pin": "pin 8",
-      "price_text": "39.490.000đ",
-      "price_sale": "4000000",
-      "price": "39490000",
-      "id": "48"
     },
     {
       "name_prodcut": "dolorem soluta voluptatem",
@@ -859,21 +843,6 @@
       "id": "57"
     },
     {
-      "name_prodcut": "ASUS TUF Dash F15",
-      "id_cate": "2",
-      "cpu": "cpu 8",
-      "img": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/5/13/tufdashf15-den-1.jpg",
-      "ram": "ram 8",
-      "rom": "rom 8",
-      "display": "15.6 Inchs FullHD Amoled",
-      "card": "card 8",
-      "pin": "pin 8",
-      "price_text": "39.490.000đ",
-      "price_sale": "4000000",
-      "price": "39490000",
-      "id": "58"
-    },
-    {
       "name_prodcut": "dolorem soluta voluptatem",
       "id_cate": "2",
       "cpu": "cpu 9",
@@ -903,7 +872,6 @@
       "img": [
         "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/15/asus-vivobook-a515-oled-thinkpro.jpg"
       ],
-      "img4": "https://media-api-beta.thinkpro.vn/backend/sku-import/laptop/Asus%20Zenbook%20Q408UG/ZenbookQ408ug01NS/Asus-Zenbook-Q408UG-004.png",
       "price": "15690000",
       "price_sale": "2500000"
     },
@@ -1010,21 +978,6 @@
       "id": "67"
     },
     {
-      "name_prodcut": "ASUS TUF Dash F15",
-      "id_cate": "2",
-      "cpu": "cpu 8",
-      "img": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/5/13/tufdashf15-den-1.jpg",
-      "ram": "ram 8",
-      "rom": "rom 8",
-      "display": "15.6 Inchs FullHD ips",
-      "card": "card 8",
-      "pin": "pin 8",
-      "price_text": "39.490.000đ",
-      "price_sale": "4000000",
-      "price": "39490000",
-      "id": "68"
-    },
-    {
       "name_prodcut": "dolorem soluta voluptatem",
       "id_cate": "2",
       "cpu": "cpu 9",
@@ -1054,108 +1007,8 @@
       "img": [
         "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/15/asus-vivobook-a515-oled-thinkpro.jpg"
       ],
-      "img4": "https://media-api-beta.thinkpro.vn/backend/sku-import/laptop/Asus%20Zenbook%20Q408UG/ZenbookQ408ug01NS/Asus-Zenbook-Q408UG-004.png",
       "price": "27590000",
       "price_sale": "4000000"
-    },
-    {
-      "name_prodcut": "Apple Macbook Pro 13 2020",
-      "id_cate": "1",
-      "id": "8rmOCiQ",
-      "cpu": "Intel Core i5, 4 nhân, 8 luồng",
-      "ram": "8GB, LPDDR3, 2133 MHz",
-      "rom": "SSD 128GB",
-      "price": "25.990000đ",
-      "pin": "58WHr",
-      "card": "Intel Iris Plus 645",
-      "img": "https://res.cloudinary.com/djsbi0bma/image/upload/v1644251289/wl2ssbibfoj1zz1v2g2t.jpg",
-      "price_text": "25990000",
-      "price_sale": "0"
-    },
-    {
-      "name_prodcut": "Bàn phím Keychron K1 v4 (Gateron Red Switch)",
-      "id_cate": "1",
-      "id": "9D7ygN7",
-      "cpu": "Ha Noi",
-      "ram": "ha noi",
-      "rom": "100000",
-      "price_text": "2.750.000đ",
-      "pin": "65W",
-      "card": "MX450",
-      "img": "https://res.cloudinary.com/djsbi0bma/image/upload/v1644299384/uduyouos1tsqfqekyjqc.jpg",
-      "img4": "https://media-api-beta.thinkpro.vn/backend/sku-import/laptop/Asus%20Zenbook%20Q408UG/ZenbookQ408ug01NS/Asus-Zenbook-Q408UG-004.png",
-      "price": "2750000",
-      "price_sale": "0"
-    },
-    {
-      "name_prodcut": "",
-      "id_cate": "1",
-      "id": "nPNpykv",
-      "cpu": "Intel Core i7 1065G7, 4 nhân, 8 luồng",
-      "ram": "16GB, LPDDR4X, 3733 MHz",
-      "rom": "SSD 512GB",
-      "price_text": "29.990.000đ",
-      "pin": "51WHr",
-      "card": "Intel Iris Plus G7",
-      "img": "https://res.cloudinary.com/djsbi0bma/image/upload/v1644309023/nsbfauwdhiqqf7kvn6dr.jpg",
-      "img4": "https://media-api-beta.thinkpro.vn/backend/sku-import/laptop/Asus%20Zenbook%20Q408UG/ZenbookQ408ug01NS/Asus-Zenbook-Q408UG-004.png",
-      "price": "29990000",
-      "price_sale": "0"
-    },
-    {
-      "name_prodcut": "Dell XPS 15 7590",
-      "id_cate": "1",
-      "id": "awETrvS",
-      "cpu": "Intel Core i5 9300H, 4 nhân, 8 luồng",
-      "ram": "8GB, DDR4, 2666 MHz",
-      "rom": "SSD 256GB",
-      "price": "29.990000đ",
-      "pin": "57WHr",
-      "card": "Intel UHD 630",
-      "img": "https://res.cloudinary.com/djsbi0bma/image/upload/v1644309156/xmhyhzudwplry7f2ouie.jpg",
-      "price_text": "29990000",
-      "price_sale": "0"
-    },
-    {
-      "name_prodcut": "Dell XPS 13 9310 (Chính hãng) (JGNH61)",
-      "id_cate": "1",
-      "id": "wlDR_pS",
-      "cpu": "Ha Noi",
-      "ram": "ha noi",
-      "rom": "100000",
-      "price": "93.000đ",
-      "pin": "51WHr",
-      "card": "Intel Iris Plus G7",
-      "img": "https://res.cloudinary.com/djsbi0bma/image/upload/v1644331031/dkxtymhdbtdtzyo3ceho.jpg",
-      "price_text": "93000",
-      "price_sale": "0"
-    },
-    {
-      "name_prodcut": "Asus ZenBook F571",
-      "id_cate": "1",
-      "id": "FucVoHi",
-      "cpu": "Ha Noi",
-      "ram": "ha noi",
-      "rom": "100000",
-      "price_text": "16990000đ",
-      "pin": "57WHr",
-      "card": "Intel UHD 630",
-      "img": "https://res.cloudinary.com/djsbi0bma/image/upload/v1644331132/dle0jpratiokulrpvydn.png",
-      "price": "16990000",
-      "price_sale": "0đ"
-    },
-    {
-      "name_prodcut": "Dell XPS 15 9510",
-      "id": "lE83yyO",
-      "cpu": "Ha Noi",
-      "ram": "ha noi",
-      "rom": "100000",
-      "price": "49990000",
-      "pin": "56Wh",
-      "card": "Intel Iris Plus G7",
-      "img": "https://res.cloudinary.com/djsbi0bma/image/upload/v1645421162/pxqpgw5oz7ry2kgmtrqm.png",
-      "price_text": "49990000",
-      "price_sale": "0"
     },
     {
       "name_prodcut": "thành",
