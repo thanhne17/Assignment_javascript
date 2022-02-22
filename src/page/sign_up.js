@@ -1,4 +1,8 @@
 import { signup } from "../api/user";
+import $ from "jquery";
+import validate from "jquery-validation";
+import toastr from "toastr";
+import "toastr/build/toastr.min.css";
 
 const SignUp = {
     print() {
@@ -11,12 +15,12 @@ const SignUp = {
               Đăng ký
             </h2>
           </div>
-          <form class="mt-8 space-y-6" action="#" method="POST">
+          <form class="mt-8 space-y-6" action="#" method="POST" id="form-sign-up">
             <input type="hidden" name="remember" value="true">
             <div class="rounded-md shadow-sm -space-y-px">
               <div>
                 <label for="email-address" class="sr-only">Email </label>
-                <input id="email-address" name="email" type="email" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Email ">
+                <input id="email-address" name="email-address" type="email" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Email ">
               </div>
               <div>
                 <label for="password" class="sr-only">Mật khẩu</label>
@@ -24,9 +28,9 @@ const SignUp = {
               </div>
               <div>
               <label for="password" class="sr-only">Mật khẩu</label>
-              <input id="re-password" name="password" type="password" autocomplete="current-password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Xác nhận mật khẩu">
             </div>
             </div>
+            <p id="err"></p>
       
             <div class="flex items-center justify-between">
               <div class="flex items-center">
@@ -60,12 +64,40 @@ const SignUp = {
             `;
     },
     after(){
+
+        // $("#form-sign-up").validate({
+        //     rules: {
+        //         "email-address": "required",
+        //         "password": "required", 
+        //         // "re-password": "required"
+        //     },
+        //     messages:{
+        //         "email-address": "Email hoặc mật khẩu không được trống",
+        //         "password": "Email hoặc mật khẩu không được trống",
+        //         // "re-password": "re-Password dont blank"
+        //     },
+
+        // submitHandler:(form)=>{
+
+        //         form.reset();
+        //     }
+        // });
+        // });
         const btn = document.querySelector(".btn-submit");
-        btn.addEventListener("click", ()=>{
-            signup({
-                email: document.querySelector("#email-address").value,
-                password: document.querySelector("#password").value,
-            });
+        btn.addEventListener("click",async (e)=>{
+            e.preventDefault();
+            try {
+                await signup({
+                    email: document.querySelector("#email-address").value,
+                    password: document.querySelector("#password").value,
+                })
+                    .then(()=>{toastr.success("Đăng kí thành công!");})
+                    .then(()=>{document.location.href="/#/signin";});
+            } catch (error) {
+                console.log(error.response.data);
+                document.querySelector("#err").innerHTML = error.response.data;
+                document.querySelector("#err").style.color = "red";
+            }
         });
     }
 };

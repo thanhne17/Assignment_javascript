@@ -2,8 +2,8 @@ import NavDashboad from "../components/nav";
 import axios from "axios";
 import toastr from "toastr";
 import "toastr/build/toastr.min.css";
-// import $ from "jquery";
-// import validate from "jquery-validation";
+import $ from "jquery";
+import validate from "jquery-validation";
 
 const AddSlide = {
     async print(){
@@ -12,11 +12,11 @@ const AddSlide = {
             ${NavDashboad.print()}
             <div class="relative md:ml-64 bg-blueGray-50">
             <h1 class="py-[20px] text-xl font-bold sm:px-6 lg:px-8">Thêm mới sản phẩm</h1>
-        <form action="" enctype="application/x-www-form-urlencoded" class="overflow-hidden border-b border-gray-200 w-[100%] mx-auto form">
+        <form id="form-add-slide" action="" enctype="application/x-www-form-urlencoded" class="overflow-hidden border-b border-gray-200 w-[100%] mx-auto form">
           <div class="mt-10 sm:mt-0">
             <div class="md:grid md:grid-cols-2 md:gap-6">
               <div class="mt-5 md:mt-0 md:col-span-2">
-                <form action="#" method="POST">
+                <form action="" method="POST">
                   <div class="shadow overflow-hidden sm:rounded-md">
                     <div class="px-4 py-5 bg-white sm:p-6">
 
@@ -51,31 +51,67 @@ const AddSlide = {
             console.log(URL.createObjectURL(img.files[0]));
             document.querySelector("#preview").src = URL.createObjectURL(img.files[0]);
         });
-        btn.addEventListener("click", (e)=>{
-            e.preventDefault();
-            const file = img.files[0];
-            const formData = new FormData();
-            formData.append("file", file);
-            formData.append("upload_preset", "edlvdeks");
-            axios({
-                url: "https://api.cloudinary.com/v1_1/djsbi0bma/image/upload",
-                method: "POST",
-                // headers: {
-                //     "Content-Type":  "application/x-www-formendcoded",
-                // },
-                data: formData,
-            }).then((res)=>{
-                const apiFake = {
-                    id: document.querySelector("#id").value,
-                    img:  res.data.url,
-                };
-                console.log(apiFake);
-                axios.post("http://localhost:3001/slider", apiFake)
-                    .then(()=>{
-                        toastr.success("Bạn đã thêm thành công");
-                    });
-                document.location.href="/admin/slide";
-            });
+        // btn.addEventListener("click", (e)=>{
+        //     e.preventDefault();
+        //     const file = img.files[0];
+        //     const formData = new FormData();
+        //     formData.append("file", file);
+        //     formData.append("upload_preset", "edlvdeks");
+        //     axios({
+        //         url: "https://api.cloudinary.com/v1_1/djsbi0bma/image/upload",
+        //         method: "POST",
+        //         // headers: {
+        //         //     "Content-Type":  "application/x-www-formendcoded",
+        //         // },
+        //         data: formData,
+        //     }).then((res)=>{
+        //         const apiFake = {
+        //             id: document.querySelector("#id").value,
+        //             img:  res.data.url,
+        //         };
+        //         console.log(apiFake);
+        //         axios.post("http://localhost:3001/slider", apiFake)
+        //             .then(()=>{
+        //                 toastr.success("Bạn đã thêm thành công");
+        //             });
+        //         document.location.href="/admin/slide";
+        //     });
+        // });
+        $("#form-add-slide").validate({
+            rules: {
+                "img": "required"
+            },
+            messages:{
+                "img": "Nhập tiêu đề anh ei"
+            },
+
+            submitHandler: (form)=>{
+                const file = img.files[0];
+                const formData = new FormData();
+                formData.append("file", file);
+                formData.append("upload_preset", "edlvdeks");
+                axios({
+                    url: "https://api.cloudinary.com/v1_1/djsbi0bma/image/upload",
+                    method: "POST",
+                    // headers: {
+                    //     "Content-Type":  "application/x-www-formendcoded",
+                    // },
+                    data: formData,
+                }).then((res)=>{
+                    const apiFake = {
+                        id: document.querySelector("#id").value,
+                        img:  res.data.url,
+                    };
+                    console.log(apiFake);
+                    axios.post("http://localhost:3001/slider", apiFake)
+                        .then(()=>{
+                            toastr.success("Bạn đã thêm thành công");
+                        });
+                    document.location.href="/#/admin/slide";
+                });
+
+                form.reset();
+            }
         });
     }
 };

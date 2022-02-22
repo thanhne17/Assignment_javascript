@@ -25,7 +25,7 @@ const EditSlide = {
                             <div class="col-span-6 border p-[5px] rounded-xl">
                               <label for="img" class="block text-sm font-medium text-gray-700">Slide</label>
                               <input type="file" name="img" id="img" autocomplete="img" class="mt-1 border border-gray-300 block w-full py-2 px-3 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                              <img class="w-[30%] text-center preview rounded-lg m-[5px]" src="${data.img}">
+                              <img class="preview" class="w-[30%] text-center preview rounded-lg m-[5px]" src="${data.img}">
                             </div>
 
                           </div>
@@ -74,17 +74,16 @@ const EditSlide = {
                 imgUploadedLink = data.url;
             }
          
-            axios.put("http://localhost:3001/cate_pr/"+id, {
-                title: document.querySelector("#name").value,
+            axios.put("http://localhost:3001/slider/"+id, {
                 id: document.querySelector("#id").value,
                 img: [
                     imgUploadedLink ? imgUploadedLink : document.querySelector(".preview").src
                 ],
             })
                 .then(()=>{
-                    toastr.success("Bạn đã cập nhật thành công");
+                    toastr.success("Cập nhật thành công");
                     setTimeout(() => {
-                        document.location.href = "/#/admin/cate";
+                        document.location.href = "/#/admin/slide";
                     }, 2000);
                 })
                 .catch(()=>{

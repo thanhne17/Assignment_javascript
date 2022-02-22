@@ -845,7 +845,7 @@
       "id": "59"
     },
     {
-      "name_prodcut": "et modi qui",
+      "name_prodcut": "Asus VivoBook a515",
       "id": "60",
       "cpu": "SnapDragon 8 GEN 1",
       "ram": "16GB, DDR4, 3200 MHz",
@@ -1073,6 +1073,36 @@
       "email": "nguyentuanthanh@gmail.com",
       "password": "$2a$10$7deGJ2X7HvAKad3SNz.29ueZzhueehPgzx306P1QLkkOs..GKrnsq",
       "id": "zGzZ2FX"
+    },
+    {
+      "email": "thanhne@gmail.com",
+      "password": "$2a$10$Sj6RcTGfZuxiUBZwwGUFEuXvwCcyi1tRQ6M1vwQnzcjZctJweTjWe",
+      "id": "5_HU2aJ"
+    },
+    {
+      "email": "Thanhabc@gmail.com",
+      "password": "$2a$10$ptyeluSvXZmy93nmEAAs9ew6t5IZr5LCDwHbjnwWXZgrmCwifOc.e",
+      "id": "uP_kkf2"
+    },
+    {
+      "email": "thanhabc@gmail.com",
+      "password": "$2a$10$cEpXLaQkOg6hyKURKr1avu9rwhQnlyvuKh4QaavLwmWINs04oPuTa",
+      "id": "xsnkpj8"
+    },
+    {
+      "email": "thanhnguyenabc@gmail.com",
+      "password": "$2a$10$hnyb8xexYuY6rGUQ7zf44e/JvKjme97eIZ9bzQYdznzvco7BKD6oS",
+      "id": "T4b9axE"
+    },
+    {
+      "email": "thanhabc17@gmail.com",
+      "password": "$2a$10$/JG4suBBGTVKP7obhjPjju9vApJlhBSjDuk5h34NEwRXIeP842eTq",
+      "id": "_jcbY8j"
+    },
+    {
+      "email": "thanhoi@gmail.com",
+      "password": "$2a$10$AD2NF2hym2BwG/ZpldP3Hekw05liziHHvUxEWooiaJX9PvL0QVof6",
+      "id": "S7uousb"
     }
   ],
   "slider": [
